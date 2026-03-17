@@ -55,73 +55,51 @@ class _DetailScreenState extends State<DetailScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+    final isDesktop = size.width > 900;
+
     return Scaffold(
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            expandedHeight: 350,
+            expandedHeight: isDesktop ? 500 : 350,
             pinned: true,
-            title: Text(widget.municipio.nombre), // Título en la barra colapsada
+            title: Text(widget.municipio.nombre),
+            backgroundColor: Colors.teal,
             flexibleSpace: FlexibleSpaceBar(
               background: Stack(
                 fit: StackFit.expand,
                 children: [
-                  // PageView con InteractiveViewer para zoom y deslizamiento
-                  GestureDetector(
-                    onHorizontalDragStart: (details) {
-                      // Prevenir que el CustomScrollView robe el gesto horizontal
-                      // No hacemos nada especial aquí porque PageView ya maneja
-                      // la detección horizontal, pero a veces el SliverAppBar interfiere.
-                      // Esta línea ayuda a priorizar el gesto horizontal.
+                  PageView.builder(
+                    controller: _pageController,
+                    itemCount: widget.municipio.imagenes.length,
+                    onPageChanged: (index) {
+                      setState(() {
+                        _currentImageIndex = index;
+                        _resetZoom();
+                      });
                     },
-                    child: PageView.builder(
-                      controller: _pageController,
-                      itemCount: widget.municipio.imagenes.length,
-                      onPageChanged: (index) {
-                        setState(() {
-                          _currentImageIndex = index;
-                          _resetZoom(); // Al cambiar de imagen, reiniciamos el zoom
-                        });
-                      },
-                      itemBuilder: (context, index) {
-                        return InteractiveViewer(
-                          transformationController: _transformationController,
-                          minScale: 0.5,
-                          maxScale: 4.0,
-                          onInteractionStart: (_) {
-                            setState(() => _isZoomed = true);
-                          },
-                          onInteractionEnd: (_) {
-                            // Si la escala es 1 (o cercana), consideramos que no está en zoom
-                            final scale = _transformationController.value.getMaxScaleOnAxis();
-                            if (scale <= 1.1) {
-                              setState(() => _isZoomed = false);
-                            }
-                          },
-                          child: Image.asset(
-                            widget.municipio.imagenes[index],
-                            fit: BoxFit.cover,
-                            errorBuilder: (_, __, ___) => Container(
-                              color: Colors.grey[300],
-                              child: Center(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    const Icon(Icons.broken_image, size: 80, color: Colors.grey),
-                                    Text(
-                                      'Imagen ${index + 1} no disponible',
-                                      style: const TextStyle(color: Colors.grey),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
+                    itemBuilder: (context, index) {
+                      return InteractiveViewer(
+                        transformationController: _transformationController,
+                        minScale: 0.5,
+                        maxScale: 4.0,
+                        onInteractionStart: (_) => setState(() => _isZoomed = true),
+                        onInteractionEnd: (_) {
+                          final scale = _transformationController.value.getMaxScaleOnAxis();
+                          if (scale <= 1.1) setState(() => _isZoomed = false);
+                        },
+                        child: Image.asset(
+                          widget.municipio.imagenes[index],
+                          fit: BoxFit.cover,
+                          errorBuilder: (_, __, ___) => Container(
+                            color: Colors.grey[300],
+                            child: const Icon(Icons.broken_image, size: 80, color: Colors.grey),
                           ),
-                        );
-                      },
-                    ),
+                        ),
+                      );
+                    },
                   ),
-                  // Gradiente oscuro para mejorar legibilidad del título
                   Container(
                     decoration: const BoxDecoration(
                       gradient: LinearGradient(
@@ -131,37 +109,18 @@ class _DetailScreenState extends State<DetailScreen> {
                       ),
                     ),
                   ),
-                  // Título superpuesto en la imagen (visible cuando la barra no está colapsada)
-                  Positioned(
-                    bottom: 50,
-                    left: 16,
-                    right: 16,
-                    child: Text(
-                      widget.municipio.nombre,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        shadows: [
-                          Shadow(
-                            blurRadius: 10,
-                            color: Colors.black,
-                            offset: Offset(2, 2),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  // Flechas de navegación (solo si hay más de una imagen y no está en zoom)
                   if (widget.municipio.imagenes.length > 1 && !_isZoomed) ...[
                     Positioned(
                       left: 8,
                       top: 0,
                       bottom: 0,
                       child: Center(
-                        child: IconButton(
-                          icon: const Icon(Icons.arrow_back_ios, color: Colors.white, size: 30),
-                          onPressed: _previousImage,
+                        child: CircleAvatar(
+                          backgroundColor: Colors.black26,
+                          child: IconButton(
+                            icon: const Icon(Icons.arrow_back_ios_new, color: Colors.white, size: 20),
+                            onPressed: _previousImage,
+                          ),
                         ),
                       ),
                     ),
@@ -170,14 +129,16 @@ class _DetailScreenState extends State<DetailScreen> {
                       top: 0,
                       bottom: 0,
                       child: Center(
-                        child: IconButton(
-                          icon: const Icon(Icons.arrow_forward_ios, color: Colors.white, size: 30),
-                          onPressed: _nextImage,
+                        child: CircleAvatar(
+                          backgroundColor: Colors.black26,
+                          child: IconButton(
+                            icon: const Icon(Icons.arrow_forward_ios, color: Colors.white, size: 20),
+                            onPressed: _nextImage,
+                          ),
                         ),
                       ),
                     ),
                   ],
-                  // Indicador de página
                   Positioned(
                     bottom: 16,
                     left: 0,
@@ -186,99 +147,50 @@ class _DetailScreenState extends State<DetailScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: List.generate(
                         widget.municipio.imagenes.length,
-                            (index) => GestureDetector(
-                          onTap: () {
-                            _pageController.animateToPage(
-                              index,
-                              duration: const Duration(milliseconds: 300),
-                              curve: Curves.easeInOut,
-                            );
-                          },
-                          child: AnimatedContainer(
-                            duration: const Duration(milliseconds: 300),
-                            margin: const EdgeInsets.symmetric(horizontal: 4),
-                            width: _currentImageIndex == index ? 14 : 10,
-                            height: _currentImageIndex == index ? 14 : 10,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: _currentImageIndex == index
-                                  ? Colors.white
-                                  : Colors.white.withOpacity(0.5),
-                              border: Border.all(color: Colors.black12, width: 1),
-                            ),
+                        (index) => AnimatedContainer(
+                          duration: const Duration(milliseconds: 300),
+                          margin: const EdgeInsets.symmetric(horizontal: 4),
+                          width: _currentImageIndex == index ? 12 : 8,
+                          height: _currentImageIndex == index ? 12 : 8,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: _currentImageIndex == index ? Colors.white : Colors.white54,
                           ),
                         ),
                       ),
                     ),
                   ),
-                  // Botón para resetear zoom (solo visible cuando está en zoom)
-                  if (_isZoomed)
-                    Positioned(
-                      top: 40,
-                      right: 16,
-                      child: FloatingActionButton.small(
-                        heroTag: null,
-                        backgroundColor: Colors.white.withOpacity(0.8),
-                        onPressed: _resetZoom,
-                        child: const Icon(Icons.close, color: Colors.black),
-                      ),
-                    ),
                 ],
               ),
             ),
           ),
-          SliverPadding(
-            padding: const EdgeInsets.all(16.0),
-            sliver: SliverList(
-              delegate: SliverChildListDelegate([
-                Card(
-                  elevation: 8,
-                  shadowColor: Colors.teal.withOpacity(0.3),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
+          SliverToBoxAdapter(
+            child: Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 1000),
+                child: Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: isDesktop ? 40.0 : 16.0,
+                    vertical: 24.0,
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          'Información general',
-                          style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-                        ),
-                        const SizedBox(height: 16),
-                        _buildInfoRow(Icons.people, 'Población', widget.municipio.poblacion),
-                        const Divider(),
-                        _buildInfoRow(Icons.map, 'Superficie', widget.municipio.superficie),
-                        const Divider(),
-                        _buildInfoRow(Icons.face, 'Gentilicio', widget.municipio.gentilicio),
-                      ],
-                    ),
-                  ),
+                  child: isDesktop 
+                    ? Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(flex: 2, child: _buildMainInfo()),
+                          const SizedBox(width: 24),
+                          Expanded(flex: 3, child: _buildDescription()),
+                        ],
+                      )
+                    : Column(
+                        children: [
+                          _buildMainInfo(),
+                          const SizedBox(height: 16),
+                          _buildDescription(),
+                        ],
+                      ),
                 ),
-                const SizedBox(height: 16),
-                Card(
-                  elevation: 8,
-                  shadowColor: Colors.teal.withOpacity(0.3),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          'Descripción',
-                          style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-                        ),
-                        const SizedBox(height: 16),
-                        _buildFormattedText(widget.municipio.descripcionLarga),
-                      ],
-                    ),
-                  ),
-                ),
-              ]),
+              ),
             ),
           ),
         ],
@@ -286,25 +198,74 @@ class _DetailScreenState extends State<DetailScreen> {
     );
   }
 
-  Widget _buildInfoRow(IconData icon, String label, String value) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
-      child: Row(
-        children: [
-          Icon(icon, color: Colors.teal),
-          const SizedBox(width: 16),
-          Expanded(
-            child: Text(
-              '$label:',
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+  Widget _buildMainInfo() {
+    return Card(
+      elevation: 4,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      child: Padding(
+        padding: const EdgeInsets.all(24.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Información General',
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.teal),
             ),
-          ),
-          Text(
-            value,
-            style: const TextStyle(fontSize: 16),
-          ),
-        ],
+            const SizedBox(height: 20),
+            _buildInfoRow(Icons.people_outline, 'Población', widget.municipio.poblacion),
+            const Divider(height: 32),
+            _buildInfoRow(Icons.map_outlined, 'Superficie', widget.municipio.superficie),
+            const Divider(height: 32),
+            _buildInfoRow(Icons.badge_outlined, 'Gentilicio', widget.municipio.gentilicio),
+          ],
+        ),
       ),
+    );
+  }
+
+  Widget _buildDescription() {
+    return Card(
+      elevation: 4,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      child: Padding(
+        padding: const EdgeInsets.all(24.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Descripción',
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.teal),
+            ),
+            const SizedBox(height: 16),
+            _buildFormattedText(widget.municipio.descripcionLarga),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildInfoRow(IconData icon, String label, String value) {
+    return Row(
+      children: [
+        Container(
+          padding: const EdgeInsets.all(8),
+          decoration: BoxDecoration(
+            color: Colors.teal.withOpacity(0.1),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Icon(icon, color: Colors.teal, size: 24),
+        ),
+        const SizedBox(width: 16),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(label, style: TextStyle(color: Colors.grey[600], fontSize: 14)),
+              Text(value, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+            ],
+          ),
+        ),
+      ],
     );
   }
 
@@ -314,16 +275,14 @@ class _DetailScreenState extends State<DetailScreen> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: lines.map((line) {
         if (line.startsWith('## ')) {
-          // Título nivel 2
           return Padding(
-            padding: const EdgeInsets.only(top: 12, bottom: 4),
+            padding: const EdgeInsets.only(top: 16, bottom: 8),
             child: Text(
               line.substring(3),
-              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.teal),
             ),
           );
         } else if (line.startsWith('**') && line.endsWith('**')) {
-          // Negritas
           return Padding(
             padding: const EdgeInsets.only(top: 12, bottom: 4),
             child: Text(
@@ -333,30 +292,19 @@ class _DetailScreenState extends State<DetailScreen> {
           );
         } else if (line.startsWith('- ')) {
           return Padding(
-            padding: const EdgeInsets.only(left: 8, top: 2),
+            padding: const EdgeInsets.only(left: 8, top: 4),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('• ', style: TextStyle(fontSize: 16)),
-                Expanded(
-                  child: Text(
-                    line.substring(2),
-                    style: const TextStyle(fontSize: 16),
-                  ),
-                ),
+                const Text('• ', style: TextStyle(fontSize: 16, color: Colors.teal, fontWeight: FontWeight.bold)),
+                Expanded(child: Text(line.substring(2), style: const TextStyle(fontSize: 16, height: 1.5))),
               ],
             ),
           );
         } else if (line.trim().isEmpty) {
-          return const SizedBox(height: 8);
+          return const SizedBox(height: 12);
         } else {
-          return Padding(
-            padding: const EdgeInsets.symmetric(vertical: 2),
-            child: Text(
-              line,
-              style: const TextStyle(fontSize: 16, height: 1.4),
-            ),
-          );
+          return Text(line, style: const TextStyle(fontSize: 16, height: 1.6));
         }
       }).toList(),
     );
