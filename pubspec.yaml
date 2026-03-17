@@ -1,0 +1,32 @@
+name: municipios_app
+description: Aplicación informativa de los 43 municipios de Tamaulipas.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1   # <--- NUEVO
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo/
+    - assets/images/
+
+# NUEVO: Configuración del launcher icon
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo/app_logo.png"
+  adaptive_icon_background: "#008080"   # color teal
+  # adaptive_icon_foreground: "assets/logo/app_logo_foreground.png" # opcional
