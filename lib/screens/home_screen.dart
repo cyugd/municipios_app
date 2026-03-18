@@ -3,12 +3,16 @@ import 'package:municipios_app/data/municipios_list.dart';
 import 'package:municipios_app/screens/detail_screen.dart';
 import 'package:municipios_app/widgets/municipio_card.dart';
 import 'package:municipios_app/widgets/buscar_municipio_delegate.dart';
+import 'package:municipios_app/widgets/chat_ai_widget.dart';
+import 'package:municipios_app/services/auth_service.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final authService = AuthService();
+
     return Scaffold(
       appBar: AppBar(
         title: Row(
@@ -35,8 +39,15 @@ class HomeScreen extends StatelessWidget {
               );
             },
           ),
+          IconButton(
+            icon: const Icon(Icons.logout),
+            onPressed: () async {
+              await authService.signOut();
+            },
+          ),
         ],
       ),
+      floatingActionButton: const ChatAIWidget(),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -47,7 +58,6 @@ class HomeScreen extends StatelessWidget {
         ),
         child: LayoutBuilder(
           builder: (context, constraints) {
-            // Determinar número de columnas basado en el ancho
             int crossAxisCount = 2;
             double maxWidth = 1200; 
             
@@ -59,7 +69,6 @@ class HomeScreen extends StatelessWidget {
               crossAxisCount = 3;
             }
 
-            // Ajustar ratio para evitar desbordamiento en móviles (un ratio menor da más altura)
             double childAspectRatio = constraints.maxWidth < 600 ? 0.68 : 0.75;
 
             return Center(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:municipios_app/models/municipio.dart';
+import 'package:municipios_app/widgets/chat_ai_widget.dart'; // <--- NUEVO
 
 class DetailScreen extends StatefulWidget {
   final Municipio municipio;
@@ -59,6 +60,7 @@ class _DetailScreenState extends State<DetailScreen> {
     final isDesktop = size.width > 900;
 
     return Scaffold(
+      floatingActionButton: ChatAIWidget(municipio: widget.municipio), // <--- ASISTENTE CONTEXTUAL
       body: CustomScrollView(
         slivers: [
           SliverAppBar(

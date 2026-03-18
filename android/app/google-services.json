@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "570436458803",
+    "project_id": "municipios-6095a",
+    "storage_bucket": "municipios-6095a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570436458803:android:daf10fa99be477714ac646",
+        "android_client_info": {
+          "package_name": "com.example.municipios_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJHj7EIU-0-APRk16ju6-oP3z3bolav5Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

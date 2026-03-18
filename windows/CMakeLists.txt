@@ -2,6 +2,12 @@
 cmake_minimum_required(VERSION 3.14)
 project(municipios_app LANGUAGES CXX)
 
+# FIX: Add policy to allow older CMake versions for Firebase SDK compatibility
+if(POLICY CMP0048)
+  cmake_policy(SET CMP0048 NEW)
+endif()
+set(CMAKE_POLICY_VERSION_MINIMUM 3.5)
+
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
 set(BINARY_NAME "municipios_app")
