@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.municipios_app"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 36                     // ✅ Cambiado a 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -16,13 +16,13 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        jvmTarget = "1.8"
     }
 
     defaultConfig {
         applicationId = "com.example.municipios_app"
-        minSdk = 24   // Para ARCore si más tarde lo activas
-        targetSdk = flutter.targetSdkVersion
+        minSdk = 24
+        targetSdk = 36                  // ✅ También subir targetSdk
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }

@@ -1,6 +1,5 @@
 import '../../models/municipio.dart';
-import '../../models/monumento.dart';  // <-- Importante
-
+import '../../models/monumento_3d.dart';
 
 final abasolo = Municipio(
   id: 'abasolo',
@@ -26,8 +25,6 @@ La Revolución Mexicana trajo inestabilidad, con frecuentes enfrentamientos entr
 **Época Contemporánea**
 Hoy Abasolo es un municipio en crecimiento, con servicios educativos de nivel básico y medio superior, y una economía diversificada. La cabecera municipal ha modernizado su infraestructura con pavimentación, alumbrado público y una nueva unidad deportiva, pero conserva su carácter provinciano. En los últimos años, se ha impulsado el turismo rural y la producción de naranja orgánica, con exportaciones a Estados Unidos y Canadá.
 
----
-
 ## Geografía y Medio Ambiente
 
 **Ubicación**
@@ -49,8 +46,6 @@ Clima semicálido subhúmedo con lluvias en verano. Temperatura media anual de 2
 - **Flora:** Matorral espinoso, pastizales, mezquites, huizaches, y en las partes altas, encinos y pinos. En las riberas de los arroyos hay ahuehuetes y sauces.
 - **Fauna:** Venado cola blanca, coyote, liebre, conejo, armadillo, tlacuache, zorrillo, mapache, y aves como la codorniz, el halcón, el zopilote, y el cardenal. En la presa hay especies acuáticas como mojarra, bagre, lobina, y tortugas de río. También se han avistado ocasionalmente jaguares en la sierra.
 
----
-
 ## Demografía
 
 Según el censo de 2020, Abasolo tiene una población de 12,345 habitantes (6,200 hombres y 6,145 mujeres). La densidad poblacional es de 68 hab/km². El 65% vive en la cabecera municipal y el resto en 15 localidades rurales, siendo las más importantes: El Azúcar, San Antonio y La Misión.
@@ -71,8 +66,6 @@ El 5% de la población habla alguna lengua indígena (principalmente náhuatl y 
 
 **Migración**
 El municipio ha experimentado una migración moderada hacia Estados Unidos y ciudades cercanas como Ciudad Victoria y Reynosa, aunque en los últimos años ha habido un retorno de migrantes que invierten en negocios locales.
-
----
 
 ## Economía
 
@@ -98,8 +91,6 @@ Sector en crecimiento, con visitantes que acuden a la presa y a eventos cultural
 **Industria**
 Pequeñas industrias: fábricas de muebles rústicos, talleres de costura, panaderías y procesadoras de naranja para jugo concentrado.
 
----
-
 ## Turismo y Atractivos
 
 **Presa "El Azúcar"**
@@ -123,8 +114,6 @@ Abasolo forma parte de un recorrido que incluye antiguas misiones franciscanas d
 - **Aniversario de la Fundación:** 15 de mayo, con actos cívicos y desfile escolar.
 - **Semana Santa:** Procesiones y representaciones de la Pasión de Cristo.
 
----
-
 ## Cultura y Tradiciones
 
 **Artesanías**
@@ -144,8 +133,6 @@ Platillos típicos:
 
 **Leyendas**
 Se cuenta que en el Cerro del Bernal habita un "nahual" que protege la sierra, y que en las noches de luna llena se escuchan los lamentos de los mineros muertos en derrumbes. También se dice que la Presa "El Azúcar" está encantada y que a veces se ve una mujer vestida de blanco en sus orillas.
-
----
 
 ## Educación y Salud
 
@@ -168,8 +155,6 @@ La tasa de alfabetización es del 96%, superior al promedio estatal.
 
 Las especialidades médicas se atienden en Ciudad Victoria, a 45 minutos.
 
----
-
 ## Infraestructura y Comunicaciones
 
 **Vías de Comunicación**
@@ -181,16 +166,12 @@ Agua potable (90% cobertura), electricidad (98%), alumbrado público (90%), reco
 **Medios de Comunicación**
 Estación de radio local, periódico semanal, y cobertura de telefonía móvil (Telcel, Movistar). Redes sociales activas con páginas de noticias comunitarias.
 
----
-
 ## Personajes Ilustres
 
 - **Donaciano Martínez** (1850-1920): General revolucionario que participó en la toma de Ciudad Victoria y fue gobernador interino en 1915.
 - **Profesora Elvira García** (1910-1995): Fundadora de la primera escuela rural en 1930, reconocida por su labor educativa.
 - **Jesús "Chucho" Rodríguez** (1935-2010): Músico y compositor de huapangos, autor de "El Cielito de Abasolo".
 - **Ingeniero Carlos Hernández** (1945- ): Pionero en la tecnificación del riego, introdujo el sistema de goteo en la región.
-
----
 
 ## Datos Curiosos
 - Abasolo es conocido como "La Puerta de la Sierra" por ser el acceso a la Sierra Madre Oriental.
@@ -199,17 +180,14 @@ Estación de radio local, periódico semanal, y cobertura de telefonía móvil (
 - El municipio tiene un club de fútbol amateur que ha ganado campeonatos regionales.
 - La capilla del cementerio data de 1850 y es considerada patrimonio histórico.
 
----
-
 ## Perspectivas Futuras
-El municipio busca impulsar el ecoturismo, mejorar la tecnificación agrícola y atraer inversiones para un parque industrial. Se proyecta la construcción de un centro de convenciones y la modernización de la carretera estatal. También se planea crear una ruta turística que incluya la presa, el cerro y las misiones. En educación, se gestiona una extensión universitaria para carreras de ingeniería ambiental y turismo.
+El municipio busca impulsar el ecoturismo, mejorar la tecnificación agrícola     y atraer inversiones para un parque industrial. Se proyecta la construcción de un centro de convenciones y la modernización de la carretera estatal. También se planea crear una ruta turística que incluya la presa, el cerro y las misiones. En educación, se gestiona una extensión universitaria para carreras de ingeniería ambiental y turismo.
 ''',
   imagenAsset: 'assets/images/abasolos-logo.jpeg',
   imagenes: [
-    'assets/images/866ab583891b6751a8e2e40bfad6dbbb.jpg',
-    'assets/images/images.jpg',
-    'assets/images/municipio.jpg',
-    'assets/images/images.jpg',
+    'assets/images/Abasolo-img1.jpeg',
+    'assets/images/Abasolo-img2.jpeg',
+    'assets/images/Abasolo-img3.jpeg',
   ],
   poblacion: '12,345 hab.',
   superficie: '180 km²',
@@ -250,18 +228,18 @@ final List<Map<String, dynamic>> lugaresAbasolo = [
   },
 ];
 
-// --- Lista de monumentos para Realidad Aumentada (AR) ---
-final List<Monumento> monumentosAbasolo = [
-  Monumento(
+// --- Lista de monumentos 3D para Realidad Aumentada (solo Abasolo) ---
+final List<Monumento3D> monumentos3dAbasolo = [
+  Monumento3D(
     nombre: 'Parroquia de San Juan Bautista',
-    descripcion: 'Templo construido en 1795, estilo barroco modesto. Es el centro religioso y cultural del municipio.',
-    modeloUrl: null, // Usaremos cubo básico
-    escala: 0.5,
+    descripcion: 'Templo construido en 1795, estilo barroco modesto.',
+    rutaModelo: 'assets/models/Astronaut.glb',
+    escala: 0.8,
   ),
-  Monumento(
+  Monumento3D(
     nombre: 'Cerro del Bernal',
-    descripcion: 'Elevación emblemática ideal para senderismo. En AR podrás visualizar su forma característica.',
-    modeloUrl: null,
-    escala: 0.3,
+    descripcion: 'Elevación emblemática ideal para senderismo.',
+    rutaModelo: 'assets/models/hamburguesa.glb',
+    escala: 0.5,
   ),
 ];

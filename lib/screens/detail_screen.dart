@@ -3,7 +3,10 @@ import 'package:flutter_tts/flutter_tts.dart';
 import 'package:municipios_app/models/municipio.dart';
 import 'package:municipios_app/widgets/chat_ai_widget.dart';
 import 'package:municipios_app/widgets/mapa_interactivo.dart';
+import 'package:municipios_app/screens/visor_3d_screen.dart';
 import 'package:municipios_app/data/municipios/abasolo.dart' as abasolo;
+import 'package:municipios_app/data/municipios/aldama.dart' as aldama;          // <-- NUEVO
+import 'package:municipios_app/data/monumentos_3d/abasolo_3d.dart' as abasolo_3d;
 
 class DetailScreen extends StatefulWidget {
   final Municipio municipio;
@@ -175,6 +178,46 @@ class _DetailScreenState extends State<DetailScreen> {
     setState(() => _isSpeaking = false);
   }
 
+  void _showMonumentosMenu() {
+    final monumentos = abasolo_3d.monumentos3dAbasolo;
+    if (monumentos.isEmpty) return;
+
+    showModalBottomSheet(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (context) => Container(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Selecciona un monumento para ver en 3D',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 16),
+            ...monumentos.map((monumento) => ListTile(
+              leading: const Icon(Icons.place, color: Colors.teal),
+              title: Text(monumento.nombre),
+              subtitle: Text(monumento.descripcion),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => Visor3DScreen(monumento: monumento),
+                  ),
+                );
+              },
+            )),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   void dispose() {
     _pageController.dispose();
@@ -215,7 +258,20 @@ class _DetailScreenState extends State<DetailScreen> {
     final isDesktop = size.width > 900;
 
     return Scaffold(
-      floatingActionButton: ChatAIWidget(municipio: widget.municipio),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          ChatAIWidget(municipio: widget.municipio),
+          const SizedBox(height: 16),
+          if (widget.municipio.id == 'abasolo')
+            FloatingActionButton(
+              heroTag: 'visor_3d_btn',
+              onPressed: _showMonumentosMenu,
+              backgroundColor: Colors.deepPurple,
+              child: const Icon(Icons.view_in_ar),
+            ),
+        ],
+      ),
       body: Stack(
         children: [
           CustomScrollView(
@@ -364,8 +420,11 @@ class _DetailScreenState extends State<DetailScreen> {
                           _buildMainInfo(),
                           const SizedBox(height: 24),
                           ..._sectionWidgets,
+                          // Mapa interactivo para Abasolo y Aldama
                           if (widget.municipio.id == 'abasolo')
                             MapaInteractivo(lugares: abasolo.lugaresAbasolo),
+                          if (widget.municipio.id == 'aldama')
+                            MapaInteractivo(lugares: aldama.lugaresAldama),   // <-- NUEVO
                           const SizedBox(height: 40),
                         ],
                       ),
@@ -377,7 +436,7 @@ class _DetailScreenState extends State<DetailScreen> {
           ),
           if (_showBackToTop)
             Positioned(
-              bottom: 140,
+              bottom: 200,   // ← ajustado para separación
               right: 20,
               child: FloatingActionButton.small(
                 onPressed: _scrollToTop,

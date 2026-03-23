@@ -1,7 +1,7 @@
 class Monumento {
   final String nombre;
   final String descripcion;
-  final String? modeloUrl; // Si es null, usaremos un cubo básico
+  final String? modeloUrl; // URL o ruta local al archivo GLB/GLTF
   final double escala;
 
   Monumento({

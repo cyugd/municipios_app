@@ -24,8 +24,6 @@ La Revolución Mexicana trajo enfrentamientos entre carrancistas y villistas, co
 **Época Contemporánea**
 Aldama es hoy un destino turístico en crecimiento, con playas vírgenes, la Reserva de la Biosfera "El Cielo" (en su porción serrana) y una pujante actividad pesquera y agrícola. En los últimos años, se ha promovido el ecoturismo y la conservación, con proyectos de desarrollo sostenible y la creación de cooperativas pesqueras.
 
----
-
 ## Geografía y Medio Ambiente
 
 **Ubicación**
@@ -51,8 +49,6 @@ Cálido subhúmedo con lluvias en verano. Temperatura media anual 24°C, máxima
 - **Reserva de la Biosfera "El Cielo"** (compartida con otros municipios): 144,530 hectáreas, con bosques de niebla, gran biodiversidad, y especies endémicas. Es Patrimonio de la Humanidad (UNESCO).
 - **Santuario Playa de Rancho Nuevo:** Zona de anidación de la tortuga lora (Lepidochelys kempii), la más amenazada del mundo. Protegida por la CONANP.
 
----
-
 ## Demografía
 
 Según el censo 2020, Aldama tiene 30,250 habitantes (15,200 hombres, 15,050 mujeres). Densidad: 25 hab/km². El 40% vive en la cabecera municipal, el resto en localidades rurales y costeras como Barra del Tordo, La Pesca, Nuevo Progreso, y El Carrizo.
@@ -74,8 +70,6 @@ Según el censo 2020, Aldama tiene 30,250 habitantes (15,200 hombres, 15,050 muj
 **Migración**
 La pesca atrae a migrantes temporales de otros estados, especialmente durante la temporada de camarón. También hay emigración hacia Estados Unidos, aunque menor que en otros municipios.
 
----
-
 ## Economía
 
 **Pesca**
@@ -95,8 +89,6 @@ Explotación de sal marina en las salinas de La Pesca, con producción para cons
 
 **Industria**
 Pequeñas industrias: procesadoras de pescado (congelado y seco), fábricas de hielo, talleres de reparación de embarcaciones, y artesanías de concha.
-
----
 
 ## Turismo y Atractivos
 
@@ -127,8 +119,6 @@ Petrograbados prehispánicos en la sierra, con figuras de animales, espirales y 
 - **San Juan Bautista** (patrono): 24 de junio, con procesiones, danzas, y feria popular.
 - **Día de la Marina:** 1 de junio, con desfile de barcos y eventos en la costa.
 
----
-
 ## Cultura y Tradiciones
 
 **Artesanías**
@@ -149,8 +139,6 @@ Predomina la música norteña y el huapango. Danzas típicas: "La Danza del Pesc
 
 **Leyendas**
 Se dice que en la laguna de San Andrés habita una "sirena" que atrae a los pescadores con su canto, y que en las noches de tormenta se escuchan los lamentos de los marineros perdidos. También se cuenta que en la sierra hay un "tesoro escondido" de los piratas que asolaban la costa.
-
----
 
 ## Educación y Salud
 
@@ -173,8 +161,6 @@ Tasa de alfabetización: 94%.
 
 Las especialidades se atienden en Tampico o Ciudad Victoria.
 
----
-
 ## Infraestructura y Comunicaciones
 
 **Vías de Comunicación**
@@ -189,8 +175,6 @@ Estación de radio comunitaria, periódico quincenal, y cobertura de telefonía 
 **Puerto y Aeropuerto**
 Puerto pesquero en La Pesca con capacidad para 100 embarcaciones. No hay aeropuerto, pero se puede usar el de Tampico.
 
----
-
 ## Personajes Ilustres
 
 - **Profesor Manuel Gómez** (1900-1978): Educador y escritor, autor de la "Historia de Aldama", libro de texto en escuelas locales.
@@ -198,16 +182,12 @@ Puerto pesquero en La Pesca con capacidad para 100 embarcaciones. No hay aeropue
 - **Doña Rosa Martínez** (1935-2020): Defensora de la tortuga lora, fundadora del campamento tortuguero de Rancho Nuevo, reconocida internacionalmente.
 - **Doctora Ana María Torres** (1950- ): Bióloga marina, investigadora de la UAT, especialista en conservación de manglares.
 
----
-
 ## Datos Curiosos
 - En la playa de La Pesca se han avistado ballenas jorobadas en migración (enero-marzo).
 - El municipio tiene una de las mayores poblaciones de jaguares en la sierra de Tamaulipas, estimada en 30 individuos.
 - Cada año se liberan más de 100,000 crías de tortuga lora en Rancho Nuevo, contribuyendo a la recuperación de la especie.
 - La laguna de San Andrés es un sitio Ramsar (humedal de importancia internacional).
 - En Barra del Tordo se filmó una escena de la película "Apocalypto" de Mel Gibson, aunque no fue acreditado.
-
----
 
 ## Perspectivas Futuras
 Aldama busca consolidarse como destino ecoturístico, mejorar la infraestructura costera con un muelle turístico, y proteger sus ecosistemas mediante programas de conservación. Se planea un parque eólico en la zona costera (50 MW) y la ampliación del puerto pesquero de La Pesca. En educación, se proyecta una escuela de biología marina. También se promueve la certificación de playas como "Playa Limpia" y el desarrollo de rutas ecoturísticas en la sierra.
@@ -222,3 +202,37 @@ Aldama busca consolidarse como destino ecoturístico, mejorar la infraestructura
   superficie: '1,200 km²',
   gentilicio: 'Aldamense',
 );
+
+// --- Lista de lugares turísticos con coordenadas para el mapa de Aldama ---
+final List<Map<String, dynamic>> lugaresAldama = [
+  {
+    'nombre': 'Playa La Pesca',
+    'descripcion': 'Extensa playa con palapas, restaurantes y zona de anidación de tortugas.',
+    'lat': 23.2236,
+    'lng': -97.7842,
+  },
+  {
+    'nombre': 'Barra del Tordo',
+    'descripcion': 'Playa virgen con manglares, ideal para ecoturismo y observación de aves.',
+    'lat': 23.1900,
+    'lng': -97.7667,
+  },
+  {
+    'nombre': 'Santuario de la Tortuga Lora',
+    'descripcion': 'Centro de conservación donde se protegen nidos y se liberan crías.',
+    'lat': 23.2450,
+    'lng': -97.7710,
+  },
+  {
+    'nombre': 'Laguna de San Andrés',
+    'descripcion': 'Cuerpo de agua costero con manglares, ideal para kayak y observación de aves.',
+    'lat': 23.1833,
+    'lng': -97.7500,
+  },
+  {
+    'nombre': 'Reserva de la Biosfera El Cielo',
+    'descripcion': 'Área natural protegida con bosque de niebla, cascadas y gran biodiversidad.',
+    'lat': 23.0833,
+    'lng': -99.2000,
+  },
+];
