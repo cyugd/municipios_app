@@ -1,4 +1,6 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';  // <-- Importante
+
 
 final abasolo = Municipio(
   id: 'abasolo',
@@ -213,3 +215,53 @@ El municipio busca impulsar el ecoturismo, mejorar la tecnificación agrícola y
   superficie: '180 km²',
   gentilicio: 'Abasolense',
 );
+
+// --- Lista de lugares turísticos con coordenadas para el mapa ---
+final List<Map<String, dynamic>> lugaresAbasolo = [
+  {
+    'nombre': 'Presa "El Azúcar"',
+    'descripcion': 'Ideal para pesca deportiva, paseos en lancha y campismo.',
+    'lat': 23.9325,
+    'lng': -98.4286,
+  },
+  {
+    'nombre': 'Parroquia de San Juan Bautista',
+    'descripcion': 'Construida en 1795, estilo barroco modesto.',
+    'lat': 23.9478,
+    'lng': -98.4102,
+  },
+  {
+    'nombre': 'Plaza Principal "José María Morelos"',
+    'descripcion': 'Jardín central con kiosco y edificios históricos.',
+    'lat': 23.9480,
+    'lng': -98.4105,
+  },
+  {
+    'nombre': 'Cerro del Bernal',
+    'descripcion': 'Elevación emblemática para senderismo y vistas panorámicas.',
+    'lat': 23.9072,
+    'lng': -98.4553,
+  },
+  {
+    'nombre': 'Misión de San Antonio (ruinas)',
+    'descripcion': 'Vestigios de antigua misión franciscana.',
+    'lat': 23.8925,
+    'lng': -98.4725,
+  },
+];
+
+// --- Lista de monumentos para Realidad Aumentada (AR) ---
+final List<Monumento> monumentosAbasolo = [
+  Monumento(
+    nombre: 'Parroquia de San Juan Bautista',
+    descripcion: 'Templo construido en 1795, estilo barroco modesto. Es el centro religioso y cultural del municipio.',
+    modeloUrl: null, // Usaremos cubo básico
+    escala: 0.5,
+  ),
+  Monumento(
+    nombre: 'Cerro del Bernal',
+    descripcion: 'Elevación emblemática ideal para senderismo. En AR podrás visualizar su forma característica.',
+    modeloUrl: null,
+    escala: 0.3,
+  ),
+];

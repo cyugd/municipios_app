@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -14,7 +15,7 @@ class AuthService {
         password: password,
       );
     } catch (e) {
-      print("Error en el registro: $e");
+      debugPrint("Error en el registro: $e");
       rethrow;
     }
   }
@@ -27,7 +28,7 @@ class AuthService {
         password: password,
       );
     } catch (e) {
-      print("Error en el inicio de sesión: $e");
+      debugPrint("Error en el inicio de sesión: $e");
       rethrow;
     }
   }

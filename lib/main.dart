@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'firebase_options.dart';
-import 'package:municipios_app/screens/splash_screen.dart';
+// import 'package:municipios_app/screens/splash_screen.dart'; // Eliminar esta línea
 import 'package:municipios_app/screens/login_screen.dart';
 import 'package:municipios_app/screens/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
+
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  
+
   runApp(const MyApp());
 }
 
@@ -42,18 +42,14 @@ class AuthWrapper extends StatelessWidget {
     return StreamBuilder<User?>(
       stream: FirebaseAuth.instance.authStateChanges(),
       builder: (context, snapshot) {
-        // Si está cargando el estado inicial
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Scaffold(body: Center(child: CircularProgressIndicator()));
         }
-        
-        // Si hay un usuario, vamos al SplashScreen (que luego lleva al Home)
-        // o directamente al HomeScreen para evitar bucles.
+
         if (snapshot.hasData) {
           return const HomeScreen();
         }
-        
-        // Si no hay usuario, vamos al Login
+
         return const LoginScreen();
       },
     );
