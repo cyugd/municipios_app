@@ -33,7 +33,7 @@ class _ChatAIWidgetState extends State<ChatAIWidget> {
   }
 
   Future<void> _initChatSystem() async {
-    const apiKey = 'AIzaSyBfL_S9UEtZFEbeu8NqTNlAyQ_tzswe0BA';
+    const apiKey = 'AIzaSyCztBqbMOkfcPJqnd3fbFyD7ThDH4_We7o';
     
     final systemPrompt = widget.municipio != null 
       ? 'Eres un guía experto del estado de Tamaulipas, México enfocado en el municipio de ${widget.municipio!.nombre}. Ayuda al usuario con datos turísticos e históricos de forma amable.'
