@@ -6,7 +6,7 @@ final reynosa = Municipio(
   descripcionCorta: 'Ciudad industrial y fronteriza.',
   descripcionLarga:
   'Reynosa es una de las ciudades más grandes de Tamaulipas, con una fuerte industria maquiladora, comercio binacional y una vida cultural activa.',
-  imagenAsset: 'assets/images/reynosa.jpg',
+  imagenAsset: 'assets/images/reynosa0101.jpeg',
   imagenes: [
     'assets/images/reynosa_1.jpg',
     'assets/images/reynosa_2.jpg',

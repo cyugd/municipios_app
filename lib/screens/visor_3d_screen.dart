@@ -14,7 +14,6 @@ class _Visor3DScreenState extends State<Visor3DScreen> {
   @override
   Widget build(BuildContext context) {
     // Cargar modelo local con formato "asset:///ruta/completa"
-    // final srcLocal = 'asset:///${widget.monumento.rutaModelo}';
     final srcLocal = 'https://modelviewer.dev/shared-assets/models/Astronaut.glb';
 
     return Scaffold(
@@ -33,7 +32,7 @@ class _Visor3DScreenState extends State<Visor3DScreen> {
           Expanded(
             flex: 3,
             child: Container(
-              color: Colors.grey[100],
+              color: Colors.grey[900],
               child: ModelViewer(
                 src: srcLocal,
                 alt: widget.monumento.nombre,
@@ -41,7 +40,7 @@ class _Visor3DScreenState extends State<Visor3DScreen> {
                 autoRotate: true,
                 cameraControls: true,
                 scale: '${widget.monumento.escala} ${widget.monumento.escala} ${widget.monumento.escala}',
-                backgroundColor: Colors.transparent,
+                backgroundColor: Colors.grey[900]!,
               ),
             ),
           ),

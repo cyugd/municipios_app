@@ -12,7 +12,7 @@
         android:label="Municipios Tamaulipas"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true">   <!-- Esta línea es crucial -->
         <activity
             android:name=".MainActivity"
             android:exported="true"

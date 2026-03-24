@@ -181,13 +181,14 @@ Estación de radio local, periódico semanal, y cobertura de telefonía móvil (
 - La capilla del cementerio data de 1850 y es considerada patrimonio histórico.
 
 ## Perspectivas Futuras
-El municipio busca impulsar el ecoturismo, mejorar la tecnificación agrícola     y atraer inversiones para un parque industrial. Se proyecta la construcción de un centro de convenciones y la modernización de la carretera estatal. También se planea crear una ruta turística que incluya la presa, el cerro y las misiones. En educación, se gestiona una extensión universitaria para carreras de ingeniería ambiental y turismo.
+El municipio busca impulsar el ecoturismo, mejorar la tecnificación agrícola y atraer inversiones para un parque industrial. Se proyecta la construcción de un centro de convenciones y la modernización de la carretera estatal. También se planea crear una ruta turística que incluya la presa, el cerro y las misiones. En educación, se gestiona una extensión universitaria para carreras de ingeniería ambiental y turismo.
 ''',
   imagenAsset: 'assets/images/abasolos-logo.jpeg',
   imagenes: [
-    'assets/images/Abasolo-img1.jpeg',
-    'assets/images/Abasolo-img2.jpeg',
-    'assets/images/Abasolo-img3.jpeg',
+    'assets/images/abasolo1.jpg',
+    'assets/images/abasolo2.jpg',
+    'assets/images/abasolo3.jpg',
+    'assets/images/abasolo4.jpg',
   ],
   poblacion: '12,345 hab.',
   superficie: '180 km²',
@@ -228,18 +229,24 @@ final List<Map<String, dynamic>> lugaresAbasolo = [
   },
 ];
 
-// --- Lista de monumentos 3D para Realidad Aumentada (solo Abasolo) ---
+// --- Lista de monumentos 3D (modelos GLB que SÍ funcionan) ---
 final List<Monumento3D> monumentos3dAbasolo = [
   Monumento3D(
-    nombre: 'Parroquia de San Juan Bautista',
-    descripcion: 'Templo construido en 1795, estilo barroco modesto.',
-    rutaModelo: 'assets/models/Astronaut.glb',
+    nombre: 'Cubo 3D (Prueba)',
+    descripcion: 'Modelo de cubo simple para verificar que el visor funciona correctamente.',
+    rutaModelo: 'assets/models/Cube.glb',
     escala: 0.8,
   ),
   Monumento3D(
-    nombre: 'Cerro del Bernal',
-    descripcion: 'Elevación emblemática ideal para senderismo.',
-    rutaModelo: 'assets/models/hamburguesa.glb',
+    nombre: 'Flamenco',
+    descripcion: 'Modelo de un flamenco (glTF sample).',
+    rutaModelo: 'assets/models/Flamingo.glb',
     escala: 0.5,
+  ),
+  Monumento3D(
+    nombre: 'Casco de vuelo',
+    descripcion: 'Modelo de un casco de vuelo (glTF sample).',
+    rutaModelo: 'assets/models/Helmet.glb',
+    escala: 0.6,
   ),
 ];
