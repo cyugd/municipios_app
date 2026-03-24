@@ -6,7 +6,7 @@ project(municipios_app LANGUAGES CXX)
 if(POLICY CMP0048)
   cmake_policy(SET CMP0048 NEW)
 endif()
-set(CMAKE_POLICY_VERSION_MINIMUM 3.5)
+set(CMAKE_POLICY_VERSION_MINIMUM 3.10)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
@@ -49,6 +49,7 @@ function(APPLY_STANDARD_SETTINGS TARGET)
   target_compile_options(${TARGET} PRIVATE /EHsc)
   target_compile_definitions(${TARGET} PRIVATE "_HAS_EXCEPTIONS=0")
   target_compile_definitions(${TARGET} PRIVATE "$<$<CONFIG:Debug>:_DEBUG>")
+  target_link_options(${TARGET} PRIVATE /ignore:4099)
 endfunction()
 
 # Flutter library and tool build rules.
