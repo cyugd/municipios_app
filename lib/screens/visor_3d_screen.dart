@@ -13,8 +13,9 @@ class Visor3DScreen extends StatefulWidget {
 class _Visor3DScreenState extends State<Visor3DScreen> {
   @override
   Widget build(BuildContext context) {
-    // Cargar modelo local con formato "asset:///ruta/completa"
-    final srcLocal = 'https://modelviewer.dev/shared-assets/models/Astronaut.glb';
+    // Usar la ruta del modelo definida en el objeto monumento
+    // Si la ruta no empieza con http, asumimos que es un asset local
+    final String src = widget.monumento.rutaModelo;
 
     return Scaffold(
       appBar: AppBar(
@@ -34,7 +35,7 @@ class _Visor3DScreenState extends State<Visor3DScreen> {
             child: Container(
               color: Colors.grey[900],
               child: ModelViewer(
-                src: srcLocal,
+                src: src,
                 alt: widget.monumento.nombre,
                 ar: false,
                 autoRotate: true,
@@ -95,7 +96,7 @@ class _Visor3DScreenState extends State<Visor3DScreen> {
         title: const Text('Acerca del modelo 3D'),
         content: const Text(
           'Puedes rotar el modelo con un dedo y hacer zoom con dos dedos.\n'
-              'El modelo se carga desde los archivos locales de la app.',
+              'El modelo se carga desde los archivos definidos para este monumento.',
         ),
         actions: [
           TextButton(

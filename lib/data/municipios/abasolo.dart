@@ -234,7 +234,7 @@ final List<Monumento3D> monumentos3dAbasolo = [
   Monumento3D(
     nombre: 'Cubo 3D (Prueba)',
     descripcion: 'Modelo de cubo simple para verificar que el visor funciona correctamente.',
-    rutaModelo: 'assets/models/Cube.glb',
+    rutaModelo: 'assets/models/Modeltoused.glb',
     escala: 0.8,
   ),
   Monumento3D(
@@ -246,7 +246,7 @@ final List<Monumento3D> monumentos3dAbasolo = [
   Monumento3D(
     nombre: 'Casco de vuelo',
     descripcion: 'Modelo de un casco de vuelo (glTF sample).',
-    rutaModelo: 'assets/models/Helmet.glb',
+    rutaModelo: 'assets/models/Camargo.glb',
     escala: 0.6,
   ),
 ];

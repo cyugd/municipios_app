@@ -23,7 +23,12 @@ class HomeScreen extends StatelessWidget {
               errorBuilder: (_, __, ___) => const Icon(Icons.map, color: Colors.white),
             ),
             const SizedBox(width: 8),
-            const Text('Municipios de Tamaulipas'),
+            const Expanded(
+              child: Text(
+                'Municipios de Tamaulipas',
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
           ],
         ),
         backgroundColor: Colors.teal,
