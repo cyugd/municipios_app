@@ -4,8 +4,8 @@ import 'package:municipios_app/models/municipio.dart';
 import 'package:municipios_app/widgets/chat_ai_widget.dart';
 import 'package:municipios_app/widgets/mapa_interactivo.dart';
 import 'package:municipios_app/screens/visor_3d_screen.dart';
-import 'package:municipios_app/data/municipios/abasolo.dart' as abasolo;  // Contiene los modelos 3D
-import 'package:municipios_app/data/municipios/aldama.dart' as aldama;     // Para el mapa de Aldama
+import 'package:municipios_app/data/municipios/abasolo.dart' as abasolo;
+import 'package:municipios_app/data/municipios/aldama.dart' as aldama;
 
 class DetailScreen extends StatefulWidget {
   final Municipio municipio;
@@ -178,8 +178,7 @@ class _DetailScreenState extends State<DetailScreen> {
   }
 
   void _showMonumentosMenu() {
-    // Usamos los modelos definidos en abasolo.dart
-    final monumentos = abasolo.monumentos3dAbasolo;
+    final monumentos = widget.municipio.monumentos3D;
     if (monumentos.isEmpty) return;
 
     showModalBottomSheet(
@@ -263,7 +262,7 @@ class _DetailScreenState extends State<DetailScreen> {
         children: [
           ChatAIWidget(municipio: widget.municipio),
           const SizedBox(height: 16),
-          if (widget.municipio.id == 'abasolo')
+          if (widget.municipio.monumentos3D.isNotEmpty)
             FloatingActionButton(
               heroTag: 'visor_3d_btn',
               onPressed: _showMonumentosMenu,
@@ -420,7 +419,6 @@ class _DetailScreenState extends State<DetailScreen> {
                           _buildMainInfo(),
                           const SizedBox(height: 24),
                           ..._sectionWidgets,
-                          // Mapa interactivo para Abasolo y Aldama
                           if (widget.municipio.id == 'abasolo')
                             MapaInteractivo(lugares: abasolo.lugaresAbasolo),
                           if (widget.municipio.id == 'aldama')

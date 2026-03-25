@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final reynosa = Municipio(
   id: 'reynosa',
@@ -15,4 +16,12 @@ final reynosa = Municipio(
   poblacion: '700,000 hab.',
   superficie: '3,000 km²',
   gentilicio: 'Reynosense',
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a la Patria',
+      descripcion: 'Un monumento icónico de la ciudad de Reynosa.',
+      rutaModelo: 'assets/models/Reynosa.glb',
+      escala: 1.0,
+    ),
+  ],
 );

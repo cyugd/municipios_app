@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final camargo = Municipio(
   id: 'camargo',
@@ -62,4 +63,13 @@ Camargo es un municipio con una identidad fuerte, construida a lo largo de más 
   poblacion: '16,000 hab.',
   superficie: '1,200 km²',
   gentilicio: 'Camarguense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a la Patria',
+      descripcion: 'Un monumento icónico de la ciudad de Camargo.',
+      rutaModelo: 'assets/models/Camargo.glb',
+      escala: 1.0,
+    ),
+  ],
 );

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:model_viewer_plus/model_viewer_plus.dart';
-import 'package:municipios_app/models/monumento_3d.dart';
+import 'package:municipios_app/models/monumento.dart';
 
 class Visor3DScreen extends StatefulWidget {
-  final Monumento3D monumento;
+  final Monumento monumento;
   const Visor3DScreen({Key? key, required this.monumento}) : super(key: key);
 
   @override
@@ -13,8 +13,6 @@ class Visor3DScreen extends StatefulWidget {
 class _Visor3DScreenState extends State<Visor3DScreen> {
   @override
   Widget build(BuildContext context) {
-    // Usar la ruta del modelo definida en el objeto monumento
-    // Si la ruta no empieza con http, asumimos que es un asset local
     final String src = widget.monumento.rutaModelo;
 
     return Scaffold(

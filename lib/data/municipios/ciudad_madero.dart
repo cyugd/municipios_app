@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final ciudad_madero = Municipio(
   id: 'ciudad_madero',
@@ -49,4 +50,15 @@ Ciudad Madero es un municipio que combina industria, historia y belleza natural.
   poblacion: '205,000 hab.',
   superficie: '46 km²',
   gentilicio: 'Maderense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a la Patria',
+      descripcion: 'Un monumento icónico de la ciudad de Madero.',
+      rutaModelo: 'assets/models/Madero.glb',
+      escala: 1.0,
+    ),
+  ],
 );
+
+

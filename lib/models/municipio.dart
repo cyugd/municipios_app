@@ -1,3 +1,5 @@
+import 'monumento.dart';
+
 class Municipio {
   final String id;
   final String nombre;
@@ -8,6 +10,7 @@ class Municipio {
   final String poblacion;
   final String superficie;
   final String gentilicio;
+  final List<Monumento> monumentos3D;
 
   Municipio({
     required this.id,
@@ -19,5 +22,6 @@ class Municipio {
     required this.poblacion,
     required this.superficie,
     required this.gentilicio,
+    this.monumentos3D = const [],
   });
 }
