@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final burgos = Municipio(
   id: 'burgos',
@@ -75,4 +76,13 @@ Burgos, Tamaulipas, es un municipio con una fuerte identidad histórica y cultur
   poblacion: '4,256 hab.',
   superficie: '1,900 km²',
   gentilicio: 'Burgueño',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Gazebo de la plaza principal',
+      descripcion: 'Un monumento icónico de la ciudad de Burgos.',
+      rutaModelo: 'assets/models/Burgos.glb',
+      escala: 1.0,
+    ),
+  ],
 );

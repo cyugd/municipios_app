@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final cruillas = Municipio(
   id: 'cruillas',
@@ -49,4 +50,13 @@ Cruillas Tamaulipas es una comunidad donde tradición, historia y vida rural se 
   poblacion: '1,800 hab.',
   superficie: '1,200 km²',
   gentilicio: 'Cruillense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Iglesia central',
+      descripcion: 'Un monumento icónico de la ciudad de Cruillas.',
+      rutaModelo: 'assets/models/Cruilla.glb',
+      escala: 1.0,
+    ),
+  ],
 );

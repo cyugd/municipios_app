@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final gueemez = Municipio(
   id: 'gueemez',
@@ -15,4 +16,13 @@ final gueemez = Municipio(
   poblacion: '7,000 hab.',
   superficie: '450 km²',
   gentilicio: 'Güemecense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a la Patria',
+      descripcion: 'Un monumento icónico de la ciudad de Guemez.',
+      rutaModelo: 'assets/models/Guemez.glb',
+      escala: 1.0,
+    ),
+  ],
 );

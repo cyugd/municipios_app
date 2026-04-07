@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final victoria = Municipio(
   id: 'victoria',
@@ -15,4 +16,13 @@ final victoria = Municipio(
   poblacion: '350,000 hab.',
   superficie: '1,000 km²',
   gentilicio: 'Victorense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Aguila monumental',
+      descripcion: 'Un monumento icónico de la ciudad de Victoria.',
+      rutaModelo: 'assets/models/Victoria.glb',
+      escala: 1.0,
+    ),
+  ],
 );

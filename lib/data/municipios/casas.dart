@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final casas = Municipio(
   id: 'casas',
@@ -49,4 +50,13 @@ Casas, Tamaulipas, es un municipio con una gran riqueza histórica, cultural y n
   poblacion: '4,143 hab.',
   superficie: '1,500 km²',
   gentilicio: 'Casense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Gazebo de la plaza principal',
+      descripcion: 'Un monumento icónico de la ciudad de Casas.',
+      rutaModelo: 'assets/models/Casas.glb',
+      escala: 1.0,
+    ),
+  ],
 );

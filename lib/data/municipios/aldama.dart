@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final aldama = Municipio(
   id: 'aldama',
@@ -201,6 +202,15 @@ Aldama busca consolidarse como destino ecoturístico, mejorar la infraestructura
   poblacion: '30,250 hab.',
   superficie: '1,200 km²',
   gentilicio: 'Aldamense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a la Patria',
+      descripcion: 'Un monumento icónico de la ciudad de Aldama.',
+      rutaModelo: 'assets/models/Aldama.glb',
+      escala: 1.0,
+    ),
+  ],
 );
 
 // --- Lista de lugares turísticos con coordenadas para el mapa de Aldama ---

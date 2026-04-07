@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final bustamante = Municipio(
   id: 'bustamante',
@@ -73,4 +74,13 @@ Bustamante es un municipio que destaca por su riqueza histórica, cultural y nat
   poblacion: '7,720 hab.',
   superficie: '780 km²',
   gentilicio: 'Bustamantense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento al Profr. y Gral. Alberto Carrera Torres',
+      descripcion: 'Un monumento icónico de la ciudad de Bustamante.',
+      rutaModelo: 'assets/models/Bustamante.glb',
+      escala: 1.0,
+    ),
+  ],
 );

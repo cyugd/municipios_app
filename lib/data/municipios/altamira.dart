@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final altamira = Municipio(
   id: 'altamira',
@@ -65,4 +66,13 @@ Predominan carreras industriales, tecnológicas, portuarias y administrativas, r
   poblacion: '212,000 hab.',
   superficie: '1,663 km²',
   gentilicio: 'Altamirense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a la Patria',
+      descripcion: 'Un monumento icónico de la ciudad de Altamira.',
+      rutaModelo: 'assets/models/Altamira.glb',
+      escala: 1.0,
+    ),
+  ],
 );

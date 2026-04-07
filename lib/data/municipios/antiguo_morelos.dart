@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final antiguo_morelos = Municipio(
   id: 'antiguo_morelos',
@@ -59,4 +60,13 @@ Antiguo Morelos es un municipio con raíces huastecas y tradición rural que ha 
   poblacion: '8,850 hab.',
   superficie: '561.30 km²',
   gentilicio: 'Antiguomorelense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a la Patria',
+      descripcion: 'Un monumento icónico de la ciudad de Antiguo Morelos.',
+      rutaModelo: 'assets/models/Antiguomorelos.glb',
+      escala: 1.0,
+    ),
+  ],
 );
