@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final padilla = Municipio(
   id: 'padilla',
@@ -15,4 +16,13 @@ final padilla = Municipio(
   poblacion: '7,000 hab.',
   superficie: '600 km²',
   gentilicio: 'Padillense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Antigua catedral abandonada',
+      descripcion: 'Un monumento icónico de la ciudad de Padilla.',
+      rutaModelo: 'assets/models/Padilla.glb',
+      escala: 1.0,
+    ),
+  ],
 );

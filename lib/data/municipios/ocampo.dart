@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final ocampo = Municipio(
   id: 'ocampo',
@@ -15,4 +16,13 @@ final ocampo = Municipio(
   poblacion: '6,000 hab.',
   superficie: '500 km²',
   gentilicio: 'Ocampense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Muralla de entrada a Ocampo',
+      descripcion: 'Un monumento icónico de la ciudad de Ocampo.',
+      rutaModelo: 'assets/models/Ocampo.glb',
+      escala: 1.0,
+    ),
+  ],
 );

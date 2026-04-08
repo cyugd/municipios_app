@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final el_mante = Municipio(
   id: 'el_mante',
@@ -15,4 +16,13 @@ final el_mante = Municipio(
   poblacion: '80,000 hab.',
   superficie: '1,600 km²',
   gentilicio: 'Mantense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a Juan Escales',
+      descripcion: 'Un monumento icónico de la ciudad de Mante.',
+      rutaModelo: 'assets/models/Mante.glb',
+      escala: 1.0,
+    ),
+  ],
 );

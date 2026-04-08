@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final matamoros = Municipio(
   id: 'matamoros',
@@ -15,4 +16,13 @@ final matamoros = Municipio(
   poblacion: '500,000 hab.',
   superficie: '4,000 km²',
   gentilicio: 'Matamorense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento Azteca y Antorcha liberal',
+      descripcion: 'Un monumento icónico de la ciudad de Matamoros.',
+      rutaModelo: 'assets/models/Matamoros.glb',
+      escala: 1.0,
+    ),
+  ],
 );

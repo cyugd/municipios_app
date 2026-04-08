@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final rio_bravo = Municipio(
   id: 'rio_bravo',
@@ -15,4 +16,13 @@ final rio_bravo = Municipio(
   poblacion: '100,000 hab.',
   superficie: '1,500 km²',
   gentilicio: 'Riobravense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Casa de Ladrillo',
+      descripcion: 'Un monumento icónico de la ciudad de Rio Bravo.',
+      rutaModelo: 'assets/models/Riobravo.glb',
+      escala: 1.0,
+    ),
+  ],
 );

@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final llera = Municipio(
   id: 'llera',
@@ -15,4 +16,13 @@ final llera = Municipio(
   poblacion: '5,000 hab.',
   superficie: '800 km²',
   gentilicio: 'Llerense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento con obelisco',
+      descripcion: 'Un monumento icónico de la ciudad de Llera.',
+      rutaModelo: 'assets/models/Llera.glb',
+      escala: 1.0,
+    ),
+  ],
 );

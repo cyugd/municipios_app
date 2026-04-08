@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final palmillas = Municipio(
   id: 'palmillas',
@@ -15,4 +16,13 @@ final palmillas = Municipio(
   poblacion: '2,000 hab.',
   superficie: '150 km²',
   gentilicio: 'Palmillense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Santa Cruz',
+      descripcion: 'Un monumento icónico de la ciudad de Palmillas.',
+      rutaModelo: 'assets/models/Palmillas.glb',
+      escala: 1.0,
+    ),
+  ],
 );

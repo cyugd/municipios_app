@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final nuevo_laredo = Municipio(
   id: 'nuevo_laredo',
@@ -15,4 +16,13 @@ final nuevo_laredo = Municipio(
   poblacion: '400,000 hab.',
   superficie: '1,200 km²',
   gentilicio: 'Neolaredense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a Vega Alta',
+      descripcion: 'Un monumento icónico de la ciudad de Nuevo Ladero.',
+      rutaModelo: 'assets/models/Nuevoladero.glb',
+      escala: 1.0,
+    ),
+  ],
 );

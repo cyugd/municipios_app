@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final hidalgo = Municipio(
   id: 'hidalgo',
@@ -15,4 +16,13 @@ final hidalgo = Municipio(
   poblacion: '10,000 hab.',
   superficie: '300 km²',
   gentilicio: 'Hidalguense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Virgen de la misericordia',
+      descripcion: 'Un monumento icónico de la ciudad de Hidalgo.',
+      rutaModelo: 'assets/models/Hidalgo.glb',
+      escala: 1.0,
+    ),
+  ],
 );

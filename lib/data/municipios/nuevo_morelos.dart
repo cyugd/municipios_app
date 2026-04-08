@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final nuevo_morelos = Municipio(
   id: 'nuevo_morelos',
@@ -15,4 +16,13 @@ final nuevo_morelos = Municipio(
   poblacion: '4,000 hab.',
   superficie: '200 km²',
   gentilicio: 'Morelense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Cruz Central',
+      descripcion: 'Un monumento icónico de la ciudad de Nuevo Morelos.',
+      rutaModelo: 'assets/models/Morelos.glb',
+      escala: 1.0,
+    ),
+  ],
 );

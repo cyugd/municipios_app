@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final mendez = Municipio(
   id: 'mendez',
@@ -15,4 +16,13 @@ final mendez = Municipio(
   poblacion: '2,500 hab.',
   superficie: '1,200 km²',
   gentilicio: 'Mendecino',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a Pedro José Mendez',
+      descripcion: 'Un monumento icónico de la ciudad de Mendez.',
+      rutaModelo: 'assets/models/Mendez.glb',
+      escala: 1.0,
+    ),
+  ],
 );

@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final jimenez = Municipio(
   id: 'jimenez',
@@ -15,4 +16,13 @@ final jimenez = Municipio(
   poblacion: '6,000 hab.',
   superficie: '1,100 km²',
   gentilicio: 'Jimense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a Santander Jiménez',
+      descripcion: 'Un monumento icónico de la ciudad de Jiménez.',
+      rutaModelo: 'assets/models/Jimenez.glb',
+      escala: 1.0,
+    ),
+  ],
 );

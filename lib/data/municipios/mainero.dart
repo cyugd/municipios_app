@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final mainero = Municipio(
   id: 'mainero',
@@ -15,4 +16,13 @@ final mainero = Municipio(
   poblacion: '2,000 hab.',
   superficie: '400 km²',
   gentilicio: 'Mainerenese',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a las madres',
+      descripcion: 'Un monumento icónico de la ciudad de Mainero.',
+      rutaModelo: 'assets/models/Mainero.glb',
+      escala: 1.0,
+    ),
+  ],
 );

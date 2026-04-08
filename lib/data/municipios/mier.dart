@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final mier = Municipio(
   id: 'mier',
@@ -15,4 +16,13 @@ final mier = Municipio(
   poblacion: '5,000 hab.',
   superficie: '300 km²',
   gentilicio: 'Mierense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Mi heroica',
+      descripcion: 'Un monumento icónico de la ciudad de Mier.',
+      rutaModelo: 'assets/models/Mier.glb',
+      escala: 1.0,
+    ),
+  ],
 );
