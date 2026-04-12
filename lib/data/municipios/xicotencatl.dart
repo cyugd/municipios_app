@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final xicotencatl = Municipio(
   id: 'xicotencatl',
@@ -15,4 +16,13 @@ final xicotencatl = Municipio(
   poblacion: '9,000 hab.',
   superficie: '600 km²',
   gentilicio: 'Xicotencatlense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento de Xicontencat',
+      descripcion: 'Un monumento icónico de la ciudad de Xicontencat.',
+      rutaModelo: 'assets/models/Xicontencat.glb',
+      escala: 1.0,
+    ),
+  ],
 );

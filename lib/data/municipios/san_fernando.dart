@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final san_fernando = Municipio(
   id: 'san_fernando',
@@ -15,4 +16,13 @@ final san_fernando = Municipio(
   poblacion: '50,000 hab.',
   superficie: '6,000 km²',
   gentilicio: 'Sanfernandense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Gazebo plaza principal',
+      descripcion: 'Un monumento icónico de la ciudad de San Fernando.',
+      rutaModelo: 'assets/models/Sanfernando.glb',
+      escala: 1.0,
+    ),
+  ],
 );

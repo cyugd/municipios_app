@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final villagran = Municipio(
   id: 'villagran',
@@ -15,4 +16,13 @@ final villagran = Municipio(
   poblacion: '5,000 hab.',
   superficie: '1,100 km²',
   gentilicio: 'Villagranense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a los caídos',
+      descripcion: 'Un monumento icónico de la ciudad de Villagran.',
+      rutaModelo: 'assets/models/Villagran.glb',
+      escala: 1.0,
+    ),
+  ],
 );

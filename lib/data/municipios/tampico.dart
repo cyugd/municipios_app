@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final tampico = Municipio(
   id: 'tampico',
@@ -15,4 +16,13 @@ final tampico = Municipio(
   poblacion: '300,000 hab.',
   superficie: '90 km²',
   gentilicio: 'Tampiqueño',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento al heroe',
+      descripcion: 'Un monumento icónico de la ciudad de Tampico.',
+      rutaModelo: 'assets/models/Tampico.glb',
+      escala: 1.0,
+    ),
+  ],
 );

@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final san_nicolas = Municipio(
   id: 'san_nicolas',
@@ -15,4 +16,13 @@ final san_nicolas = Municipio(
   poblacion: '1,500 hab.',
   superficie: '200 km²',
   gentilicio: 'San Nicolás',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Tumba emblematica de San Nicolas',
+      descripcion: 'Un monumento icónico de la ciudad de San Nicolas.',
+      rutaModelo: 'assets/models/Sannicolas.glb',
+      escala: 1.0,
+    ),
+  ],
 );

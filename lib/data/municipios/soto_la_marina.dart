@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final soto_la_marina = Municipio(
   id: 'soto_la_marina',
@@ -15,4 +16,13 @@ final soto_la_marina = Municipio(
   poblacion: '25,000 hab.',
   superficie: '3,000 km²',
   gentilicio: 'Sotense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento heroico',
+      descripcion: 'Un monumento icónico de la ciudad de Soto la Marina.',
+      rutaModelo: 'assets/models/Soto.glb',
+      escala: 1.0,
+    ),
+  ],
 );

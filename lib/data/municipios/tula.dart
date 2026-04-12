@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final tula = Municipio(
   id: 'tula',
@@ -15,4 +16,13 @@ final tula = Municipio(
   poblacion: '10,000 hab.',
   superficie: '700 km²',
   gentilicio: 'Tulteco',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Los atlánticos',
+      descripcion: 'Un monumento icónico de la ciudad de Tula.',
+      rutaModelo: 'assets/models/Tula.glb',
+      escala: 1.0,
+    ),
+  ],
 );

@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final gomez_farias = Municipio(
   id: 'gomez_farias',
@@ -59,4 +60,13 @@ Gómez Farías es un municipio que combina historia, naturaleza y cultura. Sus t
   poblacion: '16,431 hab.',
   superficie: '800 km²',
   gentilicio: 'Gomezfaríense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a Gómez Farias',
+      descripcion: 'Un monumento icónico de la ciudad de Gomez Farias.',
+      rutaModelo: 'assets/models/Gomez.glb',
+      escala: 1.0,
+    ),
+  ],
 );
