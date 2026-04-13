@@ -22,7 +22,7 @@ La economía se basa en la industria petrolera, la pesca, el comercio y el turis
 La cultura de Ciudad Madero refleja su identidad marinera y obrera. Se manifiesta en la música tradicional, las fiestas populares y las costumbres relacionadas con la pesca y la industria petrolera. También se conserva el patrimonio histórico como el Faro de la Barra y monumentos conmemorativos.
 
 ## Valores
-Los valores principales de la comunidad son el trabajo, la solidaridad, la hospitalidad y el orgullo por su historia.
+Los valores principales de la comunidad son el trabajo, la solidaridad, la hospitalidad y el orgullo por su historia. Estos principios fortalecen la convivencia social y el sentido de pertenencia de los habitantes.
 
 ## Costumbres
 Las costumbres incluyen celebraciones como el Carnaval, la fiesta de la Virgen del Carmen y la Semana Santa. Estas festividades combinan elementos religiosos, culturales y turísticos, y reúnen a la comunidad y visitantes.

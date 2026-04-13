@@ -49,13 +49,7 @@ Se celebran eventos como el Carnaval de Altamira. La música huasteca y el huapa
 Destacan los mariscos frescos, enchiladas huastecas y platillos tradicionales como el zacahuil.
 
 ## Educación
-Altamira cuenta con una amplia oferta educativa desde nivel básico hasta superior, con instituciones públicas y privadas.
-
-**Infraestructura Educativa**
-Incluye universidades, tecnológicos, preparatorias y centros técnicos como CBTis, CETis y CONALEP.
-
-**Áreas de Formación**
-Predominan carreras industriales, tecnológicas, portuarias y administrativas, relacionadas con el desarrollo económico de la región.
+Altamira cuenta con una amplia oferta educativa desde nivel básico hasta superior, con instituciones públicas y privadas. Predominan carreras industriales, tecnológicas, portuarias y administrativas.
 ''',
   imagenAsset: 'assets/images/altamira.jpg',
   imagenes: [

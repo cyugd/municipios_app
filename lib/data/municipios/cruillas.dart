@@ -1,6 +1,8 @@
 import '../../models/municipio.dart';
 import '../../models/monumento.dart';
 
+import '../../models/municipio.dart';
+
 final cruillas = Municipio(
   id: 'cruillas',
   nombre: 'Cruillas',
@@ -42,6 +44,7 @@ El municipio ofrece paisajes semidesérticos, ranchos tradicionales, rutas rural
 ## Conclusión
 Cruillas Tamaulipas es una comunidad donde tradición, historia y vida rural se mantienen vivas. Su pueblo conserva valores sólidos, gastronomía auténtica y una identidad que perdura con orgullo.
 ''',
+
   imagenAsset: 'assets/images/cruillas.jpg',
   imagenes: [
     'assets/images/cruillas_1.jpg',

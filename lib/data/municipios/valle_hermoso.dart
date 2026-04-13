@@ -1,5 +1,4 @@
 import '../../models/municipio.dart';
-import '../../models/monumento.dart';
 
 final valle_hermoso = Municipio(
   id: 'valle_hermoso',
@@ -16,13 +15,4 @@ final valle_hermoso = Municipio(
   poblacion: '60,000 hab.',
   superficie: '800 km²',
   gentilicio: 'Vallehermosense',
-
-  monumentos3D: [
-    Monumento(
-      nombre: 'Capilla San Antonio',
-      descripcion: 'Un monumento icónico de la ciudad de Valle Hermoso.',
-      rutaModelo: 'assets/models/Vallehermoso.glb',
-      escala: 1.0,
-    ),
-  ],
 );

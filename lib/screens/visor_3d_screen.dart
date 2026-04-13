@@ -94,7 +94,7 @@ class _Visor3DScreenState extends State<Visor3DScreen> {
         title: const Text('Acerca del modelo 3D'),
         content: const Text(
           'Puedes rotar el modelo con un dedo y hacer zoom con dos dedos.\n'
-              'El modelo se carga desde los archivos definidos para este monumento.',
+              'El modelo se carga desde los archivos definidos para este monumento.  ',
         ),
         actions: [
           TextButton(
