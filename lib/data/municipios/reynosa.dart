@@ -1,8 +1,6 @@
 import '../../models/municipio.dart';
 import '../../models/monumento.dart';
 
-import '../../models/municipio.dart';
-
 final reynosa = Municipio(
   id: 'reynosa',
   nombre: 'Reynosa',

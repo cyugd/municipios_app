@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final tampico = Municipio(
   id: 'tampico',
@@ -100,4 +101,13 @@ Tampico es una ciudad con gran importancia histórica, económica y cultural en 
   poblacion: '297,000 hab.',
   superficie: '92 km²',
   gentilicio: 'Tampiqueño',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento al heroe',
+      descripcion: 'Un monumento icónico de la ciudad de Tampico.',
+      rutaModelo: 'assets/models/Tampico.glb',
+      escala: 1.0,
+    ),
+  ],
 );

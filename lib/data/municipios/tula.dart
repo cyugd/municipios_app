@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final tula = Municipio(
   id: 'tula',
@@ -92,4 +93,13 @@ Tula es un municipio con gran riqueza histórica, cultural y natural. Su identid
   poblacion: '28,000 hab.',
   superficie: '3,000 km²',
   gentilicio: 'Tulteca',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Los atlanticos',
+      descripcion: 'Un monumento icónico de la ciudad de Tula.',
+      rutaModelo: 'assets/models/Tula.glb',
+      escala: 1.0,
+    ),
+  ],
 );

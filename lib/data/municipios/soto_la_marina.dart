@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final soto_la_marina = Municipio(
   id: 'soto_la_marina',
@@ -84,4 +85,13 @@ Soto la Marina es un municipio con gran riqueza histórica, cultural y natural. 
   poblacion: '23,673 hab.',
   superficie: '6,000 km²',
   gentilicio: 'Sotense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento heroico',
+      descripcion: 'Un monumento icónico de la ciudad de Soto la marina.',
+      rutaModelo: 'assets/models/Soto.glb',
+      escala: 1.0,
+    ),
+  ],
 );

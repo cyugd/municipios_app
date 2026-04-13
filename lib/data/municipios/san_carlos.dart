@@ -1,6 +1,7 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
-final san_nicolas = Municipio(
+final san_carlos = Municipio(
   id: 'san_nicolas',
   nombre: 'San Nicolás',
   descripcionCorta: 'Municipio con historia minera y tradiciones rurales en la Sierra de San Carlos.',
@@ -60,4 +61,13 @@ San Nicolás, Tamaulipas, es un municipio con gran riqueza cultural, histórica 
   poblacion: '926 hab.',
   superficie: '500 km²',
   gentilicio: 'Sannicolense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Catedral de San Carlos',
+      descripcion: 'Un monumento icónico de la ciudad de San Carlos.',
+      rutaModelo: 'assets/models/Sancarlos.glb',
+      escala: 1.0,
+    ),
+  ],
 );

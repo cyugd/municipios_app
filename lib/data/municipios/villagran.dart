@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final villagran = Municipio(
   id: 'villagran',
@@ -79,4 +80,13 @@ A pesar de retos como la migración y la falta de desarrollo industrial, conserv
   poblacion: '5,361 hab.',
   superficie: '800 km²',
   gentilicio: 'Villagranense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento de los caidos',
+      descripcion: 'Un monumento icónico de la ciudad de Villagran.',
+      rutaModelo: 'assets/models/Villagran.glb',
+      escala: 1.0,
+    ),
+  ],
 );

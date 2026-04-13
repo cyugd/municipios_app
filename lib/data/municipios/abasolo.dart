@@ -83,12 +83,6 @@ Los principales desafíos son mejorar la infraestructura, capacitar a docentes, 
       rutaModelo: 'assets/models/Abasolo.glb',
       escala: 0.8,
     ),
-    Monumento(
-      nombre: 'Flamenco',
-      descripcion: 'Modelo de un flamenco (glTF sample).',
-      rutaModelo: 'assets/models/Flamingo.glb',
-      escala: 0.5,
-    ),
   ],
 );
 
