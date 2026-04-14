@@ -105,9 +105,7 @@ Reynosa es una ciudad fronteriza clave con gran desarrollo industrial, identidad
 ''',
   imagenAsset: 'assets/images/reynosa0101.jpeg',
   imagenes: [
-    'assets/images/reynosa_1.jpg',
-    'assets/images/reynosa_2.jpg',
-    'assets/images/reynosa_3.jpg',
+    'assets/fotos/Reynosa.png',
   ],
   poblacion: '700,000 hab.',
   superficie: '3,000 km²',

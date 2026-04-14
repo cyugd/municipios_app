@@ -7,10 +7,10 @@ final bustamante = Municipio(
   descripcionCorta: 'Puerta de la Sierra Madre Oriental, con grutas y tradición.',
   descripcionLarga:  '''
 ## Introducción
-Bustamante, Tamaulipas, es un municipio fundado en 1749 por José de Escandón. Se localiza en una zona montañosa y es conocido como la “Puerta de la Sierra Madre Oriental”. Destaca por su historia, su entorno natural y la calidez de su gente, combinando tradición, cultura y paisajes únicos del noreste de México.
+Bustamante, Tamaulipas, es un municipio fundado in 1749 por José de Escandón. Se localiza en una zona montañosa y es conocido como la “Puerta de la Sierra Madre Oriental”. Destaca por su historia, su entorno natural y la calidez de su gente, combinando tradición, cultura y paisajes únicos del noreste de México.
 
 ## Historia
-La historia de Bustamante se remonta al siglo XVIII durante la colonización del Nuevo Santander. Fue fundado como parte del proyecto de poblamiento impulsado por José de Escandón. Con el tiempo, el municipio adoptó el nombre de Bustamante en honor a Anastasio Bustamante, expresidente de México. A lo largo de los años ha mantenido una fuerte tradición agrícola y una identidad marcada por su herencia colonial y su relación con la Sierra Madre Oriental.
+La historia de Bustamante se remonta al siglo XVIII durante la colonización del Nuevo Santander. Fue fundado como parte del proyecto de poblamiento impulsado por José de Escandón. Con el tiempo, el municipio adoptó el nombre de Bustamante in honor a Anastasio Bustamante, expresidente de México. A lo largo de los años ha mantenido una fuerte tradición agrícola y una identidad marcada por su herencia colonial y su relación con la Sierra Madre Oriental.
 
 ## Geografía
 Bustamante se ubica en la región centro-oeste de Tamaulipas, dentro de la Sierra Madre Oriental. Su territorio está formado por montañas, cañones, ríos subterráneos y zonas boscosas. La vegetación incluye bosques de pino y encino, así como matorrales en zonas bajas. La fauna es variada, con especies como venado cola blanca, armadillos y aves. El clima es semiárido templado, con inviernos frescos y veranos calurosos, además de lluvias en verano que alimentan manantiales como el Ojo de Agua.
@@ -47,8 +47,7 @@ Bustamante es un municipio que destaca por su riqueza histórica, cultural y nat
 ''',
   imagenAsset: 'assets/images/bustamante.jpg',
   imagenes: [
-    'assets/images/bustamante_1.jpg',
-    'assets/images/bustamante_2.jpg',
+    'assets/fotos/bustamante.png',
   ],
   poblacion: '7,720 hab.',
   superficie: '780 km²',

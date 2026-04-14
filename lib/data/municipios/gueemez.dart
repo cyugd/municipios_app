@@ -46,9 +46,7 @@ Güémez, Tamaulipas, representa una combinación de historia, tradición y desa
 ''',
   imagenAsset: 'assets/images/gueemez.jpg',
   imagenes: [
-    'assets/images/gueemez_1.jpg',
-    'assets/images/gueemez_2.jpg',
-    'assets/images/gueemez_3.jpg',
+    'assets/fotos/guemez.png',
   ],
   poblacion: '7,000 hab.',
   superficie: '450 km²',

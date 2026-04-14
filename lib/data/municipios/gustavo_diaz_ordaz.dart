@@ -55,9 +55,7 @@ Gustavo Díaz Ordaz es un municipio con una identidad fuerte, basada en su histo
 ''',
   imagenAsset: 'assets/images/gustavo_diaz_ordaz.jpg',
   imagenes: [
-    'assets/images/gustavo_diaz_ordaz_1.jpg',
-    'assets/images/gustavo_diaz_ordaz_2.jpg',
-    'assets/images/gustavo_diaz_ordaz_3.jpg',
+    'assets/fotos/gustavo dias ordaz.png',
   ],
   poblacion: '16,000 hab.',
   superficie: '200 km²',

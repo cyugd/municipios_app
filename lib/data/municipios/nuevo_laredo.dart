@@ -1,8 +1,6 @@
 import '../../models/municipio.dart';
 import '../../models/monumento.dart';
 
-import '../../models/municipio.dart';
-
 final nuevo_laredo = Municipio(
   id: 'nuevo_laredo',
   nombre: 'Nuevo Laredo',
@@ -37,9 +35,7 @@ Actualmente Nuevo Laredo continúa siendo una ciudad estratégica para el comerc
 ''',
   imagenAsset: 'assets/images/nuevo_laredo.jpg',
   imagenes: [
-    'assets/images/nuevo_laredo_1.jpg',
-    'assets/images/nuevo_laredo_2.jpg',
-    'assets/images/nuevo_laredo_3.jpg',
+    'assets/fotos/Nuevo_ladero.png',
   ],
   poblacion: '400,000 hab.',
   superficie: '1,200 km²',

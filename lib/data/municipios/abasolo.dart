@@ -64,14 +64,11 @@ La alfabetización alcanza el 92%, con una escolaridad promedio de 8.2 años. Ha
 Incluyen transporte escolar para zonas alejadas, bibliotecas, acceso a computadoras e internet, programas de alimentación y actividades extracurriculares.
 
 **Retos educativos**
-Los principales desafíos son mejorar la infraestructura, capacitar a docentes, ampliar el acceso a tecnología, fortalecer la educación a distancia y ofrecer más opciones técnicas.
+Los principales desafíos son mejorar la infraestructura, capacitaciones a docentes, ampliar el acceso a tecnología, fortalecer la educación a distancia y ofrecer más opciones técnicas.
 ''',
   imagenAsset: 'assets/images/abasolos-logo.jpeg',
   imagenes: [
-    'assets/images/abasolo1.jpg',
-    'assets/images/abasolo2.jpg',
-    'assets/images/abasolo3.jpg',
-    'assets/images/abasolo4.jpg',
+    'assets/fotos/abasolo.png',
   ],
   poblacion: '14,285 hab.',
   superficie: '180 km²',

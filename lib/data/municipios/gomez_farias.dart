@@ -54,8 +54,7 @@ Gómez Farías es un municipio que combina historia, naturaleza y cultura. Sus t
 ''',
   imagenAsset: 'assets/images/gomez_farias.jpg',
   imagenes: [
-    'assets/images/gomez_farias_1.jpg',
-    'assets/images/gomez_farias_2.jpg',
+    'assets/fotos/gomez farias.png',
   ],
   poblacion: '16,431 hab.',
   superficie: '800 km²',

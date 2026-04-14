@@ -51,7 +51,9 @@ San Fernando destaca por su combinación de historia y naturaleza:
 San Fernando combina historia, tradición y naturaleza. Su comunidad mantiene fuertes raíces culturales y valores locales, mientras que sus espacios emblemáticos, zonas rurales y costeras muestran un municipio con identidad, cultura y atractivos turísticos relevantes en el norte de Tamaulipas.
 ''',
   imagenAsset: 'assets/images/san_fernando.jpg',
-  imagenes: ['assets/images/san_fernando_1.jpg', 'assets/images/san_fernando_2.jpg'],
+  imagenes: [
+    'assets/fotos/San_fernando.png',
+  ],
   poblacion: '51,405 hab.',
   superficie: '6,847.45 km²',
   gentilicio: 'Sanfernandense',

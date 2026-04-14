@@ -1,8 +1,6 @@
 import '../../models/municipio.dart';
 import '../../models/monumento.dart';
 
-import '../../models/municipio.dart';
-
 final ocampo = Municipio(
   id: 'ocampo',
   nombre: 'Ocampo',
@@ -40,7 +38,7 @@ Ocampo se ubica al suroeste de Tamaulipas, en una zona entre la Sierra Madre Ori
 Según el censo 2020 tiene 13,190 habitantes, distribuidos entre la cabecera municipal y muchas localidades rurales. La población es mayormente joven y el municipio presenta un carácter rural con baja densidad poblacional. También existe migración hacia ciudades grandes y Estados Unidos.
 
 ## Características socioeconómicas y ecológicas
-Gran parte del municipio mantiene características rurales y su economía depende principalmente de actividades primarias. Esto representa retos en servicios, pero también oportunidades para el turismo y la conservación cultural.
+Gran parte del municipio mantiene características rurales y su economía depende principalmente en actividades primarias. Esto representa retos en servicios, pero también oportunidades para el turismo y la conservación cultural.
 
 ## Economía
 - **Agricultura:** Es la actividad principal y genera cerca del 65% de la economía, empleando a gran parte de la población.
@@ -87,9 +85,7 @@ Ocampo es un municipio con una fuerte identidad cultural y tradiciones arraigada
 ''',
   imagenAsset: 'assets/images/ocampo.jpg',
   imagenes: [
-    'assets/images/ocampo_1.jpg',
-    'assets/images/ocampo_2.jpg',
-    'assets/images/ocampo_3.jpg',
+    'assets/fotos/Ocampo.png',
   ],
   poblacion: '6,000 hab.',
   superficie: '500 km²',

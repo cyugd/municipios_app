@@ -44,8 +44,7 @@ Casas, Tamaulipas, es un municipio con una gran riqueza histórica, cultural y n
 ''',
   imagenAsset: 'assets/images/casas.jpg',
   imagenes: [
-    'assets/images/casas_1.jpg',
-    'assets/images/casas_2.jpg',
+    'assets/fotos/casas.png',
   ],
   poblacion: '4,143 hab.',
   superficie: '1,500 km²',

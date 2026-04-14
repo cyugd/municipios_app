@@ -1,8 +1,6 @@
 import '../../models/municipio.dart';
 import '../../models/monumento.dart';
 
-import '../../models/municipio.dart';
-
 final cruillas = Municipio(
   id: 'cruillas',
   nombre: 'Cruillas',
@@ -12,7 +10,7 @@ final cruillas = Municipio(
 Cruillas, Tamaulipas, es un municipio pequeño pero lleno de historia y tradición. Fundado en 1751, su identidad está profundamente ligada a la vida rural, la agricultura y la ganadería. Su población mantiene un estilo de vida tranquilo, basado en valores comunitarios, festividades religiosas y costumbres que han pasado de generación en generación.
 
 ## Historia
-Cruillas fue fundado en 1751 y debe su nombre al Duque de Cruillas. Durante la época colonial, funcionó como punto de resguardo y apoyo agrícola. Su desarrollo estuvo ligado a haciendas, caminos comerciales y el trabajo del campo.
+Cruillas fue fundado in 1751 y debe su nombre al Duque de Cruillas. Durante la época colonial, funcionó como punto de resguardo y apoyo agrícola. Su desarrollo estuvo ligado a haciendas, caminos comerciales y el trabajo del campo.
 
 ## Geografía y Población
 Ubicado en la región centro-norte de Tamaulipas, Cruillas tiene un clima semiseco y terrenos amplios de llanura. Su población es principalmente rural y está distribuida en varias comunidades agrícolas y ganaderas.
@@ -27,7 +25,7 @@ La cultura cruillense se refleja en sus festividades religiosas, música regiona
 Entre los valores más importantes destacan el respeto, la solidaridad, el trabajo comunitario y la unión familiar, elementos clave del carácter local.
 
 ## Costumbres y Fiestas
-Sus fiestas principales se celebran en honor a la Virgen de Guadalupe y San Isidro Labrador, además de encuentros familiares y eventos comunitarios tradicionales.
+Sus fiestas principales se celebran in honor a la Virgen de Guadalupe y San Isidro Labrador, además de encuentros familiares y eventos comunitarios tradicionales.
 
 ## Gastronomía
 Entre sus platillos destacan la discada norteña, carne asada, tamales, asado de puerco y productos artesanales como queso fresco y crema.
@@ -47,8 +45,7 @@ Cruillas Tamaulipas es una comunidad donde tradición, historia y vida rural se 
 
   imagenAsset: 'assets/images/cruillas.jpg',
   imagenes: [
-    'assets/images/cruillas_1.jpg',
-    'assets/images/cruillas_2.jpg',
+    'assets/fotos/cruillas.png',
   ],
   poblacion: '1,800 hab.',
   superficie: '1,200 km²',

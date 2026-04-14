@@ -68,9 +68,7 @@ Jaumave, Tamaulipas, es un municipio lleno de historia, naturaleza y tradiciones
 ''',
   imagenAsset: 'assets/images/jaumave.jpg',
   imagenes: [
-    'assets/images/jaumave_1.jpg',
-    'assets/images/jaumave_2.jpg',
-    'assets/images/jaumave_3.jpg',
+    'assets/fotos/jaumave.png',
   ],
   poblacion: '15,000 hab.',
   superficie: '1,500 km²',

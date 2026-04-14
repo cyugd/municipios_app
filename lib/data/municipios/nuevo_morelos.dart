@@ -1,8 +1,6 @@
 import '../../models/municipio.dart';
 import '../../models/monumento.dart';
 
-import '../../models/municipio.dart';
-
 final nuevo_morelos = Municipio(
   id: 'nuevo_morelos',
   nombre: 'Nuevo Morelos',
@@ -49,9 +47,7 @@ El municipio de Morelos es una comunidad que destaca por su historia, sus tradic
 
   imagenAsset: 'assets/images/nuevo_morelos.jpg',
   imagenes: [
-    'assets/images/nuevo_morelos_1.jpg',
-    'assets/images/nuevo_morelos_2.jpg',
-    'assets/images/nuevo_morelos_3.jpg',
+    'assets/fotos/Nuevo_morelos.png',
   ],
   poblacion: '4,000 hab.',
   superficie: '200 km²',

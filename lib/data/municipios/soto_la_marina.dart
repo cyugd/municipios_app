@@ -81,7 +81,9 @@ Se han realizado inversiones en infraestructura, servicios básicos y promoción
 Soto la Marina es un municipio con gran riqueza histórica, cultural y natural. A pesar de sus retos, su gente, tradiciones y valores lo convierten en un lugar importante. Conservar su identidad es clave para el futuro.
 ''',
   imagenAsset: 'assets/images/soto_la_marina.jpg',
-  imagenes: ['assets/images/soto_la_marina_1.jpg', 'assets/images/soto_la_marina_2.jpg'],
+  imagenes: [
+    'assets/fotos/Soto.png',
+  ],
   poblacion: '23,673 hab.',
   superficie: '6,000 km²',
   gentilicio: 'Sotense',

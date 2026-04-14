@@ -51,8 +51,7 @@ Camargo es un municipio con una identidad fuerte, construida a lo largo de más 
 ''',
   imagenAsset: 'assets/images/camargo.jpg',
   imagenes: [
-    'assets/images/camargo_1.jpg',
-    'assets/images/camargo_2.jpg',
+    'assets/fotos/camargo.png',
   ],
   poblacion: '16,000 hab.',
   superficie: '1,200 km²',

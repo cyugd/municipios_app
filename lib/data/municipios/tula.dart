@@ -89,7 +89,9 @@ Es un destino turístico cultural y natural en crecimiento.
 Tula es un municipio con gran riqueza histórica, cultural y natural. Su identidad se mantiene viva gracias a sus tradiciones, su gente y su patrimonio. Como Pueblo Mágico, representa un importante símbolo de historia y cultura en Tamaulipas, con un futuro prometedor basado en el turismo y la conservación de sus raíces.
 ''',
   imagenAsset: 'assets/images/tula.jpg',
-  imagenes: ['assets/images/tula_1.jpg', 'assets/images/tula_2.jpg'],
+  imagenes: [
+    'assets/fotos/Tula.png',
+  ],
   poblacion: '28,000 hab.',
   superficie: '3,000 km²',
   gentilicio: 'Tulteca',

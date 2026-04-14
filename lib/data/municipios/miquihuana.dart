@@ -1,7 +1,5 @@
 import '../../models/municipio.dart';
 
-import '../../models/municipio.dart';
-
 final miquihuana = Municipio(
   id: 'miquihuana',
   nombre: 'Miquihuana',
@@ -39,9 +37,7 @@ Miquihuana es un municipio con una fuerte identidad cultural, marcado por su his
 ''',
   imagenAsset: 'assets/images/miquihuana.jpg',
   imagenes: [
-    'assets/images/miquihuana_1.jpg',
-    'assets/images/miquihuana_2.jpg',
-    'assets/images/miquihuana_3.jpg',
+    'assets/fotos/Miquihuana.png',
   ],
   poblacion: '3,000 hab.',
   superficie: '250 km²',

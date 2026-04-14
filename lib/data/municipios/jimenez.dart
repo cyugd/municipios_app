@@ -53,9 +53,7 @@ El municipio ofrece educación básica en sus comunidades, mientras que para niv
 ''',
   imagenAsset: 'assets/images/jimenez.jpg',
   imagenes: [
-    'assets/images/jimenez_1.jpg',
-    'assets/images/jimenez_2.jpg',
-    'assets/images/jimenez_3.jpg',
+    'assets/fotos/jimenez.png',
   ],
   poblacion: '6,000 hab.',
   superficie: '1,100 km²',

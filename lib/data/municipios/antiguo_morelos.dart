@@ -44,8 +44,7 @@ Antiguo Morelos es un municipio con raíces huastecas y tradición rural que ha 
 ''',
   imagenAsset: 'assets/images/antiguo_morelos.jpg',
   imagenes: [
-    'assets/images/antiguo_morelos_1.jpg',
-    'assets/images/antiguo_morelos_2.jpg',
+    'assets/fotos/antiguo morelos.png',
   ],
   poblacion: '8,850 hab.',
   superficie: '561.30 km²',

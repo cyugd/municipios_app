@@ -57,9 +57,7 @@ Heroica Matamoros es un municipio con gran importancia histórica, económica y 
 
   imagenAsset: 'assets/images/matamoros.jpg',
   imagenes: [
-    'assets/images/matamoros_1.jpg',
-    'assets/images/matamoros_2.jpg',
-    'assets/images/matamoros_3.jpg',
+    'assets/fotos/Matamoros.png'
   ],
   poblacion: '500,000 hab.',
   superficie: '4,000 km²',

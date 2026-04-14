@@ -1,8 +1,6 @@
 import '../../models/municipio.dart';
 import '../../models/monumento.dart';
 
-import '../../models/municipio.dart';
-
 final rio_bravo = Municipio(
   id: 'rio_bravo',
   nombre: 'Río Bravo',
@@ -78,9 +76,7 @@ Río Bravo es una ciudad que combina su desarrollo industrial con la riqueza nat
 ''',
   imagenAsset: 'assets/images/rio_bravo.jpg',
   imagenes: [
-    'assets/images/rio_bravo_1.jpg',
-    'assets/images/rio_bravo_2.jpg',
-    'assets/images/rio_bravo_3.jpg',
+    'assets/fotos/Rio_bravo.png',
   ],
   poblacion: '100,000 hab.',
   superficie: '1,500 km²',

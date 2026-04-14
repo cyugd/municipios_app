@@ -1,8 +1,6 @@
 import '../../models/municipio.dart';
 import '../../models/monumento.dart';
 
-import '../../models/municipio.dart';
-
 final victoria = Municipio(
   id: 'victoria',
   nombre: 'Ciudad Victoria',
@@ -38,9 +36,7 @@ Ciudad Victoria representa la unión entre historia, tradición y desarrollo mod
 
   imagenAsset: 'assets/images/victoria.jpg',
   imagenes: [
-    'assets/images/victoria_1.jpg',
-    'assets/images/victoria_2.jpg',
-    'assets/images/victoria_3.jpg',
+    'assets/fotos/victoria.png',
   ],
   poblacion: '350,000 hab.',
   superficie: '1,000 km²',

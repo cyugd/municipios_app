@@ -65,9 +65,7 @@ Ciudad Mier, Tamaulipas, es un ejemplo de identidad, historia y resiliencia. A p
 ''',
   imagenAsset: 'assets/images/mier.jpg',
   imagenes: [
-    'assets/images/mier_1.jpg',
-    'assets/images/mier_2.jpg',
-    'assets/images/mier_3.jpg',
+    'assets/fotos/Mier.png',
   ],
   poblacion: '5,000 hab.',
   superficie: '300 km²',

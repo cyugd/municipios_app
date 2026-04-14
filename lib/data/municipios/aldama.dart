@@ -71,9 +71,7 @@ Se localiza en la región central de Tamaulipas, con coordenadas 24.0665° N y 9
 ''',
   imagenAsset: 'assets/images/aldama.jpeg',
   imagenes: [
-    'assets/images/aldama_1.jpg',
-    'assets/images/aldama_2.jpg',
-    'assets/images/aldama_3.jpg',
+    'assets/fotos/aldama.png',
   ],
   poblacion: '30,250 hab.',
   superficie: '1,200 km²',

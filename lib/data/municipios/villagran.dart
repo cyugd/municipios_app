@@ -76,7 +76,9 @@ Villagrán es un municipio con raíces históricas profundas y una identidad rur
 A pesar de retos como la migración y la falta de desarrollo industrial, conserva tradiciones, cultura y un fuerte sentido de comunidad. Su futuro depende del fortalecimiento de la educación, la economía local y el aprovechamiento de sus recursos naturales y culturales.
 ''',
   imagenAsset: 'assets/images/villagran.jpg',
-  imagenes: ['assets/images/villagran_1.jpg', 'assets/images/villagran_2.jpg'],
+  imagenes: [
+    'assets/fotos/Villagran.png',
+  ],
   poblacion: '5,361 hab.',
   superficie: '800 km²',
   gentilicio: 'Villagranense',

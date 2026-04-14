@@ -57,9 +57,7 @@ Mainero es un municipio que refleja la vida rural de Tamaulipas, con una fuerte 
 ''',
   imagenAsset: 'assets/images/mainero.jpg',
   imagenes: [
-    'assets/images/mainero_1.jpg',
-    'assets/images/mainero_2.jpg',
-    'assets/images/mainero_3.jpg',
+    'assets/fotos/mainero.png',
   ],
   poblacion: '2,000 hab.',
   superficie: '400 km²',

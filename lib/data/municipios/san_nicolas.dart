@@ -1,7 +1,6 @@
 import '../../models/municipio.dart';
 import '../../models/monumento.dart';
 
-
 final san_nicolas = Municipio(
   id: 'san_nicolas',
   nombre: 'San Nicolás',
@@ -55,13 +54,11 @@ Es una sociedad pequeña, rural y cercana, con familias numerosas y estilo de vi
 - Ruinas de minería: Restos de la actividad minera del siglo XVIII en El Palmar, Las Vírgenes y la cabecera municipal.
 
 ## Conclusión
-San Nicolás, Tamaulipas, es un municipio con gran riqueza cultural, histórica y natural. Su población mantiene tradiciones, valores y costumbres que fortalecen la identidad local. La economía rural basada en agricultura y ganadería, junto con la convivencia comunitaria y la vida religiosa, define un estilo de vida tranquilo y cercano. Sus paisajes, edificaciones históricas y festividades atraen al turismo que busca autenticidad y contacto con la naturaleza, convirtiendo a San Nicolás en un ejemplo de pueblo que preserva su herencia y cultura.
+San Nicolás, Tamaulipas, es un municipio con gran riqueza cultural, histórica y natural. Su población mantiene tradiciones, valores y costumbres que fortalecen la identidad local. La economía rural basada en agricultura y ganadería, junto con la convivencia comunitaria y la vida religiosa, define un estilo de vida tranquilo y cercano. Sus paisajes, edificaciones históricas y festividades atraen al turismo que busca autenticidad y contacto con la naturaleza, convirtiendo a San Nicolás in un ejemplo de pueblo que preserva su herencia y cultura.
 ''',
   imagenAsset: 'assets/images/san_nicolas.jpg',
   imagenes: [
-    'assets/images/san_nicolas_1.jpg',
-    'assets/images/san_nicolas_2.jpg',
-    'assets/images/san_nicolas_3.jpg',
+    'assets/fotos/San_nicolas.png'
   ],
   poblacion: '1,500 hab.',
   superficie: '200 km²',

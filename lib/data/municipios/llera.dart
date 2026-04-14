@@ -54,9 +54,7 @@ El municipio cuenta con educación básica y programas comunitarios que apoyan e
 
   imagenAsset: 'assets/images/llera.jpg',
   imagenes: [
-    'assets/images/llera_1.jpg',
-    'assets/images/llera_2.jpg',
-    'assets/images/llera_3.jpg',
+    'assets/fotos/llera.png',
   ],
   poblacion: '5,000 hab.',
   superficie: '800 km²',

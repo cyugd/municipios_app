@@ -7,7 +7,7 @@ final valle_hermoso = Municipio(
   descripcionCorta: 'Colonia agrícola transformada en ciudad fronteriza con arraigo rural.',
   descripcionLarga: '''
 ## Historia
-Valle Hermoso surge en la década de 1930 como una colonia agraria impulsada por el gobierno de Lázaro Cárdenas, para reubicar a mexicanos repatriados de Estados Unidos tras la Gran Depresión. El ingeniero Eduardo Chávez Ramírez diseñó su sistema de riego y su trazo urbano. Su crecimiento se consolidó con el auge del algodón en los años 40 y 50. El 4 de marzo de 1953 se convirtió en municipio libre.
+Valle Hermoso surge en la década de 1930 como una colonia agraria impulsada por el gobierno de Lázaro Cárdenas, para reubicar a mexicanos repatriados de Estados Unidos tras la Gran Depresión. El ingeniero Eduardo Chávez Ramírez diseñó su sistema de riego y su trazo urbano. Su crecimiento se consolidó con el auge del algodón in los años 40 y 50. El 4 de marzo de 1953 se convirtió in municipio libre.
 
 ## Línea del tiempo
 - **1929:** Repatriación de mexicanos desde EE. UU.
@@ -45,7 +45,9 @@ Valle Hermoso no es un destino de turismo masivo, sino de turismo de nicho y de 
 Valle Hermoso es una ciudad con origen agrícola y fuerte identidad rural. Su desarrollo depende del campo, especialmente del sorgo, y enfrenta retos como el manejo del agua y la migración. Aun así, su comunidad resiliente mantiene viva su economía y cultura, buscando un futuro más estable.
 ''',
   imagenAsset: 'assets/images/valle_hermoso.jpg',
-  imagenes: ['assets/images/valle_hermoso_1.jpg', 'assets/images/valle_hermoso_2.jpg'],
+  imagenes: [
+    'assets/fotos/Valle_hermoso.png',
+  ],
   poblacion: '60,000 hab.',
   superficie: '900 km²',
   gentilicio: 'Vallehermosense',

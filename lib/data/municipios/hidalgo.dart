@@ -68,9 +68,7 @@ Hidalgo, Tamaulipas, es una comunidad rica en historia, tradiciones y valores. S
 ''',
   imagenAsset: 'assets/images/hidalgo.jpg',
   imagenes: [
-    'assets/images/hidalgo_1.jpg',
-    'assets/images/hidalgo_2.jpg',
-    'assets/images/hidalgo_3.jpg',
+    'assets/fotos/hidalgo.png',
   ],
   poblacion: '10,000 hab.',
   superficie: '300 km²',

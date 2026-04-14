@@ -57,9 +57,7 @@ Cuenta con niveles básicos y medio superior.
 
   imagenAsset: 'assets/images/guerrero.jpg',
   imagenes: [
-    'assets/images/guerrero_1.jpg',
-    'assets/images/guerrero_2.jpg',
-    'assets/images/guerrero_3.jpg',
+    'assets/fotos/gerrero.png',
   ],
   poblacion: '4,500 hab.',
   superficie: '900 km²',

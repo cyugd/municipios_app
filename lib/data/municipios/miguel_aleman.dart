@@ -70,9 +70,7 @@ Ciudad Miguel Alemán, Tamaulipas, es un municipio que refleja la importancia de
 
   imagenAsset: 'assets/images/miguel_aleman.jpg',
   imagenes: [
-    'assets/images/miguel_aleman_1.jpg',
-    'assets/images/miguel_aleman_2.jpg',
-    'assets/images/miguel_aleman_3.jpg',
+    'assets/fotos/Miguel.png',
   ],
   poblacion: '25,000 hab.',
   superficie: '200 km²',

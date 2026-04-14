@@ -1,8 +1,6 @@
 import '../../models/municipio.dart';
 import '../../models/monumento.dart';
 
-import '../../models/municipio.dart';
-
 final palmillas = Municipio(
   id: 'palmillas',
   nombre: 'Palmillas',
@@ -74,9 +72,7 @@ Palmillas es un municipio lleno de historia, tradiciones y paisajes del altiplan
 
   imagenAsset: 'assets/images/palmillas.jpg',
   imagenes: [
-    'assets/images/palmillas_1.jpg',
-    'assets/images/palmillas_2.jpg',
-    'assets/images/palmillas_3.jpg',
+    'assets/fotos/Palmillas.png',
   ],
   poblacion: '2,000 hab.',
   superficie: '150 km²',

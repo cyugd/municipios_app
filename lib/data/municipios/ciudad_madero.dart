@@ -44,8 +44,7 @@ Ciudad Madero es un municipio que combina industria, historia y belleza natural.
 ''',
   imagenAsset: 'assets/images/ciudad_madero.jpg',
   imagenes: [
-    'assets/images/ciudad_madero_1.jpg',
-    'assets/images/ciudad_madero_2.jpg',
+    'assets/fotos/madero.png',
   ],
   poblacion: '205,000 hab.',
   superficie: '46 km²',
@@ -60,5 +59,3 @@ Ciudad Madero es un municipio que combina industria, historia y belleza natural.
     ),
   ],
 );
-
-

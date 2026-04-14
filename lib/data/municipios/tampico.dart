@@ -9,9 +9,9 @@ final tampico = Municipio(
 ## Historia
 Tamaulipas tiene antecedentes prehispánicos con pueblos como huastecos, pames y coahuiltecos. Dentro de este contexto, Tampico destaca por su desarrollo ligado al comercio marítimo.
 
-La primera fundación ocurrió en 1554 por Fray Andrés de Olmos, aunque la ciudad actual se estableció en 1823. A lo largo del tiempo enfrentó eventos como ataques piratas, como el de Lorencillo en 1684.
+La primera fundación ocurrió in 1554 por Fray Andrés de Olmos, aunque la ciudad actual se estableció in 1823. A lo largo del tiempo enfrentó eventos como ataques piratas, como el de Lorencillo in 1684.
 
-Durante el siglo XX, el auge petrolero (1900–1920) impulsó su crecimiento económico y poblacional, convirtiéndola en un importante centro industrial y portuario. Hoy es una ciudad moderna con gran valor histórico.
+Durante el siglo XX, el auge petrolero (1900–1920) impulsó su crecimiento económico y poblacional, convirtiéndola in un importante centro industrial y portuario. Hoy es una ciudad moderna con gran valor histórico.
 
 ## Línea del Tiempo
 - **1554:** Fundación original de Tampico
@@ -22,32 +22,32 @@ Durante el siglo XX, el auge petrolero (1900–1920) impulsó su crecimiento eco
 - **Siglo XXI:** Consolidación como ciudad moderna
 
 ## Personajes Destacados
-- Fray Andrés de Olmos — Fundador en 1554
-- Lorencillo — Ataque en 1684
+- Fray Andrés de Olmos — Fundador in 1554
+- Lorencillo — Ataque in 1684
 - Francisco R. Murguía — Militar revolucionario
 - Carlos A. Madrazo — Impulsor educativo
 - Refugio García — Promotora de la educación
 
 ## Geografía
-Tampico se ubica al sureste de Tamaulipas, en la desembocadura del río Pánuco, frente al Golfo de México.
+Tampico se ubica al sureste de Tamaulipas, in la desembocadura del río Pánuco, frente al Golfo de México.
 
-Su relieve es plano, con llanuras costeras. Cuenta con cuerpos de agua importantes como la Laguna del Carpintero. El clima es cálido-húmedo, con lluvias en verano y riesgo de ciclones.
+Su relieve es plano, con llanuras costeras. Cuenta con cuerpos de agua importantes como la Laguna del Carpintero. El clima es cálido-húmedo, con lluvias in verano y riesgo de ciclones.
 
 Sus ecosistemas incluyen manglares, estuarios y lagunas con gran biodiversidad, aunque enfrentan amenazas por la urbanización.
 
 ## Población
 El crecimiento poblacional ha sido constante, especialmente durante el auge petrolero. Actualmente supera los 200 mil habitantes.
 
-La población es diversa, con mayor concentración en zonas cercanas al puerto. Predomina una población joven con movilidad por trabajo en la industria y servicios.
+La población es diversa, con mayor concentración in zonas cercanas al puerto. Predomina una población joven con movilidad por trabajo in la industria y servicios.
 
 ## Economía
-La economía de Tampico se basa en:
+La economía de Tampico se basa in:
 - **Puerto y logística:** conexión con mercados nacionales e internacionales.
 - **Industria petrolera:** refinería y actividades relacionadas.
 - **Comercio y servicios:** centros comerciales y negocios locales.
 - **Turismo:** potencial cultural y natural.
 
-Esto la convierte en un centro económico clave en la región.
+Esto la convierte in un centro económico clave in la región.
 
 ## Cultura
 La cultura tampiqueña es resultado del mestizaje indígena, español y extranjero. Destaca el huapango huasteco, las tradiciones y la vida portuaria.
@@ -97,7 +97,9 @@ Es un destino que combina turismo cultural, natural y urbano.
 Tampico es una ciudad con gran importancia histórica, económica y cultural en Tamaulipas. Su desarrollo ha estado ligado al puerto y al petróleo, pero también destaca por sus tradiciones, gastronomía y riqueza natural. Tiene un gran potencial turístico y sigue siendo un punto clave en el desarrollo regional.
 ''',
   imagenAsset: 'assets/images/tampico.jpg',
-  imagenes: ['assets/images/tampico_1.jpg', 'assets/images/tampico_2.jpg'],
+  imagenes: [
+    'assets/fotos/Tampico.png',
+  ],
   poblacion: '297,000 hab.',
   superficie: '92 km²',
   gentilicio: 'Tampiqueño',

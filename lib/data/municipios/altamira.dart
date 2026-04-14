@@ -53,9 +53,7 @@ Altamira cuenta con una amplia oferta educativa desde nivel básico hasta superi
 ''',
   imagenAsset: 'assets/images/altamira.jpg',
   imagenes: [
-    'assets/images/altamira_1.jpg',
-    'assets/images/altamira_2.jpg',
-    'assets/images/altamira_3.jpg',
+    'assets/fotos/altamira.png',
   ],
   poblacion: '212,000 hab.',
   superficie: '1,663 km²',

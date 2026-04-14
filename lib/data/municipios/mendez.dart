@@ -59,9 +59,7 @@ Méndez, Tamaulipas, es un municipio que refleja la esencia de las comunidades r
 
   imagenAsset: 'assets/images/mendez.jpg',
   imagenes: [
-    'assets/images/mendez_1.jpg',
-    'assets/images/mendez_2.jpg',
-    'assets/images/mendez_3.jpg',
+    'assets/fotos/Mendez.png',
   ],
   poblacion: '2,500 hab.',
   superficie: '1,200 km²',

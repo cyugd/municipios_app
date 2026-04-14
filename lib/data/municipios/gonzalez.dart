@@ -51,8 +51,7 @@ González, Tamaulipas, es un municipio que combina historia, tradición y desarr
 ''',
   imagenAsset: 'assets/images/gonzalez.jpg',
   imagenes: [
-    'assets/images/gonzalez_1.jpg',
-    'assets/images/gonzalez_2.jpg',
+    'assets/fotos/gonzales.png',
   ],
   poblacion: '41,470 hab.',
   superficie: '3,500 km²',

@@ -82,7 +82,9 @@ Xicoténcatl es un municipio donde la historia, la naturaleza y la cultura se co
 A pesar de los retos actuales, como la migración y la dependencia del campo, su comunidad mantiene vivas sus tradiciones, valores y sentido de pertenencia. Xicoténcatl sigue siendo un lugar representativo de la Huasteca Tamaulipeca, destacando por su riqueza natural y cultural.
 ''',
   imagenAsset: 'assets/images/xicotencatl.jpg',
-  imagenes: ['assets/images/xicotencatl_1.jpg', 'assets/images/xicotencatl_2.jpg'],
+  imagenes: [
+    'assets/fotos/Xicotencatl.png',
+  ],
   poblacion: '12,000 hab.',
   superficie: '800 km²',
   gentilicio: 'Xicotencatlense',

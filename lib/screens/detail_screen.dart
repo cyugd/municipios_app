@@ -311,12 +311,15 @@ class _DetailScreenState extends State<DetailScreen> {
                               final scale = _transformationController.value.getMaxScaleOnAxis();
                               if (scale <= 1.1) setState(() => _isZoomed = false);
                             },
-                            child: Image.asset(
-                              widget.municipio.imagenes[index],
-                              fit: BoxFit.cover,
-                              errorBuilder: (_, __, ___) => Container(
-                                color: Colors.grey[300],
-                                child: const Icon(Icons.broken_image, size: 80, color: Colors.grey),
+                            child: Padding(
+                              padding: const EdgeInsets.all(16.0),
+                              child: Image.asset(
+                                widget.municipio.imagenes[index],
+                                fit: BoxFit.contain,
+                                errorBuilder: (_, __, ___) => Container(
+                                  color: Colors.grey[300],
+                                  child: const Icon(Icons.broken_image, size: 80, color: Colors.grey),
+                                ),
                               ),
                             ),
                           );
@@ -327,7 +330,7 @@ class _DetailScreenState extends State<DetailScreen> {
                           gradient: LinearGradient(
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
-                            colors: [Colors.transparent, Colors.black54],
+                            colors: [Colors.transparent, Colors.black26],
                           ),
                         ),
                       ),
@@ -355,7 +358,7 @@ class _DetailScreenState extends State<DetailScreen> {
                               backgroundColor: Colors.black26,
                               child: IconButton(
                                 icon: const Icon(Icons.arrow_forward_ios, color: Colors.white, size: 20),
-                                onPressed: _nextImage,
+                                onPressed: _previousImage,
                               ),
                             ),
                           ),

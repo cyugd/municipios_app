@@ -1,8 +1,6 @@
 import '../../models/municipio.dart';
 import '../../models/monumento.dart';
 
-import '../../models/municipio.dart';
-
 final padilla = Municipio(
   id: 'padilla',
   nombre: 'Padilla',
@@ -38,9 +36,7 @@ Padilla es un municipio que conserva su identidad rural y sus tradiciones. A pes
 
   imagenAsset: 'assets/images/padilla.jpg',
   imagenes: [
-    'assets/images/padilla_1.jpg',
-    'assets/images/padilla_2.jpg',
-    'assets/images/padilla_3.jpg',
+    'assets/fotos/Padilla.png',
   ],
   poblacion: '7,000 hab.',
   superficie: '600 km²',
