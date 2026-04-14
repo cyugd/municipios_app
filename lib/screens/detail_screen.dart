@@ -108,8 +108,19 @@ class _DetailScreenState extends State<DetailScreen> {
     }
 
     _sectionWidgets = [];
+    final Set<GlobalKey> usedKeys = {};
+    
     for (var section in sections) {
-      final key = _findKeyForSection(section['title']!);
+      GlobalKey key = _findKeyForSection(section['title']!);
+      
+      // Si la llave ya fue asignada a una sección anterior, generamos una nueva única
+      // para este widget específico para evitar el error de "Duplicate keys".
+      if (usedKeys.contains(key)) {
+        key = GlobalKey();
+      } else {
+        usedKeys.add(key);
+      }
+
       _sectionWidgets.add(
         Container(
           key: key,
@@ -121,20 +132,21 @@ class _DetailScreenState extends State<DetailScreen> {
   }
 
   GlobalKey _findKeyForSection(String title) {
-    final mapping = {
-      'Historia Detallada': _sections[0]['key'],
-      'Geografía y Medio Ambiente': _sections[1]['key'],
-      'Demografía': _sections[2]['key'],
-      'Economía': _sections[3]['key'],
-      'Turismo y Atractivos': _sections[4]['key'],
-      'Cultura y Tradiciones': _sections[5]['key'],
-      'Educación y Salud': _sections[6]['key'],
-      'Infraestructura y Comunicaciones': _sections[7]['key'],
-      'Personajes Ilustres': _sections[8]['key'],
-      'Datos Curiosos': _sections[9]['key'],
-      'Perspectivas Futuras': _sections[10]['key'],
-    };
-    return mapping[title] ?? GlobalKey();
+    final cleanTitle = title.toLowerCase().trim();
+    
+    if (cleanTitle.contains('historia')) return _sections[0]['key'];
+    if (cleanTitle.contains('geografía') || cleanTitle.contains('ubicación')) return _sections[1]['key'];
+    if (cleanTitle.contains('demografía') || cleanTitle.contains('población')) return _sections[2]['key'];
+    if (cleanTitle.contains('economía')) return _sections[3]['key'];
+    if (cleanTitle.contains('turismo')) return _sections[4]['key'];
+    if (cleanTitle.contains('cultura')) return _sections[5]['key'];
+    if (cleanTitle.contains('educación')) return _sections[6]['key'];
+    if (cleanTitle.contains('infraestructura')) return _sections[7]['key'];
+    if (cleanTitle.contains('personajes')) return _sections[8]['key'];
+    if (cleanTitle.contains('curiosidades') || cleanTitle.contains('datos')) return _sections[9]['key'];
+    if (cleanTitle.contains('futuro') || cleanTitle.contains('perspectivas')) return _sections[10]['key'];
+    
+    return GlobalKey();
   }
 
   Widget _buildSection(String title, String content) {
