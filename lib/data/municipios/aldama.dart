@@ -5,73 +5,77 @@ final aldama = Municipio(
   id: 'aldama',
   nombre: 'Aldama',
   descripcionCorta: 'Conocido por sus hermosas playas, biodiversidad y reserva de la biosfera.',
-  descripcionLarga:  '''
+  descripcionLarga:'''
 ## Introducción
-Aldama es un municipio ubicado en el estado de Tamaulipas, al noreste de México. Se caracteriza por su tranquilidad y por la calidez de su gente, que conserva tradiciones y costumbres de generaciones pasadas. La región presenta paisajes variados como llanuras, zonas semiáridas y vegetación típica del noreste, lo que la hace atractiva para quienes disfrutan de la naturaleza.
+Aldama es un municipio costero del sureste de Tamaulipas, con una rica historia que se remonta a la época prehispánica y que ha sido moldeada por su ubicación estratégica en el Golfo de México. Es famoso por sus playas vírgenes, la Laguna de San Andrés, el santuario de la tortuga lora y la majestuosa Reserva de la Biosfera "El Cielo", que comparte con otros municipios. Su economía se basa en la pesca, la agricultura, el ecoturismo y la explotación de sal. La calidez de su gente y la conservación de tradiciones como la pesca artesanal y las fiestas patronales lo convierten en un destino único.
 
-## Historia de Aldama
-El municipio tiene antecedentes prehispánicos, ya que la región fue habitada por grupos indígenas como los Janambres y Pizones. Fue fundado el 11 de diciembre de 1749 por José de Escandón con el nombre de Villa de Santa Bárbara de Aldama. En 1828 cambió su nombre a Aldama en honor al héroe de la Independencia Juan Aldama. Durante el siglo XIX participó en procesos importantes del estado y, en la Revolución Mexicana, hubo movimientos locales. En 1920 se consolidó como municipio libre.
+## Historia
+La región estaba habitada por los "pames" y "janambres", pueblos nómadas que vivían de la caza, pesca y recolección. Se han encontrado concheros (acumulaciones de conchas) y utensilios de piedra en la playa Tesoro y en la laguna de San Andrés, que datan de hace 2,000 años.  
+En 1749, José de Escandón fundó la villa de Aldama, nombrándola en honor al capitán Ignacio Aldama, uno de sus lugartenientes. Fue parte de la colonización del Nuevo Santander. Durante el virreinato, la actividad principal fue la ganadería extensiva y el contrabando por mar.  
+Durante la Independencia, Aldama fue un punto estratégico para los insurgentes, que recibían armas por mar. En 1827 se constituyó como municipio. En 1846, durante la guerra con Estados Unidos, fuerzas norteamericanas desembarcaron en sus playas y ocuparon brevemente la zona.  
+La Revolución Mexicana trajo enfrentamientos entre carrancistas y villistas, con combates en la costa. En 1920 se inició la explotación de salinas y la pesca se industrializó. En 1970 se construyó la carretera costera, impulsando el turismo. En 1986 se decretó la Reserva de la Biosfera "El Cielo", y en 1990 se estableció el campamento tortuguero de Rancho Nuevo.
 
-## Ubicación y Población
-Aldama se encuentra en la parte central de Tamaulipas, en la región conocida como la Cuenca Central, a unos 180 metros sobre el nivel del mar. Tiene una población total de 29,385 habitantes (2020), de los cuales 13,450 viven en la cabecera municipal. Su ubicación es estratégica, ya que conecta con otros municipios y facilita el acceso a distintas regiones.
+## Geografía y Medio Ambiente
+Aldama se localiza al sureste de Tamaulipas, entre los 22°45' y 23°15' de latitud norte y los 98°00' y 98°45' de longitud oeste. Limita al norte con González, al sur con el Golfo de México y Altamira, al este con Soto la Marina y al oeste con San Luis Potosí. Su costa se extiende por 35 km, con playas arenosas y acantilados bajos.  
+**Extensión:** 1,200 km². Dos regiones bien definidas: la **Sierra de Tamaulipas** al oeste (hasta 1,200 msnm) y la **llanura costera** al este, con dunas, humedales y lomeríos bajos.  
+**Hidrografía:** Ríos Soto la Marina y Carrizal. Lagunas costeras: San Andrés (50 km²), Almagre y Chila.  
+**Clima:** Cálido subhúmedo, temperatura media anual 24°C, precipitación 800 mm.  
+**Flora y fauna:** Selva baja caducifolia, manglares, dunas; venado cola blanca, jaguarundí, ocelote, tortugas marinas, aves migratorias.  
+**Áreas protegidas:** Reserva de la Biosfera "El Cielo" (UNESCO) y Santuario Playa de Rancho Nuevo (tortuga lora).
+
+## Demografía
+Según el censo 2020, Aldama tiene 30,250 habitantes (15,200 hombres, 15,050 mujeres). Densidad: 25 hab/km². El 40% vive en la cabecera municipal, el resto en localidades rurales y costeras como Barra del Tordo, La Pesca, Nuevo Progreso, y El Carrizo.  
+La población es mayoritariamente joven, con edad promedio de 28 años. Hay una pequeña comunidad de hablantes de lenguas indígenas (huasteco, náhuatl) y afrodescendientes en la costa.
 
 ## Economía
-La economía de Aldama se basa principalmente en actividades primarias como la agricultura y la ganadería, además del comercio local que ha ido creciendo con el tiempo.
+- **Pesca:** Principal actividad. Se captura camarón, jaiba, huachinango, mojarra, ostión, pulpo. 15 cooperativas pesqueras en La Pesca, Barra del Tordo y Tepehuaje. Acuacultura de camarón en granjas (200 hectáreas).  
+- **Agricultura:** Sorgo, maíz, soya, caña de azúcar, cítricos. En la sierra, café de altura orgánico.  
+- **Ganadería:** Bovino para carne (35,000 cabezas), porcino, caprino. Producción de leche y queso artesanal.  
+- **Salineras:** Explotación de sal marina en La Pesca (10,000 ton/año industrial, 500 ton doméstica).  
+- **Turismo:** Playas, pesca deportiva, observación de tortugas, ecoturismo en la sierra. 5 hoteles, cabañas ecológicas.
 
-**Agricultura**
-Es uno de los pilares económicos del municipio. Se cultivan productos como maíz, frijol, sorgo y hortalizas (tomate, chile y cebolla). Esta actividad emplea aproximadamente al 40% de la población económicamente activa.
+## Turismo y Atractivos
+- **Playas:** La Pesca (palapas, restaurantes, anidación de tortugas), Barra del Tordo (virgen, manglares), Playa Tesoro (pequeña cala).  
+- **Reserva de la Biosfera "El Cielo":** Bosque de niebla, cascadas (El Salto, La Peñita), orquídeas, caminatas, camping.  
+- **Santuario de la Tortuga Lora (Rancho Nuevo):** Protección de nidos, liberación de crías (abril-julio).  
+- **Laguna de San Andrés:** Kayak, observación de aves (garzas, pelícanos, flamencos), pesca deportiva.  
+- **Río Soto la Marina:** Paseos en lancha, pesca de robalo y mojarra.  
+- **Zona Arqueológica "El Sabinito":** Petrograbados prehispánicos (figuras animales, espirales).  
+- **Festividades:** Fiesta de la Tortuga (junio), Feria del Marisco (agosto), San Juan Bautista (24 de junio), Día de la Marina (1 de junio).
 
-**Ganadería**
-Incluye la producción de ganado bovino (carne y leche), caprino, avicultura y apicultura. Existen más de 150 unidades de producción pecuaria, lo que la convierte en una actividad importante para la economía local.
+## Cultura y Tradiciones
+**Artesanías:** Tejidos de palma (sombreros, cestos), artículos de concha y caracol (collares, pulseras), tallas de madera de mangle.  
+**Música y danza:** Música norteña, huapango. Danzas: "La Danza del Pescado", "El Caballito", "La Huasteca".  
+**Leyendas:** La sirena de la laguna de San Andrés que atrae a los pescadores, el tesoro escondido de los piratas.  
+**Gastronomía:** Camarones al mojo de ajo, jaiba rellena, huachinango a la talla, caldo de pescado, empanadas de camarón, ostiones en su concha, dulces de coco y plátano.
 
-**Comercio**
-El comercio incluye tiendas, mercados, talleres, restaurantes y servicios. También hay intercambio comercial con municipios cercanos y venta de artesanías. La mayor actividad se concentra en el centro del municipio.
+## Educación y Salud
+**Educación:** 12 preescolares, 18 primarias, 5 secundarias (una técnica en pesca), 2 bachilleratos (CBTIS en La Pesca, COBAT en cabecera), extensión de la UAT (ingeniería ambiental y turismo sostenible). Tasa de alfabetización: 94%.  
+**Salud:** 2 centros de salud (IMSS Bienestar) en cabecera y La Pesca, 1 clínica del ISSSTE, 1 hospital comunitario con 20 camas.
 
-## Gastronomía
-Destacan platillos como el cabrito al pastor, tamales de elote, gorditas de horno y dulces regionales. La gastronomía refleja la mezcla de tradiciones indígenas y españolas.
+## Infraestructura y Comunicaciones
+Carretera federal 180 (Tampico-Ciudad Victoria) y carretera estatal pavimentada a La Pesca (30 km) y Barra del Tordo (45 km). Servicio de autobuses cada hora a Tampico (80 km) y Ciudad Victoria (150 km). Internet de banda ancha en cabecera y La Pesca. Puerto pesquero en La Pesca.
 
-## Turismo
-El turismo es una actividad en desarrollo que incluye turismo cultural, rural y gastronómico. Aldama también destaca por su entorno natural, ya que es un municipio cercano a la costa.
+## Personajes Ilustres
+- **Profesor Manuel Gómez (1900-1978):** Educador y escritor, autor de la "Historia de Aldama".  
+- **Capitán José Luis García (1920-2005):** Pionero de la pesca industrial.  
+- **Doña Rosa Martínez (1935-2020):** Defensora de la tortuga lora, fundadora del campamento de Rancho Nuevo.  
+- **Doctora Ana María Torres (1950- ):** Bióloga marina, especialista en conservación de manglares.
 
-**Atractivos Naturales**
-Entre sus principales atractivos están la Laguna Madre, uno de los sistemas lagunares más grandes de México, y la Barra del Tordo, conocida por sus playas vírgenes y conservación de la tortuga lora. También hay esteros, manglares y zonas arqueológicas como El Sabinito.
+## Datos Curiosos
+- Se han avistado ballenas jorobadas en La Pesca (enero-marzo).  
+- Se liberan más de 100,000 crías de tortuga lora al año.  
+- La laguna de San Andrés es sitio Ramsar (humedal de importancia internacional).  
+- En Barra del Tordo se filmó una escena de la película "Apocalypto" de Mel Gibson.
 
-**Atractivos Turísticos**
-Cuenta con parque natural, iglesias, ríos, plazas y espacios recreativos. Estos lugares permiten conocer tanto la naturaleza como la cultura del municipio.
-
-**Iglesias**
-Destacan la Iglesia de Santa Bárbara, la Capilla de San José y el Templo del Sagrado Corazón, además de ermitas en comunidades rurales.
-
-**Naturaleza**
-Incluye el río Aldama, manantiales, áreas de pesca y zonas para observar aves, ideales para actividades al aire libre.
-
-**Espacios Públicos**
-La plaza principal, el Jardín Hidalgo, parques infantiles y andadores son puntos de convivencia social y recreación para los habitantes.
-
-**Festividades**
-Se celebran la feria municipal en diciembre, el Día de Santa Bárbara el 4 de diciembre, el Festival del Maíz y eventos de Semana Santa, que mantienen vivas las tradiciones.
-
-## Educación
-El sistema educativo ofrece niveles desde básico hasta medio superior, además de algunas extensiones universitarias.
-
-**Infraestructura Educativa**
-Cuenta con 15 primarias, 5 secundarias, 3 preparatorias y centros de educación especial, cubriendo las necesidades básicas del municipio.
-
-**Estadísticas Educativas**
-La alfabetización es del 94%, con una escolaridad promedio de 8.5 años. Hay 4,200 estudiantes, una deserción del 2.8% y una eficiencia del 91% en primaria.
-
-**Servicios Educativos**
-Incluyen transporte escolar, bibliotecas, acceso a computadoras e internet, programas de alimentación y actividades deportivas y culturales.
-
-**Retos Educativos**
-Los principales desafíos son mejorar la infraestructura, capacitar a docentes, ampliar el acceso a tecnología, fortalecer la educación a distancia y ofrecer más opciones técnicas.
-
-## Ubicación y Acceso
-Se localiza en la región central de Tamaulipas, con coordenadas 24.0665° N y 98.3762° W, a 180 msnm. Tiene acceso por la Carretera Federal 101 y carreteras estatales hacia González y Altamira. Limita con González, Altamira, Abasolo y Casas.
+## Perspectivas Futuras
+Aldama busca consolidarse como destino ecoturístico, mejorar la infraestructura costera con un muelle turístico, y proteger sus ecosistemas. Se planea un parque eólico (50 MW) y la ampliación del puerto pesquero de La Pesca. En educación, se proyecta una escuela de biología marina.
 ''',
   imagenAsset: 'assets/images/aldama.jpeg',
   imagenes: [
     'assets/fotos/aldama.png',
+    'assets/fotos/aldama1-i.jpg',
+    'assets/fotos/aldama2-i.jpg'
   ],
   poblacion: '30,250 hab.',
   superficie: '1,200 km²',

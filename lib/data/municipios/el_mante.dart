@@ -7,52 +7,65 @@ final el_mante = Municipio(
   descripcionCorta: 'Tradición cañera y riqueza agrícola en el sur de Tamaulipas.',
   descripcionLarga: '''
 ## Introducción
-Ciudad Mante es un municipio ubicado al sur del estado de Tamaulipas, reconocido por su riqueza agrícola, su tradición cañera y la calidez de su gente. Su identidad está profundamente ligada al campo, a la producción de caña de azúcar y a las costumbres que han pasado de generación in generación.
+El Mante es un municipio ubicado en la región sur del estado de Tamaulipas, dentro de la fértil región huasteca. Es conocido como la “Capital de la Caña de Azúcar” por su enorme producción azucarera, la cual ha moldeado su economía, cultura y paisaje. Rodeado por el río Mante y la Sierra Madre Oriental, este municipio combina la tradición agrícola con bellezas naturales como cascadas, lagunas y grutas. Su gente, cálida y trabajadora, conserva vivas las tradiciones huastecas, el huapango y una gastronomía única. Es un destino imperdible para los amantes de la naturaleza.
 
 ## Historia
-El Mante tiene sus orígenes in comunidades indígenas huastecas que habitaban la región y aprovechaban los recursos naturales. Durante la época colonial se establecieron haciendas agrícolas y ganaderas que impulsaron el desarrollo económico.
+La historia de El Mante se remonta a la época prehispánica, cuando la región estaba habitada por grupos huastecos que aprovechaban los fértiles valles y el río Guayalejo. Durante la colonia, se establecieron haciendas ganaderas y cañeras. Fue en el siglo XX cuando el municipio despegó gracias a la construcción del ingenio azucarero “Aaron Sáenz” (hoy Ingenio El Mante), que atrajo inversión y población.  
+El ferrocarril y la carretera nacional contribuyeron a su crecimiento. Durante la Revolución Mexicana, la región fue escenario de paso de tropas y reparto de tierras. En 1926, El Mante fue elevado a villa y en 1950 a ciudad. Hoy es un importante centro comercial y de servicios del sur de Tamaulipas.
 
-Con el paso del tiempo, el municipio se consolidó como un importante centro productor de caña de azúcar y cítricos. En el siglo XX, la creación del ingenio azucarero fortaleció su crecimiento económico y social, convirtiéndolo in uno de los municipios más importantes del sur de Tamaulipas.
-
-## Geografía
-Se localiza in la región sur del estado, dentro de la cuenca del Río Guayalejo. Su territorio está formado por planicies, zonas agrícolas y cuerpos de agua.
-
-El clima es cálido subhúmedo, con temperaturas elevadas durante el verano. La presencia del Río Mante permite el desarrollo agrícola mediante sistemas de riego.
+## Geografía y Población
+Se localiza en el sur del estado, en el valle del río Guayalejo, rodeado de lomeríos y la Sierra Madre Oriental. Su altitud promedio es de 80 msnm. El clima es cálido subhúmedo, con temperatura media de 24°C y lluvias en verano.  
+Población: aproximadamente 120,000 habitantes (2020), siendo la cuarta ciudad más poblada del estado. La economía gira en torno al ingenio, la agricultura (caña, maíz, sorgo, cítricos), el comercio y el turismo ecológico.
 
 ## Economía
-La economía se basa principalmente in la agricultura, la ganadería, el comercio y la industria azucarera.
+- **Agricultura:** Caña de azúcar (principal cultivo), maíz, sorgo, frijol, cítricos.  
+- **Industria:** Ingenio azucarero, empacadoras de cítricos, fábricas de alimentos.  
+- **Comercio y servicios:** Centros comerciales, hoteles, restaurantes, servicios financieros.  
+- **Turismo:** Cascadas, balnearios, grutas y ecoturismo.
 
-El cultivo de caña de azúcar es la actividad más importante, seguido por maíz, sorgo y cítricos. También destaca la ganadería bovina y el comercio local, además del turismo natural que ha ido creciendo in los últimos años.
+## Cultura y Tradiciones
+El Mante es cuna del huapango huasteco y de la música norteña. Las festividades más importantes son:  
+- **Feria del Azúcar (abril):** Desfiles, juegos mecánicos, conciertos y exposiciones.  
+- **Fiestas patronales (San Antonio de Padua, 13 de junio):** Procesiones, danzas y jaripeos.  
+- **Día de Muertos:** Altares y catrinas.  
+- **Semana Santa:** Representaciones del viacrucis en el Cerro de la Cruz.  
+**Artesanías:** Bordados huastecos, cestería, talabartería.  
+**Gastronomía:** Cecina enchilada, enchiladas huastecas, zacahuil (tamal gigante), tamales de elote, asado de boda, pescado frito del río; postres: pan de caña, dulce de calabaza, jamoncillos; bebidas: atole de masa, café de olla.  
+**Leyendas:** Se dice que en la Cascada de Micos habita una sirena que protege las pozas.
 
-## Cultura
-La cultura de Ciudad Mante se caracteriza por su música regional, como el huapango y la música norteña. Las festividades, ferias y eventos tradicionales forman parte esencial de la vida cotidiana.
+## Turismo y Atractivos
+- **Cascada de Micos:** Cascada de 15 m con pozas turquesas, ideal para nadar y rapel.  
+- **Laguna del Nacimiento:** Manantial de agua cristalina rodeado de vegetación.  
+- **Cañón del Novillo:** Cañón con paredes de roca, cascada y senderismo.  
+- **Grutas de Quintero:** Cavernas con formaciones calcáreas.  
+- **Presa San José:** Pesca y paseos en lancha.  
+- **Parroquia de San Antonio de Padua:** Iglesia principal.  
+- **Cerro de la Cruz:** Mirador de la ciudad.  
+- **Balneario El Chorrito:** Aguas termales.
 
-Destaca la Feria del Azúcar, donde se celebran actividades culturales, bailes y exposiciones que reflejan la identidad del municipio.
+## Educación y Salud
+Cuenta con el CBTA 97 (agropecuario), COBAT, CETIS, CONALEP, y campus de la UAT. En salud, hospital general, clínicas del IMSS e ISSSTE.
 
-## Valores
-Los habitantes de Ciudad Mante se distinguen por valores como el respeto, la solidaridad, la unión familiar y la hospitalidad.
+## Personajes Ilustres
+- **Don Aarón Sáenz (1891-1983):** Impulsor del ingenio azucarero.  
+- **General Pedro José Méndez (1795-1866):** Héroe tamaulipeco.  
+- **Profesor Juan López (1920-2000):** Educador local.
 
-## Costumbres
-Las costumbres están relacionadas con el trabajo agrícola, la religión y las celebraciones tradicionales. Son comunes las fiestas patronales, los bailes regionales y las reuniones familiares.
+## Datos Curiosos
+- La Cascada de Micos es uno de los balnearios más famosos de Tamaulipas.  
+- El zacahuil es un tamal gigante que puede pesar hasta 30 kg.  
+- El ingenio produce azúcar de alta calidad.  
+- En la laguna del Nacimiento hay tilapias gigantes.  
+- El Cañón del Novillo es ideal para rappel.
 
-## Gastronomía
-La gastronomía mantense combina sabores huastecos y productos locales. Entre los platillos más representativos se encuentran la cecina, enchiladas huastecas, pan de caña y diversos antojitos elaborados con maíz, carne y piloncillo.
-
-## Educación
-El municipio cuenta con instituciones educativas desde nivel básico hasta medio superior y superior. Existen escuelas primarias, secundarias, bachilleratos y centros técnicos.
-
-## Sociedad
-La sociedad de Ciudad Mante se caracteriza por su sentido de comunidad, su identidad cañera y su ambiente tranquilo. Los habitantes participan activamente in eventos culturales, deportivos y sociales.
-
-## Turismo
-El turismo se enfoca in la naturaleza y la recreación. Entre los principales atractivos destacan el Río Mante, la Laguna del Nacimiento y el Cañón del Novillo, donde se pueden realizar actividades como senderismo, kayak y ecoturismo.
-
-## Conclusión
-Ciudad Mante es un municipio que combina tradición, naturaleza y desarrollo agrícola. Su historia, basada in la producción cañera, y su riqueza cultural lo convierten in un lugar representativo del sur de Tamaulipas.
+## Perspectivas Futuras
+Se busca fortalecer el turismo sostenible, mejorar la infraestructura de las cascadas y grutas, y diversificar la agricultura.
 ''',
   imagenAsset: 'assets/images/el_mante.jpg',
   imagenes: [
     'assets/fotos/el mante.png',
+    'assets/fotos/elmante1.jpg',
+    'assets/fotos/ciudad-mante-tamaulipas.jpg'
   ],
   poblacion: '80,000 hab.',
   superficie: '1,600 km²',
@@ -67,3 +80,31 @@ Ciudad Mante es un municipio que combina tradición, naturaleza y desarrollo agr
     ),
   ],
 );
+
+
+final List<Map<String, dynamic>> lugaresElMante = [
+  {
+    'nombre': 'Cascada de Micos',
+    'descripcion': 'Cascada y pozas de agua turquesa.',
+    'lat': 22.8167,
+    'lng': -98.9333,
+  },
+  {
+    'nombre': 'Laguna del Nacimiento',
+    'descripcion': 'Manantial de agua cristalina.',
+    'lat': 22.8000,
+    'lng': -98.9667,
+  },
+  {
+    'nombre': 'Cañón del Novillo',
+    'descripcion': 'Cañón con cascada y senderismo.',
+    'lat': 22.7833,
+    'lng': -99.0000,
+  },
+  {
+    'nombre': 'Grutas de Quintero',
+    'descripcion': 'Cuevas con estalactitas.',
+    'lat': 22.7600,
+    'lng': -98.9000,
+  },
+];

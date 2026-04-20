@@ -7,59 +7,62 @@ final mendez = Municipio(
   descripcionCorta: 'Comunidad rural con tradición agrícola y ganadera.',
   descripcionLarga: '''
 ## Introducción
-Méndez es un municipio ubicado en el estado de Tamaulipas, en la región noreste de México. Se distingue por su riqueza histórica, su ambiente rural y la calidez de su gente. A lo largo del tiempo, ha conservado tradiciones y costumbres que reflejan la identidad de sus habitantes y su conexión con el campo.
-
-## Ubicación
-Se localiza en el noreste de Tamaulipas, dentro del Valle de San Fernando. Forma parte de los 43 municipios del estado y cuenta con un territorio amplio, con predominio de zonas rurales dedicadas a la agricultura y la ganadería.
-
-## Población
-Cuenta con aproximadamente 4,280 habitantes según el censo de 2020. La población ha mostrado una ligera disminución debido a la migración y la falta de oportunidades.
+Méndez es un municipio ubicado en el noreste de Tamaulipas, dentro del Valle de San Fernando. Es una comunidad esencialmente rural, donde la vida transcurre entre campos de cultivo y ganadería. Su gente, trabajadora y hospitalaria, mantiene vivas las tradiciones norteñas, las fiestas patronales y una gastronomía auténtica. Es un lugar ideal para quienes buscan tranquilidad y contacto con la naturaleza.
 
 ## Historia
-El origen del municipio se remonta al 1 de julio de 1866, cuando la Congregación La Laja fue elevada a Villa de la Laja. En 1868, mediante decreto estatal, se reconoció como municipio y se propuso el nombre de Méndez en honor a Pedro José Méndez. Durante los siglos XIX y XX, el municipio consolidó su carácter rural con haciendas y comunidades agrícolas.
+El origen del municipio se remonta al 1 de julio de 1866, cuando la Congregación La Laja fue elevada a Villa de la Laja. En 1868, mediante decreto estatal, se reconoció como municipio y se propuso el nombre de Méndez en honor a Pedro José Méndez, héroe tamaulipeco que combatió en la Intervención Francesa.  
+Durante los siglos XIX y XX, el municipio consolidó su carácter rural con haciendas y comunidades agrícolas. Su desarrollo urbano se organizó alrededor de la plaza principal, la parroquia y la presidencia municipal. La Revolución Mexicana trajo consigo el reparto de tierras y la formación de ejidos.
+
+## Geografía y Población
+Se localiza en el noreste de Tamaulipas, dentro del Valle de San Fernando. Su relieve es plano, con suelos fértiles aptos para la agricultura de riego y temporal. El clima es cálido y semiárido, con temperaturas que superan los 40°C en verano.  
+Población: aproximadamente 4,280 habitantes (2020), distribuida en pequeñas comunidades rurales. La migración hacia Reynosa, Matamoros y Estados Unidos es común.
 
 ## Economía
-La economía se basa principalmente en actividades primarias como la agricultura y la ganadería, complementadas por el comercio local y servicios básicos.
+- **Agricultura:** Sorgo, maíz, frijol, forrajes.  
+- **Ganadería:** Bovina, caprina, ovina.  
+- **Comercio local:** Tiendas de abarrotes, talleres, servicios básicos.  
+- **Remesas:** Importante apoyo económico de familiares en EE. UU.
 
-**Agricultura**: Se cultivan productos como sorgo, maíz y forrajes.
+## Cultura y Tradiciones
+**Fiestas patronales en honor a Nuestra Señora de Monserrat (septiembre):** Misas, procesiones, danzas, jaripeos y música norteña.  
+**Feria de la Cosecha (agosto):** Exposiciones agrícolas, ganaderas y artesanales.  
+**Día de Muertos:** Altares y visitas al cementerio.  
+**Tradiciones:** Reuniones familiares con carne asada, cabalgatas, torneos de béisbol y volibol.  
+**Gastronomía:** Carne asada, cabrito al pastor, tamales, enchiladas, asado de puerco; postres: empanadas de calabaza, pan casero, conservas de frutas; bebidas: café de olla, atole.  
+**Artesanías:** Talabartería, tejidos de palma.
 
-**Ganadería**: La ganadería es una actividad clave, destacando la producción de carne, cabrito y derivados.
+## Turismo y Atractivos
+- **Parroquia de Nuestra Señora de Monserrat:** Templo de arquitectura sencilla.  
+- **Plaza principal:** Jardín con kiosco, centro de reunión.  
+- **Paisajes rurales:** Campos de cultivo y pastizales, ideales para caminatas y descanso.  
+- **Áreas de caza:** Para quienes gustan de la cinegética.  
+- **Presa de Méndez:** Pesca de mojarra.
 
-**Comercio**: El comercio incluye tiendas, talleres y servicios básicos.
+## Educación y Salud
+Cuenta con preescolar, primaria, telesecundaria y telebachillerato. Para estudios superiores, los jóvenes viajan a Reynosa o Matamoros. En salud, un centro de salud rural.
 
-## Cultura
-La cultura de Méndez se basa en tradiciones familiares, celebraciones religiosas y un fuerte sentido de comunidad. La música, la danza y la gastronomía forman parte esencial de su identidad.
+## Personajes Ilustres
+- **Pedro José Méndez (1795-1866):** Héroe de la Intervención Francesa.  
+- **Don José López (1900-1980):** Promotor de la agricultura local.  
+- **Profesora María García (1930-2010):** Fundadora de la escuela.
 
-## Valores
-Los valores principales son el respeto, la solidaridad, el trabajo en equipo y la devoción religiosa.
+## Datos Curiosos
+- El municipio lleva el nombre de un héroe tamaulipeco.  
+- La feria de la cosecha atrae a visitantes de la región.  
+- El cabrito al pastor es el platillo típico.  
+- En la plaza principal hay un kiosco de hierro forjado.  
+- La parroquia fue construida en el siglo XIX.
 
-## Costumbres
-Es común que las familias se reúnan en plazas y espacios públicos los fines de semana. También se realizan eventos culturales, deportivos y festivales.
-
-## Festividades
-Destacan las fiestas patronales en honor a Nuestra Señora de Monserrat, la Feria de la Cosecha y eventos culturales con música, bailes y exposiciones agrícolas.
-
-## Gastronomía
-La comida típica incluye carne asada, cabrito al pastor, tamales, enchiladas tamaulipecas y asado de puerco. También destacan postres como empanadas, pan casero y conservas de frutas.
-
-## Educación
-El municipio cuenta con educación básica y media superior, aunque no dispone de universidades importantes, por lo que los estudiantes deben trasladarse a otras ciudades.
-
-## Sociedad
-La sociedad es pequeña, rural y unida. Las familias son numerosas y mantienen un estilo de vida tranquilo.
-
-## Turismo
-El turismo se enfoca en lo cultural y natural. Los visitantes pueden disfrutar de la tranquilidad, los paisajes rurales y las tradiciones del municipio.
-
-**Atractivos turísticos**: Destacan la parroquia de Nuestra Señora de Monserrat, la presidencia municipal, la plaza principal y los paisajes rurales.
-
-## Conclusión
-Méndez, Tamaulipas, es un municipio que refleja la esencia de las comunidades rurales del noreste de México. Su historia, tradiciones y forma de vida muestran una identidad fuerte basada en el trabajo, la familia y la cultura.
+## Perspectivas Futuras
+Se busca mejorar la infraestructura, apoyar la ganadería y fomentar el turismo rural.
 ''',
 
   imagenAsset: 'assets/images/mendez.jpg',
   imagenes: [
     'assets/fotos/Mendez.png',
+    'assets/fotos/mendez-1.jpg',
+    'assets/fotos/mendez-2.jpg'
+
   ],
   poblacion: '2,500 hab.',
   superficie: '1,200 km²',
@@ -74,3 +77,24 @@ Méndez, Tamaulipas, es un municipio que refleja la esencia de las comunidades r
     ),
   ],
 );
+
+final List<Map<String, dynamic>> lugaresMendez = [
+  {
+    'nombre': 'Parroquia de Nuestra Señora de Monserrat',
+    'descripcion': 'Templo principal.',
+    'lat': 25.1167,
+    'lng': -98.3333,
+  },
+  {
+    'nombre': 'Plaza Principal',
+    'descripcion': 'Centro de convivencia social.',
+    'lat': 25.1160,
+    'lng': -98.3320,
+  },
+  {
+    'nombre': 'Áreas rurales',
+    'descripcion': 'Paisajes agrícolas y ganaderos.',
+    'lat': 25.1200,
+    'lng': -98.3300,
+  },
+];

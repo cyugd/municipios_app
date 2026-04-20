@@ -7,70 +7,66 @@ final miguel_aleman = Municipio(
   descripcionCorta: 'Ciudad fronteriza con identidad binacional y desarrollo comercial.',
   descripcionLarga: '''
 ## Introducción
-Ciudad Miguel Alemán es un municipio fronterizo ubicado en el norte de Tamaulipas. Se caracteriza por su importancia estratégica, su identidad binacional y su desarrollo ligado al comercio, la agricultura y la convivencia con Estados Unidos.
-
-## Ubicación
-Se localiza en la frontera con Estados Unidos, frente a Roma, Texas, a orillas del río Bravo. Forma parte de la región fronteriza del norte de Tamaulipas y cuenta con una altitud aproximada de 55 metros sobre el nivel del mar.
-
-## Población
-Cuenta con aproximadamente 27,015 habitantes en 2020, de los cuales cerca de 18,592 viven en la cabecera municipal. La población es mayormente joven y presenta una dinámica influenciada por la migración hacia Estados Unidos.
+Ciudad Miguel Alemán es un municipio fronterizo del norte de Tamaulipas, frente a Roma, Texas, a orillas del Río Bravo. Es una ciudad joven, fundada a mediados del siglo XX, que ha crecido gracias a la agricultura, el comercio binacional y, en años recientes, al turismo cinegético (caza de paloma ala blanca). Su identidad combina la tradición rural con la influencia texana, ofreciendo una experiencia única de frontera. Es un lugar de paso para muchos migrantes y un punto de intercambio cultural.
 
 ## Historia
-El municipio fue creado oficialmente el 11 de octubre de 1950 mediante el Decreto Núm. 294. Su cabecera se formó a partir del poblado de San Pedro de Roma, adoptando el nombre de Miguel Alemán en honor al presidente Miguel Alemán Valdés.
+La región tiene antecedentes históricos desde la época colonial, cuando se establecieron ganaderías. Sin embargo, el municipio fue creado oficialmente el 11 de octubre de 1950 mediante el Decreto Núm. 294. Su cabecera se formó a partir del poblado de San Pedro de Roma, adoptando el nombre de Miguel Alemán en honor al presidente Miguel Alemán Valdés.  
+El desarrollo se vio impulsado por el comercio en el río Bravo, la construcción del puente internacional (1950) y la presa Marte R. Gómez (1958). En las últimas décadas, la maquila y el turismo de caza han diversificado la economía. La ciudad ha crecido de manera ordenada, con fraccionamientos y zonas comerciales.
 
-En el siglo XX, la construcción del puente internacional y la presa Marte R. Gómez impulsaron el crecimiento económico.
-
-## Geografía
-El municipio se encuentra en una llanura aluvial con relieve plano. Presenta un clima cálido semiseco con temperaturas extremas. La hidrografía está dominada por el río Bravo y la presa Marte R. Gómez.
+## Geografía y Población
+Se ubica en una llanura aluvial, con clima cálido semiseco, temperaturas extremas. La hidrografía está dominada por el Río Bravo y la presa Marte R. Gómez.  
+Población: aproximadamente 27,000 habitantes (2020), mayoritariamente joven, con influencia de migrantes internos. La mayoría se dedica al comercio, la agricultura y los servicios.
 
 ## Economía
-La economía se basa en la agricultura, ganadería, comercio, servicios y turismo, destacando su actividad fronteriza.
+- **Agricultura:** Maíz, sorgo, algodón, melón, hortalizas (bajo riego).  
+- **Ganadería:** Bovina, porcina, ovina, caprina.  
+- **Pesca:** En la presa Marte R. Gómez (tilapia, bagre).  
+- **Comercio transfronterizo:** Puente internacional con Roma, Texas.  
+- **Turismo:** Cinegético (paloma ala blanca), pesca deportiva, eventos culturales.  
+- **Maquiladoras:** Algunas plantas de manufactura.
 
-**Agricultura**: Se cultivan productos como maíz, sorgo, algodón, melón y hortalizas.
+## Cultura y Tradiciones
+**Aniversario del municipio (11 de octubre):** Desfiles, conciertos, feria regional.  
+**Torneo de Pesca (marzo):** En la presa.  
+**Semana Santa y Día de Muertos** con tradiciones mexicanas.  
+**Música norteña y banda** predominan.  
+**Artesanías:** Talabartería, trabajos en cuero, bordados.  
+**Gastronomía:** Carne asada, cabrito al pastor, tamales, enchiladas, machacado, frijoles charros; postres: cajetas, glorias, empanadas.  
+**Valores:** Hospitalidad, laboriosidad, unidad familiar, resiliencia.
 
-**Ganadería**: Se desarrolla la cría de bovinos, porcinos, ovinos y caprinos.
+## Turismo y Atractivos
+- **Presa Marte R. Gómez:** Ideal para pesca, camping y deportes acuáticos.  
+- **Puente Internacional Miguel Alemán – Roma:** Cruce fronterizo.  
+- **Plaza Principal:** Jardín y kiosco, centro de eventos.  
+- **Iglesia de San Pedro Apóstol:** Templo moderno.  
+- **Ranchos cinegéticos:** Caza de paloma ala blanca.  
+- **Malecón del Río Bravo:** Área de esparcimiento.  
+- **Parque Recreativo:** Albercas y áreas verdes.
 
-**Pesca**: Se practica en la presa Marte R. Gómez, tanto de forma comercial como deportiva.
+## Educación y Salud
+Cuenta con CBTIS 125, preparatorias, secundarias técnicas, y la Universidad Miguel Alemán (extensión de la UAT). En salud, hospital general y clínicas del IMSS.
 
-**Comercio**: El comercio transfronterizo es uno de los principales motores económicos.
+## Personajes Ilustres
+- **Miguel Alemán Valdés (1900-1983):** Presidente de México.  
+- **Don José López (1920-2000):** Pionero de la agricultura de riego.  
+- **Profesora María Hernández (1930-2015):** Educadora local.
 
-**Turismo**: El turismo se encuentra en crecimiento, enfocado en actividades recreativas, pesca deportiva y eventos culturales.
+## Datos Curiosos
+- El municipio fue creado en 1950.  
+- La presa Marte R. Gómez fue inaugurada en 1958.  
+- La caza de paloma ala blanca atrae a turistas estadounidenses.  
+- El puente internacional es un cruce importante para el comercio.  
+- La ciudad tiene un diseño urbano moderno.
 
-## Cultura
-La cultura refleja una mezcla de tradiciones mexicanas y estadounidenses. La música norteña, la danza folklórica y las celebraciones religiosas son parte esencial de su identidad.
-
-## Valores
-Destacan la hospitalidad, la solidaridad, el sentido de comunidad, el respeto por las tradiciones y la resiliencia.
-
-## Costumbres
-Son comunes las reuniones familiares, las convivencias con carne asada, la música regional y las prácticas culturales influenciadas por la cercanía con Estados Unidos.
-
-## Festividades
-Se celebran el aniversario del municipio el 11 de octubre, las fiestas patrias, la Semana Santa, el Día de Muertos y la feria regional con torneo de pesca.
-
-## Gastronomía
-La comida típica incluye carne asada, cabrito al pastor, tamales, enchiladas, frijoles charros y dulces regionales como cajetas y glorias.
-
-## Educación
-El municipio cuenta con instituciones educativas desde nivel básico hasta superior, incluyendo bachilleratos y universidades locales.
-
-## Sociedad
-La sociedad es activa, trabajadora y con fuerte identidad fronteriza. La convivencia familiar y la cooperación comunitaria son aspectos clave.
-
-## Turismo
-El municipio ofrece atractivos naturales, históricos y culturales, impulsados por su ubicación y su historia.
-
-**Atractivos turísticos**: Destacan la Presa Marte R. Gómez, la Plaza Principal, la Iglesia de San Pedro Apóstol y el Puente Internacional Miguel Alemán–Roma.
-
-**Naturaleza**: Cuenta con áreas ribereñas, ecosistemas naturales y espacios ideales para actividades recreativas y ecoturismo.
-
-## Conclusión
-Ciudad Miguel Alemán, Tamaulipas, es un municipio que refleja la importancia de la vida fronteriza, combinando tradición y modernidad. Su historia, economía y cultura muestran una comunidad resiliente que mantiene sus raíces mientras busca oportunidades de crecimiento.
+## Perspectivas Futuras
+Se busca diversificar la economía, promover el turismo cinegético y mejorar la infraestructura.
 ''',
-
   imagenAsset: 'assets/images/miguel_aleman.jpg',
   imagenes: [
     'assets/fotos/Miguel.png',
+    'assets/fotos/miguel-aleman-2.jpg',
+    'assets/fotos/miguelA2.png',
+
   ],
   poblacion: '25,000 hab.',
   superficie: '200 km²',
@@ -85,3 +81,29 @@ Ciudad Miguel Alemán, Tamaulipas, es un municipio que refleja la importancia de
     ),
   ],
 );
+final List<Map<String, dynamic>> lugaresMiguelAleman = [
+  {
+    'nombre': 'Presa Marte R. Gómez',
+    'descripcion': 'Pesca, camping y deportes acuáticos.',
+    'lat': 26.3333,
+    'lng': -99.0333,
+  },
+  {
+    'nombre': 'Puente Internacional',
+    'descripcion': 'Cruce hacia Roma, Texas.',
+    'lat': 26.4000,
+    'lng': -99.0167,
+  },
+  {
+    'nombre': 'Plaza Principal',
+    'descripcion': 'Centro de la ciudad.',
+    'lat': 26.3990,
+    'lng': -99.0200,
+  },
+  {
+    'nombre': 'Iglesia de San Pedro Apóstol',
+    'descripcion': 'Templo principal.',
+    'lat': 26.3980,
+    'lng': -99.0220,
+  },
+];

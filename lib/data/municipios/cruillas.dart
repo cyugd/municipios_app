@@ -7,45 +7,57 @@ final cruillas = Municipio(
   descripcionCorta: 'Tierra de historia, tradición y raíces rurales.',
   descripcionLarga: '''
 ## Introducción
-Cruillas, Tamaulipas, es un municipio pequeño pero lleno de historia y tradición. Fundado en 1751, su identidad está profundamente ligada a la vida rural, la agricultura y la ganadería. Su población mantiene un estilo de vida tranquilo, basado en valores comunitarios, festividades religiosas y costumbres que han pasado de generación en generación.
+Cruillas es un municipio pequeño pero lleno de historia y tradición, ubicado en el centro-norte de Tamaulipas. Fundado en 1751, su identidad está profundamente ligada a la vida rural, la agricultura y la ganadería. Sus habitantes mantienen un estilo de vida tranquilo, basado en valores comunitarios, festividades religiosas y costumbres que han pasado de generación en generación. Es un lugar ideal para quienes buscan paz y contacto con la naturaleza.
 
 ## Historia
-Cruillas fue fundado in 1751 y debe su nombre al Duque de Cruillas. Durante la época colonial, funcionó como punto de resguardo y apoyo agrícola. Su desarrollo estuvo ligado a haciendas, caminos comerciales y el trabajo del campo.
+Cruillas fue fundado en 1751 y debe su nombre al Duque de Cruillas, virrey de Nueva España. Durante la época colonial, funcionó como punto de resguardo y apoyo agrícola. Su desarrollo estuvo ligado a haciendas, caminos comerciales y el trabajo del campo. En el siglo XIX, participó en la Guerra de Reforma y la Intervención Francesa. En la Revolución Mexicana, la región fue escenario de reparto de tierras y formación de ejidos. En el siglo XX, se mejoraron los caminos y servicios básicos. A pesar de los cambios, la comunidad ha conservado su esencia rural.
 
 ## Geografía y Población
-Ubicado en la región centro-norte de Tamaulipas, Cruillas tiene un clima semiseco y terrenos amplios de llanura. Su población es principalmente rural y está distribuida en varias comunidades agrícolas y ganaderas.
+Ubicado en la región centro-norte de Tamaulipas, Cruillas tiene un clima semiseco y terrenos amplios de llanura. La vegetación es de matorral, pastizal, mezquite y huizache. La fauna incluye venado, coyote, liebre, armadillo y aves.  
+Población: aproximadamente 1,800 habitantes (2020), distribuida en la cabecera y pequeñas comunidades rurales. La migración hacia ciudades más grandes es frecuente.
 
 ## Economía
-La economía del municipio se basa en la ganadería bovina, caprina y ovina, así como en la agricultura de temporal, destacando cultivos como sorgo, maíz y frijol.
+- **Ganadería:** Bovina, caprina, ovina. La producción de cabrito y queso de cabra es importante.  
+- **Agricultura de temporal:** Sorgo, maíz, frijol.  
+- **Comercio local:** Tiendas de abarrotes y servicios básicos.  
+- **Remesas:** Apoyo de familiares en Estados Unidos.
 
-## Cultura y Patrimonio
-La cultura cruillense se refleja en sus festividades religiosas, música regional, arquitectura tradicional y oficios del campo. Su patrimonio es símbolo de historia y orgullo comunitario.
+## Cultura y Tradiciones
+**Fiestas:** En honor a la Virgen de Guadalupe (12 de diciembre) y San Isidro Labrador (15 de mayo), con procesiones, misas, jaripeos, bailes y juegos pirotécnicos. También se celebra el aniversario de la fundación.  
+**Gastronomía:** Discada norteña, carne asada, tamales, asado de puerco, queso fresco y crema. Dulces: jamoncillos, conservas.  
+**Artesanías:** Tejidos de palma, talabartería.  
+**Música:** Norteña y banda.
 
-## Valores
-Entre los valores más importantes destacan el respeto, la solidaridad, el trabajo comunitario y la unión familiar, elementos clave del carácter local.
+## Turismo y Atractivos
+- **Plaza Principal:** Jardín con kiosco.  
+- **Parroquia de la Virgen de Guadalupe:** Templo sencillo.  
+- **Paisajes rurales:** Campos de cultivo y pastizales, ideales para caminatas y fotografía.  
+- **Rutas de cabalgata:** Recorridos por el campo.  
+- **Presa de Cruillas:** Pesca de mojarra.
 
-## Costumbres y Fiestas
-Sus fiestas principales se celebran in honor a la Virgen de Guadalupe y San Isidro Labrador, además de encuentros familiares y eventos comunitarios tradicionales.
+## Educación y Salud
+Cuenta con preescolar, primaria, telesecundaria y telebachillerato. Para estudios superiores, los jóvenes se trasladan a Ciudad Victoria o Reynosa. En salud, un centro de salud rural.
 
-## Gastronomía
-Entre sus platillos destacan la discada norteña, carne asada, tamales, asado de puerco y productos artesanales como queso fresco y crema.
+## Personajes Ilustres
+- **Don José María González (1850-1920):** Fundador de la primera escuela.  
+- **Profesora María López (1900-1980):** Promotora de la cultura local.
 
-## Educación
-Cruillas cuenta con centros educativos de preescolar, primaria, telesecundaria y bachillerato, además de espacios comunitarios para talleres culturales.
+## Datos Curiosos
+- El nombre Cruillas proviene de un título nobiliario español.  
+- La discada es el platillo típico de las fiestas.  
+- En la plaza principal aún se conserva un árbol centenario.  
+- El municipio tiene una pequeña zona de manantiales.  
+- Las cabalgatas son tradición cada 12 de diciembre.
 
-## Sociedad
-Su sociedad se caracteriza por la cooperación entre habitantes, el trabajo en equipo y la convivencia basada en valores rurales y tradicionales.
-
-## Turismo y Lugares
-El municipio ofrece paisajes semidesérticos, ranchos tradicionales, rutas rurales y espacios ideales para actividades al aire libre y fotografía.
-
-## Conclusión
-Cruillas Tamaulipas es una comunidad donde tradición, historia y vida rural se mantienen vivas. Su pueblo conserva valores sólidos, gastronomía auténtica y una identidad que perdura con orgullo.
+## Perspectivas Futuras
+Se busca promover el turismo rural, mejorar los caminos y apoyar la producción de queso artesanal.
 ''',
 
   imagenAsset: 'assets/images/cruillas.jpg',
   imagenes: [
     'assets/fotos/cruillas.png',
+    'assets/fotos/cruilllas.jpg',
+    'assets/fotos/cruillas.jpg'
   ],
   poblacion: '1,800 hab.',
   superficie: '1,200 km²',
@@ -60,3 +72,24 @@ Cruillas Tamaulipas es una comunidad donde tradición, historia y vida rural se 
     ),
   ],
 );
+
+final List<Map<String, dynamic>> lugaresCruillas = [
+  {
+    'nombre': 'Plaza Principal',
+    'descripcion': 'Centro de convivencia social.',
+    'lat': 24.4500,
+    'lng': -98.6667,
+  },
+  {
+    'nombre': 'Parroquia de la Virgen de Guadalupe',
+    'descripcion': 'Templo principal.',
+    'lat': 24.4490,
+    'lng': -98.6670,
+  },
+  {
+    'nombre': 'Áreas rurales',
+    'descripcion': 'Paisajes agrícolas y ganaderos.',
+    'lat': 24.4600,
+    'lng': -98.6600,
+  },
+];

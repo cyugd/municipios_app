@@ -6,58 +6,79 @@ final gustavo_diaz_ordaz = Municipio(
   descripcionCorta: 'Tierra de historia y agricultura en la frontera norte.',
   descripcionLarga: '''
 ## Introducción
-Una tierra de historia, cultura, tradiciones y trabajo. Situada a orillas del Río Bravo, esta ciudad fronteriza se ha desarrollado gracias al esfuerzo de su gente, su agricultura, su identidad y su espíritu comunitario.
-
-Fundado oficialmente el 26 de marzo de 1968, este municipio tamaulipeco es conocido por su producción agrícola, sus festividades tradicionales y su cercanía con la frontera estadounidense. Con una población de más de 15,000 habitantes, Gustavo Díaz Ordaz representa el orgullo del norte de Tamaulipas.
+Gustavo Díaz Ordaz es un municipio joven de Tamaulipas, creado en 1968. Se encuentra en la región de la Frontera Chica, a orillas del Río Bravo. Su economía se basa en la agricultura de riego, gracias al Distrito de Riego 025. Es una comunidad fronteriza tranquila, con fuertes lazos familiares y tradiciones norteñas. Su nombre honra al presidente Gustavo Díaz Ordaz.
 
 ## Historia
-La historia del municipio se remonta a los antiguos asentamientos de la región de la Frontera Chica. Originalmente, el territorio pertenecía a la Villa de San Miguel de Camargo, fundada en 1749 por José de Escandón.
+El territorio pertenecía originalmente a la Villa de San Miguel de Camargo, fundada en 1749 por José de Escandón. Durante muchos años, la zona fue parte de Camargo hasta que en 1968 se creó oficialmente el municipio mediante decreto estatal. Su desarrollo se fortaleció con la creación del Distrito de Riego 025, que impulsó la agricultura. El nombre honra al presidente Gustavo Díaz Ordaz, originario de Ciudad Serdán, Puebla.
 
-Durante muchos años, la zona fue parte de Camargo hasta que en 1968 se creó oficialmente el municipio mediante decreto estatal. Su desarrollo se fortaleció con la creación del Distrito de Riego 025, que impulsó la agricultura.
-
-## Geografía
-El municipio se ubica al norte de Tamaulipas, en la región de la Frontera Chica, a orillas del Río Bravo, que marca la frontera con Estados Unidos.
-
-Colinda con Reynosa al este, Camargo al oeste y General Bravo, Nuevo León al sur. Tiene una altitud aproximada de 68 metros sobre el nivel del mar y una superficie de 431.12 km².
-
-El clima es seco cálido, con temperaturas que pueden superar los 40°C en verano y lluvias moderadas.
+## Geografía y Población
+Se ubica al norte de Tamaulipas, a orillas del Río Bravo, colindando con Reynosa, Camargo y General Bravo (Nuevo León). Altitud: 68 msnm. Superficie: 431.12 km². Clima seco cálido, con temperaturas que superan los 40°C en verano.  
+Población: más de 15,000 habitantes (2020), mayoritariamente jóvenes.
 
 ## Economía
-La economía está basada principalmente en el sector agrícola, impulsado por el sistema de riego del Río Bravo.
+- **Agricultura:** Sorgo, maíz, algodón, frijol, hortalizas (bajo riego).  
+- **Ganadería:** Bovina, caprina.  
+- **Comercio local:** Tiendas, servicios, intercambio fronterizo.  
+- **Turismo:** Incipiente.
 
-Se cultivan productos como sorgo, maíz, algodón y frijol. También existen actividades ganaderas con bovinos y caprinos.
+## Cultura y Tradiciones
+**Fiestas:** San Miguel Arcángel (29 de septiembre), Día de la Virgen de Guadalupe (12 de diciembre).  
+**Gastronomía:** Carne asada, tamales, gorditas, machacado con huevo, enchiladas.  
+**Artesanías:** Talabartería, bordados.
 
-El comercio local y el intercambio fronterizo complementan la economía, generando ingresos para la población.
+## Turismo y Atractivos
+- **Parroquia de San Miguel Arcángel:** Templo principal.  
+- **Plaza Principal:** Jardín con kiosco.  
+- **Malecón del Río Bravo:** Área de esparcimiento.  
+- **Campos agrícolas:** Recorridos por zonas de cultivo.  
+- **Presas de riego:** Pesca de mojarra.
 
-## Cultura
-La cultura del municipio refleja tradiciones del norte de Tamaulipas y la vida fronteriza. Se caracteriza por la música regional, la convivencia familiar y las festividades religiosas. La comunidad mantiene un fuerte sentido de identidad y pertenencia.
+## Educación y Salud
+Cuenta con escuelas de nivel básico y medio superior (CBTIS). Para estudios superiores, los jóvenes acuden a Reynosa. En salud, un centro de salud y clínica del IMSS.
 
-## Valores
-Los valores principales son el respeto, la responsabilidad, la solidaridad, la honestidad y el trabajo.
+## Personajes Ilustres
+- **Gustavo Díaz Ordaz (1911-1979):** Presidente de México.  
+- **Don José López (1930-2000):** Pionero de la agricultura de riego.  
+- **Profesora María Gómez (1940-2015):** Fundadora de la escuela primaria.
 
-## Costumbres
-Las costumbres incluyen celebraciones religiosas como las fiestas de San Miguel Arcángel y el Día de la Virgen de Guadalupe. También destacan reuniones familiares, eventos en la plaza principal y actividades comunitarias.
+## Datos Curiosos
+- El municipio es uno de los más jóvenes de Tamaulipas.  
+- El Distrito de Riego 025 fue construido en la década de 1950.  
+- La producción de algodón fue muy importante en el pasado.  
+- El puente internacional hacia Estados Unidos está cerca.  
+- La fiesta de San Miguel Arcángel atrae a visitantes de la región.
 
-## Gastronomía
-La gastronomía es típica del norte de México, con platillos como carne asada, tamales, gorditas, machacado con huevo y enchiladas.
-
-## Educación
-El municipio cuenta con educación básica, media y media superior. Las escuelas brindan formación a niños y jóvenes, aunque muchos estudiantes continúan sus estudios en ciudades cercanas.
-
-## Sociedad
-La sociedad se caracteriza por ser unida, trabajadora y con fuerte sentido comunitario.
-
-## Turismo
-El turismo es una actividad en desarrollo. Los principales atractivos son la Parroquia de San Miguel Arcángel, la plaza principal, el malecón del Río Bravo y los campos agrícolas.
-
-## Conclusión
-Gustavo Díaz Ordaz es un municipio con una identidad fuerte, basada en su historia, su cultura y su gente. A pesar de ser una comunidad relativamente joven, ha logrado consolidarse gracias al trabajo de sus habitantes.
+## Perspectivas Futuras
+Se busca diversificar la economía, promover el turismo fronterizo y mejorar la infraestructura agrícola.
 ''',
   imagenAsset: 'assets/images/gustavo_diaz_ordaz.jpg',
   imagenes: [
     'assets/fotos/gustavo dias ordaz.png',
+    'assets/fotos/GDOrdaz.jpg',
+    'assets/fotos/GDOrdaz2.jpg'
   ],
   poblacion: '16,000 hab.',
   superficie: '200 km²',
   gentilicio: 'Ordaceño',
 );
+
+final List<Map<String, dynamic>> lugaresGustavoDiazOrdaz = [
+  {
+    'nombre': 'Parroquia de San Miguel Arcángel',
+    'descripcion': 'Templo principal.',
+    'lat': 26.2333,
+    'lng': -98.6667,
+  },
+  {
+    'nombre': 'Plaza Principal',
+    'descripcion': 'Centro social.',
+    'lat': 26.2320,
+    'lng': -98.6670,
+  },
+  {
+    'nombre': 'Malecón del Río Bravo',
+    'descripcion': 'Paseo frente al río.',
+    'lat': 26.2400,
+    'lng': -98.6600,
+  },
+];

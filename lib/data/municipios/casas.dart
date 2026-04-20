@@ -5,46 +5,60 @@ final casas = Municipio(
   id: 'casas',
   nombre: 'Casas',
   descripcionCorta: 'Historia colonial y tradiciones rurales en el centro de Tamaulipas.',
-  descripcionLarga: '''
+  descripcionLarga:  '''
 ## Introducción
-El municipio de Casas es una región ubicada en el centro del estado de Tamaulipas que destaca por su historia colonial, su identidad cultural y su vida comunitaria. Fue fundado en 1770 con el nombre de Croix y posteriormente renombrado en honor al insurgente Juan Bautista de las Casas. Este municipio representa un ejemplo de comunidad rural que ha mantenido sus tradiciones a lo largo del tiempo mientras enfrenta los retos del desarrollo moderno.
+Casas es un municipio ubicado en el centro del estado de Tamaulipas, fundado en 1770 con el nombre de Croix. Su nombre actual honra a Juan Bautista de las Casas, insurgente de la Independencia. Es una comunidad rural que ha conservado sus tradiciones, su arquitectura colonial y su identidad cultural. Rodeado por la Sierra de Tamaulipas, ofrece paisajes naturales ideales para el descanso y el ecoturismo. Es un lugar ideal para quienes buscan escapar del ruido y disfrutar de la tranquilidad del campo.
 
 ## Historia
-La historia de Casas se remonta al periodo de colonización del noreste de la Nueva España, cuando se establecieron poblaciones estratégicas para consolidar el dominio español. En 1770 se fundó con el nombre de Croix en honor al virrey Carlos Francisco de Croix. Posteriormente, en 1827, se le dio el nombre actual en reconocimiento a Juan Bautista de las Casas, quien participó en la lucha por la Independencia de México. A lo largo de los años, el municipio ha evolucionado conservando su esencia histórica y su identidad como comunidad rural.
+La historia de Casas se remonta al periodo de colonización del noreste de la Nueva España, cuando se establecieron poblaciones estratégicas para consolidar el dominio español. En 1770 se fundó con el nombre de Croix en honor al virrey Carlos Francisco de Croix. Posteriormente, en 1827, se le dio el nombre actual en reconocimiento a Juan Bautista de las Casas, quien participó en la lucha por la Independencia de México. A lo largo de los años, el municipio ha evolucionado conservando su esencia histórica y su identidad como comunidad rural. Durante la Revolución Mexicana, hubo reparto de tierras y formación de ejidos.
 
-## Geografía
-Casas se localiza en la parte media de Tamaulipas, con una geografía que combina zonas montañosas, semiplanas y llanuras. Su territorio forma parte de la Sierra de Tamaulipas, lo que le brinda paisajes naturales variados. Tiene una población aproximada de 4,143 habitantes y una densidad baja, lo que refleja su carácter rural. El clima es semiárido y favorece actividades agrícolas y ganaderas.
+## Geografía y Población
+Casas se localiza en la parte media de Tamaulipas, con una geografía que combina zonas montañosas, semiplanas y llanuras. Su territorio forma parte de la Sierra de Tamaulipas, lo que le brinda paisajes naturales variados. Tiene una población aproximada de 4,143 habitantes y una densidad baja, lo que refleja su carácter rural. El clima es semiárido y favorece actividades agrícolas y ganaderas. La vegetación incluye matorral, pastizales, mezquite y huizache. La fauna: venado, coyote, armadillo, conejo, aves canoras.  
+La cabecera municipal cuenta con servicios básicos y la mayoría de las viviendas son de adobe o ladrillo.
 
 ## Economía
-La economía de Casas se basa principalmente en el sector primario. La agricultura es una de las actividades más importantes, destacando cultivos como maíz, sorgo y frijol. La ganadería también es relevante, especialmente la cría de bovinos y caprinos. Además, existen pequeños comercios locales que abastecen a la población. Aunque la economía es limitada, el municipio cuenta con potencial en áreas como el turismo y la producción forestal.
+- **Agricultura:** Maíz, sorgo, frijol.  
+- **Ganadería:** Bovina y caprina. Producción de queso y carne seca.  
+- **Comercio local:** Pequeños negocios que abastecen a la población.  
+- **Potencial:** Turismo y producción forestal.
 
-## Cultura
-La cultura de Casas es el resultado de la mezcla entre tradiciones coloniales y costumbres rurales. La música norteña, las celebraciones religiosas y la convivencia familiar forman parte de la vida diaria. La parroquia de la Purísima Concepción es uno de los principales símbolos culturales e históricos del municipio. También se conservan tradiciones orales y prácticas comunitarias que fortalecen la identidad local.
+## Cultura y Tradiciones
+**Fiestas:** Patronal de la Virgen de la Purísima Concepción (8 de diciembre) con procesiones, misas, danzas, jaripeos, carreras de caballos y juegos mecánicos. También se celebra el aniversario de la fundación (noviembre) y las fiestas patrias.  
+**Gastronomía:** Carne asada, tamales, gorditas de maíz, asado de puerco, dulces tradicionales (calabaza, camote).  
+**Artesanías:** Talabartería, tejidos de palma, bordados.  
+**Música:** Norteña y banda.
 
-## Valores
-Los valores en Casas son fundamentales para la convivencia social. Destacan la solidaridad, el respeto, el trabajo honesto, la hospitalidad y el sentido de comunidad. Estos principios se transmiten de generación en generación y permiten mantener una sociedad unida y organizada.
+## Turismo y Atractivos
+- **Parroquia de la Purísima Concepción:** Templo del siglo XIX, de estilo neoclásico.  
+- **Centro histórico:** Plaza principal con kiosco y casas de adobe con techos de teja.  
+- **Sierra de Tamaulipas:** Senderismo, miradores, observación de aves (garzas, águilas).  
+- **Rutas rurales:** Recorridos por ejidos y rancherías, donde se puede conocer la vida campesina.  
+- **Presa de Casas:** Pesca de mojarra y lobina.  
+- **Grutas de la Sierra:** Pequeñas cuevas con formaciones calcáreas (poco exploradas).
 
-## Costumbres
-Las costumbres incluyen celebraciones religiosas, reuniones familiares y eventos comunitarios. La fiesta patronal en honor a la Virgen de la Purísima Concepción es una de las más importantes. También se celebran las fiestas patrias y el aniversario de la fundación del municipio. Estas actividades fortalecen los lazos sociales y mantienen vivas las tradiciones.
+## Educación y Salud
+Cuenta con preescolar, primaria, telesecundaria y telebachillerato. Para estudios superiores, los jóvenes se trasladan a Ciudad Victoria. En salud, un centro de salud rural.
 
-## Gastronomía
-La gastronomía de Casas forma parte de la cocina norteña. Entre los platillos más representativos se encuentran la carne asada, los tamales, las gorditas de maíz y diversos platillos elaborados con carne de res y productos locales. También destacan los dulces tradicionales y los productos derivados de la ganadería.
+## Personajes Ilustres
+- **Juan Bautista de las Casas (1760-1811):** Insurgente que dio nombre al municipio.  
+- **Don José María González (1880-1950):** Promotor de la agricultura local.  
+- **Profesora Ana María López (1930-2000):** Fundadora de la escuela primaria.
 
-## Educación
-El municipio cuenta con educación básica y media superior. Existen escuelas en la cabecera municipal y en algunas comunidades. Sin embargo, la falta de educación superior obliga a muchos jóvenes a trasladarse a otras ciudades para continuar sus estudios. A pesar de ello, la educación es considerada un elemento clave para el desarrollo.
+## Datos Curiosos
+- El nombre original "Croix" se debe al virrey.  
+- En la sierra se han encontrado pinturas rupestres.  
+- Las casas de adobe son características del municipio.  
+- La fiesta de la Purísima Concepción atrae visitantes de la región.  
+- El municipio cuenta con una pequeña zona de manantiales.
 
-## Sociedad
-La sociedad de Casas es principalmente rural, con fuertes lazos familiares y un alto sentido de pertenencia. La comunidad se caracteriza por la cooperación y el apoyo mutuo. Sin embargo, enfrenta retos como la migración de jóvenes, el envejecimiento poblacional y la falta de oportunidades laborales.
-
-## Turismo
-El turismo en Casas es una actividad en desarrollo. Entre sus principales atractivos se encuentran la parroquia de la Purísima Concepción, el centro histórico y las zonas naturales de la Sierra de Tamaulipas. Estas áreas ofrecen oportunidades para el turismo cultural y ecológico, lo que podría impulsar el crecimiento económico del municipio.
-
-## Conclusión
-Casas, Tamaulipas, es un municipio con una gran riqueza histórica, cultural y natural. A pesar de sus limitaciones económicas, conserva una identidad sólida basada en sus tradiciones, valores y sentido de comunidad. Su desarrollo futuro depende de aprovechar su potencial turístico, fortalecer su economía y mantener el equilibrio entre modernidad y tradición.
+## Perspectivas Futuras
+Se busca impulsar el turismo de naturaleza, mejorar los caminos rurales, apoyar la producción de queso artesanal y fomentar la conservación de las tradiciones.
 ''',
   imagenAsset: 'assets/images/casas.jpg',
   imagenes: [
     'assets/fotos/casas.png',
+    'assets/fotos/casaa1.jpg',
+    'assets/fotos/casas2.webp'
   ],
   poblacion: '4,143 hab.',
   superficie: '1,500 km²',
@@ -59,3 +73,24 @@ Casas, Tamaulipas, es un municipio con una gran riqueza histórica, cultural y n
     ),
   ],
 );
+
+final List<Map<String, dynamic>> lugaresCasas = [
+  {
+    'nombre': 'Parroquia de la Purísima Concepción',
+    'descripcion': 'Templo del siglo XIX.',
+    'lat': 23.6667,
+    'lng': -98.7333,
+  },
+  {
+    'nombre': 'Plaza Principal',
+    'descripcion': 'Centro de convivencia social.',
+    'lat': 23.6650,
+    'lng': -98.7340,
+  },
+  {
+    'nombre': 'Sierra de Tamaulipas',
+    'descripcion': 'Área natural para senderismo.',
+    'lat': 23.7000,
+    'lng': -98.7000,
+  },
+];

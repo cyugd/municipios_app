@@ -4,62 +4,90 @@ final guerrero = Municipio(
   id: 'guerrero',
   nombre: 'Guerrero',
   descripcionCorta: 'Historia sumergida y tradición fronteriza.',
-  descripcionLarga: '''
+  descripcionLarga:  '''
 ## Introducción
-Ciudad Guerrero es un municipio del estado de Tamaulipas, ubicado al norte de México, caracterizado por su historia, tradiciones y cercanía con la frontera. Es una comunidad tranquila con una fuerte identidad cultural y un importante legado histórico ligado a su antiguo asentamiento.
-
-## Ubicación
-Se localiza en la parte norte de Tamaulipas, a orillas del Río Bravo, colindando con Nuevo Laredo, Mier y el estado de Nuevo León.
-
-## Población
-Población total: 3,852 habitantes (2020). Cabecera municipal: Nueva Ciudad Guerrero.
+Guerrero es un municipio del norte de Tamaulipas, ubicado a orillas del Río Bravo. Su cabecera es Nueva Ciudad Guerrero, fundada después de que la antigua ciudad quedara sumergida por la construcción de la Presa Falcón. Es un lugar con una historia fascinante, donde las ruinas de Guerrero Viejo emergen cuando el nivel del agua baja. La pesca deportiva y el turismo histórico son sus principales atractivos. Es un destino único en México.
 
 ## Historia
-Fundado el 10 de octubre de 1750 como Villa de Revilla por José de Escandón. En 1829 cambió su nombre a Guerrero en honor a Vicente Guerrero. Fue un importante punto comercial en el norte del estado. En 1952 la ciudad fue reubicada por la construcción de la Presa Falcón. La antigua ciudad quedó bajo el agua, dando origen a Nueva Ciudad Guerrero.
+El municipio fue fundado el 10 de octubre de 1750 por José de Escandón con el nombre de Villa de Revilla. En 1829 cambió su nombre a Guerrero en honor a Vicente Guerrero. Fue un importante punto comercial en el norte del estado. En 1952, la construcción de la Presa Falcón provocó la reubicación de la ciudad, quedando la antigua cabecera bajo las aguas. Nació así Nueva Ciudad Guerrero. Las ruinas de Guerrero Viejo son hoy un atractivo turístico que se pueden visitar cuando la presa baja su nivel.
+
+## Geografía y Población
+Se localiza en la parte norte de Tamaulipas, a orillas del Río Bravo, colindando con Nuevo Laredo, Mier y Nuevo León. El clima es seco cálido, con temperaturas extremas. La Presa Falcón es el principal cuerpo de agua.  
+Población total: 3,852 habitantes (2020). Cabecera: Nueva Ciudad Guerrero.
 
 ## Economía
-Se basa principalmente en la ganadería, pesca y en menor medida la agricultura.
+- **Ganadería:** Bovina, ocupa gran parte del territorio.  
+- **Pesca:** Deportiva en la Presa Falcón (lobina, tilapia, bagre).  
+- **Agricultura:** Maíz, sorgo, productos de temporal (menor escala).  
+- **Turismo:** Histórico (ruinas) y deportivo.
 
-**Agricultura**: Principales cultivos: maíz, sorgo y productos de temporal. Se practica en menor escala debido al clima semiárido.
+## Cultura y Tradiciones
+**Fiestas:** Día de la Candelaria (2 de febrero), Día de Muertos, aniversario de la presa.  
+**Gastronomía:** Discada norteña, carne asada, tortillas de harina, frijoles charros, asado de puerco.  
+**Artesanías:** Talabartería.
 
-**Ganadería**: Predomina el ganado bovino. Ocupa gran parte del territorio municipal.
+## Turismo y Atractivos
+- **Ruinas de Guerrero Viejo:** Antigua ciudad sumergida que emerge en épocas de sequía; se pueden visitar en lancha o caminando.  
+- **Presa Falcón:** Pesca deportiva, camping, paseos en lancha, ski acuático.  
+- **Museo regional:** Piezas históricas de la antigua ciudad.  
+- **Palacio Municipal:** Edificio moderno.  
+- **Malecón de la presa:** Área recreativa.  
+- **Iglesia de Nuestra Señora del Refugio (ruinas):** Símbolo de la antigua ciudad.  
+- **Mirador de la presa:** Vistas panorámicas.
 
-**Pesca**: Se desarrolla en la Presa Falcón. Destaca la pesca deportiva de lobina, que atrae turismo.
+## Educación y Salud
+Cuenta con preescolar, primaria, secundaria y bachillerato (COBAT). Para estudios superiores, los jóvenes viajan a Nuevo Laredo o Reynosa. En salud, un centro de salud y clínica del IMSS-Bienestar.
 
-## Gastronomía
-Discada norteña, carne asada, tortillas de harina, frijoles charros y asado de puerco.
+## Personajes Ilustres
+- **Vicente Guerrero (1782-1831):** Héroe de la Independencia, da nombre al municipio.  
+- **Don Francisco Pérez (1900-1970):** Pionero de la pesca deportiva en la presa.  
+- **Profesora Rosa Martínez (1920-1990):** Fundadora de la escuela primaria.
 
-## Turismo
-Turismo histórico, natural y deportivo.
+## Datos Curiosos
+- Las ruinas de Guerrero Viejo son un sitio único en México.  
+- La presa Falcón fue inaugurada en 1954.  
+- Cada año, cuando baja el nivel del agua, los visitantes pueden caminar por las calles de la antigua ciudad.  
+- La pesca de lobina es muy popular.  
+- El antiguo templo aún tiene su torre en pie.
 
-**Atractivos turísticos**: Ruinas de Guerrero Viejo, Presa Falcón, Museo regional y Palacio Municipal.
-
-**Iglesias**: Iglesia de Nuestra Señora del Refugio (ruinas) y templos locales en la nueva ciudad.
-
-**Naturaleza**: Río Bravo, Presa Falcón, zonas de pesca y paisajes semiáridos.
-
-**Espacios públicos**: Plaza principal, parques, áreas recreativas y malecón de la presa.
-
-## Festividades
-Día de la Candelaria, Día de Muertos, aniversario de la presa y celebraciones locales.
-
-## Educación
-Cuenta con niveles básicos y medio superior.
-
-**Infraestructura educativa**: Escuelas primarias, secundarias, preparatorias y una escuela de medicina particular.
-
-**Estadísticas educativas**: Población pequeña con acceso básico a educación. Estudiantes continúan estudios en ciudades cercanas.
-
-**Servicios educativos**: Escuelas públicas, actividades culturales y acceso limitado a tecnología.
-
-**Retos educativos**: Falta de instituciones superiores, migración estudiantil, acceso a tecnología y oportunidades limitadas.
+## Perspectivas Futuras
+Se busca promover el turismo histórico y ecológico, mejorar la infraestructura pesquera y fortalecer la economía local.
 ''',
-
   imagenAsset: 'assets/images/guerrero.jpg',
   imagenes: [
     'assets/fotos/gerrero.png',
+    'assets/fotos/guerrero2.jpg',
+    'assets/fotos/GUerreroViejo2.jpg',
   ],
   poblacion: '4,500 hab.',
   superficie: '900 km²',
   gentilicio: 'Guerrerense',
 );
+
+
+final List<Map<String, dynamic>> lugaresGuerrero = [
+  {
+    'nombre': 'Ruinas de Guerrero Viejo',
+    'descripcion': 'Antigua ciudad sumergida.',
+    'lat': 26.6000,
+    'lng': -99.2000,
+  },
+  {
+    'nombre': 'Presa Falcón',
+    'descripcion': 'Pesca deportiva y paseos en lancha.',
+    'lat': 26.5500,
+    'lng': -99.2500,
+  },
+  {
+    'nombre': 'Museo regional',
+    'descripcion': 'Historia de la antigua ciudad.',
+    'lat': 26.4000,
+    'lng': -99.0167,
+  },
+  {
+    'nombre': 'Malecón',
+    'descripcion': 'Área recreativa frente a la presa.',
+    'lat': 26.4050,
+    'lng': -99.0200,
+  },
+];

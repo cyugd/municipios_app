@@ -7,47 +7,61 @@ final bustamante = Municipio(
   descripcionCorta: 'Puerta de la Sierra Madre Oriental, con grutas y tradición.',
   descripcionLarga:  '''
 ## Introducción
-Bustamante, Tamaulipas, es un municipio fundado in 1749 por José de Escandón. Se localiza en una zona montañosa y es conocido como la “Puerta de la Sierra Madre Oriental”. Destaca por su historia, su entorno natural y la calidez de su gente, combinando tradición, cultura y paisajes únicos del noreste de México.
+Bustamante es un municipio enclavado en la Sierra Madre Oriental, conocido como la "Puerta de la Sierra". Fundado en 1749, es famoso por sus grutas, cañones y manantiales, así como por su pan artesanal y sus tradiciones norteñas. Es un destino ideal para el ecoturismo y la aventura, con paisajes montañosos que contrastan con el semidesierto. Su clima fresco atrae a visitantes durante todo el año, especialmente en verano.
 
 ## Historia
-La historia de Bustamante se remonta al siglo XVIII durante la colonización del Nuevo Santander. Fue fundado como parte del proyecto de poblamiento impulsado por José de Escandón. Con el tiempo, el municipio adoptó el nombre de Bustamante in honor a Anastasio Bustamante, expresidente de México. A lo largo de los años ha mantenido una fuerte tradición agrícola y una identidad marcada por su herencia colonial y su relación con la Sierra Madre Oriental.
+La historia de Bustamante se remonta al siglo XVIII durante la colonización del Nuevo Santander. Fue fundado como parte del proyecto de poblamiento impulsado por José de Escandón. Con el tiempo, adoptó el nombre de Bustamante en honor a Anastasio Bustamante, expresidente de México. Ha mantenido una fuerte tradición agrícola y una identidad marcada por su herencia colonial y su relación con la sierra. Durante la Revolución Mexicana, hubo enfrentamientos en la zona y se formaron ejidos.
 
-## Geografía
-Bustamante se ubica en la región centro-oeste de Tamaulipas, dentro de la Sierra Madre Oriental. Su territorio está formado por montañas, cañones, ríos subterráneos y zonas boscosas. La vegetación incluye bosques de pino y encino, así como matorrales en zonas bajas. La fauna es variada, con especies como venado cola blanca, armadillos y aves. El clima es semiárido templado, con inviernos frescos y veranos calurosos, además de lluvias en verano que alimentan manantiales como el Ojo de Agua.
-
-## Población
-El municipio cuenta con aproximadamente 7,720 habitantes. La población vive principalmente en la cabecera municipal y comunidades cercanas. Predomina un estilo de vida tranquilo y rural, con fuerte identidad comunitaria y participación en actividades sociales y tradicionales.
+## Geografía y Población
+Se ubica en la región centro-oeste de Tamaulipas, dentro de la Sierra Madre Oriental. Su territorio está formado por montañas, cañones, ríos subterráneos y zonas boscosas. La vegetación incluye bosques de pino y encino, así como matorrales en zonas bajas. Fauna: venado cola blanca, armadillo, zorro, conejo, y aves como el águila y el halcón. El clima es semiárido templado, con inviernos frescos (hasta 0°C) y veranos calurosos.  
+Población: aproximadamente 7,720 habitantes, principalmente en la cabecera y comunidades cercanas.
 
 ## Economía
-La economía se basa en la agricultura, ganadería y producción de nuez pecanera, uno de los productos más importantes del municipio. Se cultivan maíz, frijol, sorgo y hortalizas. La ganadería incluye bovinos, caprinos y aves de corral. También destaca la elaboración del pan artesanal, muy reconocido en la región. En los últimos años, el turismo ecológico ha generado nuevas oportunidades económicas.
+- **Agricultura:** Maíz, frijol, sorgo, hortalizas (tomate, chile).  
+- **Ganadería:** Bovinos, caprinos, aves.  
+- **Nuez pecanera:** Producto importante, con huertas familiares.  
+- **Pan artesanal:** Muy reconocido en la región (pan de Bustamante, de masa dura y dulce).  
+- **Turismo ecológico:** Grutas, cañones, manantiales, senderismo.
 
-## Cultura
-La cultura de Bustamante combina raíces indígenas y españolas. Se refleja en su arquitectura, música y tradiciones. Las celebraciones religiosas, la música norteña y las reuniones familiares forman parte importante de la vida cotidiana. El Templo de San Miguel Arcángel y el pan artesanal son símbolos representativos del municipio.
+## Cultura y Tradiciones
+**Fiestas:** Patronal de San Miguel Arcángel (29 de septiembre) con procesiones, música de banda, danzas, cabalgatas, jaripeos, juegos pirotécnicos. También se celebra la Feria del Pan (abril) y el Día de Muertos.  
+**Artesanías:** Tejidos de palma, talabartería, pan artesanal en hornos de leña.  
+**Gastronomía:** Asado de puerco, enchiladas norteñas, carne seca, tamales, gorditas; dulces de nuez pecanera; pan de Bustamante (emblemático). También se elabora queso de cabra.  
+**Leyendas:** Se cuenta que en las grutas habita un "nahual" que protege la sierra, y que en el cañón se escuchan lamentos de mineros perdidos.  
+**Música:** Norteña, huapango y polka.
 
-## Valores
-Los habitantes de Bustamante se caracterizan por su hospitalidad, respeto y sentido de comunidad. La unión familiar, el trabajo colectivo y la conservación de tradiciones son valores fundamentales que fortalecen su identidad.
+## Turismo y Atractivos
+- **Grutas de Bustamante:** Cavernas con formaciones calcáreas, estalactitas, estalagmitas y un recorrido iluminado de más de 500 metros.  
+- **Cañón de Bustamante:** Formación geológica impresionante, ideal para senderismo y rapel.  
+- **Ojo de Agua:** Manantial natural de agua cristalina, con albercas.  
+- **Presa El Nogalito:** Pesca de lobina, paseos en lancha, camping.  
+- **Templo de San Miguel Arcángel:** Iglesia del siglo XVIII, de estilo barroco.  
+- **Plaza Principal:** Jardín con kiosco, rodeada de arcos.  
+- **Mirador del Cerro de la Cruz:** Vista panorámica del valle.
 
-## Costumbres
-Entre las costumbres destacan las reuniones en la plaza, las cabalgatas, las visitas al Ojo de Agua y la elaboración tradicional del pan en hornos de leña. También son comunes las actividades familiares y comunitarias que refuerzan la convivencia social.
+## Educación y Salud
+Cuenta con preescolar, primaria, secundaria y bachillerato (COBAT). Para estudios superiores, los jóvenes viajan a Ciudad Victoria o Linares (Nuevo León). En salud, un centro de salud y clínica rural.
 
-## Fiestas
-La principal festividad es la fiesta patronal en honor a San Miguel Arcángel, celebrada el 29 de septiembre. Incluye procesiones, música, danzas, cabalgatas y actividades culturales que reúnen a la comunidad y visitantes.
+## Personajes Ilustres
+- **General Anastasio Bustamante (1780-1853):** Expresidente de México (aunque nació en Jalisco, el municipio lleva su nombre).  
+- **Don Jesús González (1900-1980):** Fundador de la panadería tradicional.  
+- **Profesor José Hernández (1930-2000):** Promotor de la educación rural.
 
-## Gastronomía
-La gastronomía incluye platillos como asado de puerco, enchiladas norteñas, carne seca, tamales y gorditas. La nuez pecanera es un ingrediente importante en dulces y postres. El pan de Bustamante es uno de los productos más representativos.
+## Datos Curiosos
+- Las grutas tienen una profundidad de más de 100 metros.  
+- El pan de Bustamante se hornea en hornos de leña de adobe.  
+- En el cañón se han filmado escenas de películas de aventuras.  
+- El Ojo de Agua mantiene una temperatura constante de 18°C.  
+- La nuez pecanera se cosecha entre octubre y diciembre.
 
-## Educación y Sociedad
-Bustamante cuenta con escuelas de nivel básico y medio superior. La comunidad participa activamente en actividades educativas, culturales y deportivas. Existen organizaciones que promueven la conservación de tradiciones y el cuidado del medio ambiente.
-
-## Turismo
-El turismo se basa en la naturaleza y el ecoturismo. Destacan las Grutas de Bustamante, el Cañón de Bustamante, la Presa El Nogalito y el manantial Ojo de Agua. Es un destino ideal para actividades como senderismo, campismo y exploración natural.
-
-## Conclusión
-Bustamante es un municipio que destaca por su riqueza histórica, cultural y natural. A lo largo del tiempo ha mantenido sus tradiciones y su identidad comunitaria. Aunque enfrenta retos de desarrollo, tiene un gran potencial en el turismo y en el aprovechamiento de sus recursos.
+## Perspectivas Futuras
+Se busca impulsar el turismo de naturaleza, mejorar la infraestructura de las grutas y cañón, y promover la producción artesanal del pan y la nuez.
 ''',
   imagenAsset: 'assets/images/bustamante.jpg',
   imagenes: [
     'assets/fotos/bustamante.png',
+    'assets/fotos/pueblo-bustamante.jpg',
+    'assets/fotos/bustamante02.jpg'
   ],
   poblacion: '7,720 hab.',
   superficie: '780 km²',
@@ -62,3 +76,30 @@ Bustamante es un municipio que destaca por su riqueza histórica, cultural y nat
     ),
   ],
 );
+
+final List<Map<String, dynamic>> lugaresBustamante = [
+  {
+    'nombre': 'Grutas de Bustamante',
+    'descripcion': 'Cavernas con formaciones calcáreas.',
+    'lat': 23.5333,
+    'lng': -99.8667,
+  },
+  {
+    'nombre': 'Cañón de Bustamante',
+    'descripcion': 'Formación geológica para senderismo.',
+    'lat': 23.5500,
+    'lng': -99.8500,
+  },
+  {
+    'nombre': 'Ojo de Agua',
+    'descripcion': 'Manantial natural.',
+    'lat': 23.5400,
+    'lng': -99.8600,
+  },
+  {
+    'nombre': 'Presa El Nogalito',
+    'descripcion': 'Pesca y recreación.',
+    'lat': 23.5200,
+    'lng': -99.8400,
+  },
+];

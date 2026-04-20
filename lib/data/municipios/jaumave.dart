@@ -6,69 +6,61 @@ final jaumave = Municipio(
   nombre: 'Jaumave',
   descripcionCorta: 'Valle de tradición y producción citrícola.',
   descripcionLarga: '''
+## Introducción
+Jaumave es uno de los municipios más antiguos y emblemáticos del altiplano tamaulipeco. Su nombre proviene del vocablo indígena “Xaumave”, relacionado con grupos originarios que habitaron la región antes de la llegada de los españoles. Rodeado por montañas, valles agrícolas y parajes naturales, Jaumave fue un punto clave para pueblos indígenas, misioneros y colonizadores. Su identidad actual combina herencia indígena, tradición agrícola y costumbres arraigadas. Es conocido por su producción de cítricos, especialmente la naranja.
+
 ## Historia
-Jaumave, Tamaulipas, es uno de los municipios más antiguos y emblemáticos del altiplano tamaulipeco. Su nombre proviene del vocablo indígena “Xaumave”, relacionado con la presencia de grupos originarios que habitaron la región antes de la llegada de los españoles.
+Época prehispánica: habitado por grupos huastecos y jonaces dedicados a la agricultura y recolección. Época colonial: establecimiento de misiones y rutas en la región. Fundación oficial: 19 de mayo de 1747 por José de Escandón. Siglo XIX: desarrollo de haciendas y actividad agrícola. Siglo XX: modernización y fortalecimiento económico. Durante la Revolución Mexicana, hubo reparto de tierras.
 
-Rodeado por montañas, valles agrícolas y parajes naturales, Jaumave fue un punto clave para pueblos indígenas, misioneros y colonizadores.
-
-- **Época prehispánica:** habitado por grupos huastecos y jonaces dedicados a la agricultura y recolección.
-- **Época colonial:** establecimiento de misiones y rutas en la región.
-- **Fundación oficial:** 19 de mayo de 1747 por José de Escandón.
-- **Siglo XIX:** desarrollo de haciendas y actividad agrícola.
-- **Siglo XX:** modernización y fortalecimiento económico.
-
-## Geografía
-Jaumave se ubica en el suroeste de Tamaulipas, rodeado por la Sierra Madre Oriental. Su territorio incluye sierras, valles y zonas agrícolas.
-
-- Altitud media: 350 a 400 metros sobre el nivel del mar.
-- Temperatura media: entre 23°C y 25°C.
-- Cuerpos de agua: río Purificación, manantial de San Vicente, arroyo Jaumave y presa San Lorencito.
-- Vegetación: matorral, mezquite, palma y bosque en zonas altas.
+## Geografía y Población
+Jaumave se ubica en el suroeste de Tamaulipas, rodeado por la Sierra Madre Oriental. Su territorio incluye sierras, valles y zonas agrícolas. Altitud media: 350 a 400 metros. Temperatura media: entre 23°C y 25°C. Cuerpos de agua: río Purificación, manantial de San Vicente, arroyo Jaumave y presa San Lorencito. Vegetación: matorral, mezquite, palma y bosque en zonas altas.  
+Población: aproximadamente 15,000 habitantes (2020), con baja densidad, mayoritariamente rural.
 
 ## Economía
-La economía de Jaumave se basa en la agricultura, ganadería y comercio local.
+- **Agricultura:** Cítricos (naranja, limón, toronja), maíz, sorgo, hortalizas.  
+- **Ganadería:** Bovina, caprina, ovina.  
+- **Comercio:** Venta de productos locales, miel, lácteos, artesanías.  
+- **Industria pequeña:** Panaderías, talleres, empacadoras de cítricos.  
+- **Turismo:** En crecimiento gracias a paisajes naturales.
 
-- **Agricultura**: producción de cítricos, maíz, sorgo y hortalizas.
-- **Ganadería**: cría de bovinos, caprinos y ovinos.
-- **Comercio**: venta de productos locales, miel, lácteos y artesanías.
-- **Industria pequeña**: panaderías, talleres y empacadoras.
-- **Turismo**: en crecimiento gracias a sus paisajes naturales.
+## Cultura y Tradiciones
+**Fiestas:** Patronales en honor a San Vicente (enero), con danzas tradicionales, ferias regionales, comida y música. Semana Santa, Día de Muertos.  
+**Gastronomía:** Cabrito al pastor, enchiladas serranas, tamales de elote.  
+**Artesanías:** Tejidos de palma, bordados.  
+**Valores:** Respeto, solidaridad, unión familiar, hospitalidad, cuidado del entorno.
 
-## Cultura
-La cultura de Jaumave refleja su historia y su vida en el valle. Incluye música regional, bailes tradicionales y festividades religiosas que fortalecen la identidad del municipio.
+## Turismo y Atractivos
+- **Río Purificación:** Paseos y pesca.  
+- **Valle de Jaumave:** Paisajes agrícolas de cítricos.  
+- **Ojo de Agua:** Manantial natural.  
+- **Presa San Lorencito:** Pesca y camping.  
+- **Manantial de San Vicente:** Agua cristalina.  
+- **Parroquia de San Vicente:** Templo del siglo XVIII.  
+- **Cerro del Calvario:** Mirador.
 
-## Valores
-- Respeto: base de la convivencia.
-- Solidaridad: apoyo entre familias.
-- Unión familiar: núcleo de la sociedad.
-- Hospitalidad: amabilidad con visitantes.
-- Cuidado del entorno: respeto por la naturaleza.
+## Educación y Salud
+Cuenta con escuelas de nivel básico y medio superior (COBAT). Para estudios superiores, los jóvenes viajan a Ciudad Victoria. En salud, un centro de salud y clínica del IMSS.
 
-## Costumbres
-- Danzas tradicionales en festividades.
-- Fiestas patronales con actividades religiosas y sociales.
-- Ferias regionales con comida, música y participación comunitaria.
+## Personajes Ilustres
+- **San Vicente Ferrer:** Santo patrono.  
+- **Don José López (1920-2000):** Promotor de la citricultura.  
+- **Profesora María Hernández (1930-2015):** Fundadora de la escuela primaria.
 
-## Gastronomía
-- Cabrito al pastor preparado de forma tradicional.
-- Enchiladas serranas con salsa casera.
-- Tamales de elote, típicos en reuniones.
+## Datos Curiosos
+- Jaumave es uno de los principales productores de cítricos de Tamaulipas.  
+- El clima templado favorece la producción de naranja de alta calidad.  
+- Las enchiladas serranas son un platillo emblemático.  
+- El manantial de San Vicente es famoso por sus aguas.  
+- La presa San Lorencito es ideal para la pesca.
 
-## Educación
-La educación es fundamental para el desarrollo del municipio. Cuenta con niveles básicos y medio superior.
-
-## Sociedad
-La sociedad de Jaumave se caracteriza por su unión y trabajo. Solidaridad entre habitantes, cuidado del medio ambiente y participación en actividades sociales.
-
-## Turismo
-Jaumave cuenta con atractivos naturales importantes: Río Purificación, Valle de Jaumave, Ojo de Agua. Paisajes naturales ideales para el ecoturismo.
-
-## Conclusión
-Jaumave, Tamaulipas, es un municipio lleno de historia, naturaleza y tradiciones. Su gente trabajadora y su entorno lo convierten en un lugar único dentro del estado.
+## Perspectivas Futuras
+Se busca fortalecer la producción citrícola, impulsar el ecoturismo y mejorar la infraestructura rural.
 ''',
   imagenAsset: 'assets/images/jaumave.jpg',
   imagenes: [
     'assets/fotos/jaumave.png',
+    'assets/fotos/jaumave.jpeg',
+    'assets/fotos/jaumave2.jpg',
   ],
   poblacion: '15,000 hab.',
   superficie: '1,500 km²',
@@ -83,3 +75,30 @@ Jaumave, Tamaulipas, es un municipio lleno de historia, naturaleza y tradiciones
     ),
   ],
 );
+
+final List<Map<String, dynamic>> lugaresJaumave = [
+  {
+    'nombre': 'Río Purificación',
+    'descripcion': 'Paseos y pesca.',
+    'lat': 23.4000,
+    'lng': -99.3833,
+  },
+  {
+    'nombre': 'Valle de Jaumave',
+    'descripcion': 'Paisajes agrícolas de cítricos.',
+    'lat': 23.4167,
+    'lng': -99.4000,
+  },
+  {
+    'nombre': 'Ojo de Agua',
+    'descripcion': 'Manantial natural.',
+    'lat': 23.4300,
+    'lng': -99.3900,
+  },
+  {
+    'nombre': 'Manantial de San Vicente',
+    'descripcion': 'Agua cristalina.',
+    'lat': 23.4200,
+    'lng': -99.3800,
+  },
+];

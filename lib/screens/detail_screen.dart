@@ -1,11 +1,55 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:photo_view/photo_view.dart';
+import 'package:photo_view/photo_view_gallery.dart';
 import 'package:municipios_app/models/municipio.dart';
 import 'package:municipios_app/widgets/chat_ai_widget.dart';
 import 'package:municipios_app/widgets/mapa_interactivo.dart';
 import 'package:municipios_app/screens/visor_3d_screen.dart';
 import 'package:municipios_app/data/municipios/abasolo.dart' as abasolo;
 import 'package:municipios_app/data/municipios/aldama.dart' as aldama;
+import 'package:municipios_app/data/municipios/altamira.dart' as altamira;
+import 'package:municipios_app/data/municipios/antiguo_morelos.dart' as antiguo_morelos;
+import 'package:municipios_app/data/municipios/burgos.dart' as burgos;
+import 'package:municipios_app/data/municipios/bustamante.dart' as bustamante;
+import 'package:municipios_app/data/municipios/camargo.dart' as camargo;
+import 'package:municipios_app/data/municipios/casas.dart' as casas;
+import 'package:municipios_app/data/municipios/ciudad_madero.dart' as ciudad_madero;
+import 'package:municipios_app/data/municipios/victoria.dart' as ciudad_victoria;
+import 'package:municipios_app/data/municipios/cruillas.dart' as cruillas;
+import 'package:municipios_app/data/municipios/gomez_farias.dart' as gomez_farias;
+import 'package:municipios_app/data/municipios/gonzalez.dart' as gonzalez;
+import 'package:municipios_app/data/municipios/guerrero.dart' as guerrero;
+import 'package:municipios_app/data/municipios/gustavo_diaz_ordaz.dart' as gustavo_diaz_ordaz;
+import 'package:municipios_app/data/municipios/gueemez.dart' as gueemez;
+import 'package:municipios_app/data/municipios/hidalgo.dart' as hidalgo;
+import 'package:municipios_app/data/municipios/jaumave.dart' as jaumave;
+import 'package:municipios_app/data/municipios/jimenez.dart' as jimenez;
+import 'package:municipios_app/data/municipios/llera.dart' as llera;
+import 'package:municipios_app/data/municipios/mainero.dart' as mainero;
+import 'package:municipios_app/data/municipios/el_mante.dart' as el_mante;
+import 'package:municipios_app/data/municipios/matamoros.dart' as matamoros;
+import 'package:municipios_app/data/municipios/mendez.dart' as mendez;
+import 'package:municipios_app/data/municipios/mier.dart' as mier;
+import 'package:municipios_app/data/municipios/miguel_aleman.dart' as miguel_aleman;
+import 'package:municipios_app/data/municipios/miquihuana.dart' as miquihuana;
+import 'package:municipios_app/data/municipios/nuevo_laredo.dart' as nuevo_laredo;
+import 'package:municipios_app/data/municipios/nuevo_morelos.dart' as nuevo_morelos;
+import 'package:municipios_app/data/municipios/ocampo.dart' as ocampo;
+import 'package:municipios_app/data/municipios/padilla.dart' as padilla;
+import 'package:municipios_app/data/municipios/palmillas.dart' as palmillas;
+import 'package:municipios_app/data/municipios/reynosa.dart' as reynosa;
+import 'package:municipios_app/data/municipios/rio_bravo.dart' as rio_bravo;
+import 'package:municipios_app/data/municipios/san_carlos.dart' as san_carlos;
+import 'package:municipios_app/data/municipios/san_fernando.dart' as san_fernando;
+import 'package:municipios_app/data/municipios/san_nicolas.dart' as san_nicolas;
+import 'package:municipios_app/data/municipios/soto_la_marina.dart' as soto_la_marina;
+import 'package:municipios_app/data/municipios/tampico.dart' as tampico;
+import 'package:municipios_app/data/municipios/tula.dart' as tula;
+import 'package:municipios_app/data/municipios/valle_hermoso.dart' as valle_hermoso;
+import 'package:municipios_app/data/municipios/villagran.dart' as villagran;
+import 'package:municipios_app/data/municipios/xicotencatl.dart' as xicotencatl;
+import 'package:municipios_app/data/municipios/victoria.dart' as victoria;
 
 class DetailScreen extends StatefulWidget {
   final Municipio municipio;
@@ -18,8 +62,6 @@ class DetailScreen extends StatefulWidget {
 class _DetailScreenState extends State<DetailScreen> {
   int _currentImageIndex = 0;
   late PageController _pageController;
-  final TransformationController _transformationController = TransformationController();
-  bool _isZoomed = false;
   final ScrollController _scrollController = ScrollController();
   bool _showBackToTop = false;
 
@@ -109,12 +151,10 @@ class _DetailScreenState extends State<DetailScreen> {
 
     _sectionWidgets = [];
     final Set<GlobalKey> usedKeys = {};
-    
+
     for (var section in sections) {
       GlobalKey key = _findKeyForSection(section['title']!);
-      
-      // Si la llave ya fue asignada a una sección anterior, generamos una nueva única
-      // para este widget específico para evitar el error de "Duplicate keys".
+
       if (usedKeys.contains(key)) {
         key = GlobalKey();
       } else {
@@ -133,7 +173,7 @@ class _DetailScreenState extends State<DetailScreen> {
 
   GlobalKey _findKeyForSection(String title) {
     final cleanTitle = title.toLowerCase().trim();
-    
+
     if (cleanTitle.contains('historia')) return _sections[0]['key'];
     if (cleanTitle.contains('geografía') || cleanTitle.contains('ubicación')) return _sections[1]['key'];
     if (cleanTitle.contains('demografía') || cleanTitle.contains('población')) return _sections[2]['key'];
@@ -145,7 +185,7 @@ class _DetailScreenState extends State<DetailScreen> {
     if (cleanTitle.contains('personajes')) return _sections[8]['key'];
     if (cleanTitle.contains('curiosidades') || cleanTitle.contains('datos')) return _sections[9]['key'];
     if (cleanTitle.contains('futuro') || cleanTitle.contains('perspectivas')) return _sections[10]['key'];
-    
+
     return GlobalKey();
   }
 
@@ -232,7 +272,6 @@ class _DetailScreenState extends State<DetailScreen> {
   @override
   void dispose() {
     _pageController.dispose();
-    _transformationController.dispose();
     _scrollController.dispose();
     _flutterTts.stop();
     super.dispose();
@@ -254,13 +293,6 @@ class _DetailScreenState extends State<DetailScreen> {
         curve: Curves.easeInOut,
       );
     }
-  }
-
-  void _resetZoom() {
-    _transformationController.value = Matrix4.identity();
-    setState(() {
-      _isZoomed = false;
-    });
   }
 
   @override
@@ -304,37 +336,30 @@ class _DetailScreenState extends State<DetailScreen> {
                   background: Stack(
                     fit: StackFit.expand,
                     children: [
-                      PageView.builder(
-                        controller: _pageController,
+                      PhotoViewGallery.builder(
+                        scrollPhysics: const BouncingScrollPhysics(),
+                        builder: (BuildContext context, int index) {
+                          return PhotoViewGalleryPageOptions(
+                            imageProvider: AssetImage(widget.municipio.imagenes[index]),
+                            minScale: PhotoViewComputedScale.contained * 0.8,
+                            maxScale: PhotoViewComputedScale.covered * 2,
+                            heroAttributes: PhotoViewHeroAttributes(tag: widget.municipio.imagenes[index]),
+                          );
+                        },
                         itemCount: widget.municipio.imagenes.length,
+                        loadingBuilder: (context, event) => Center(
+                          child: Container(
+                            width: 20.0,
+                            height: 20.0,
+                            child: const CircularProgressIndicator(),
+                          ),
+                        ),
+                        backgroundDecoration: const BoxDecoration(color: Colors.black),
+                        pageController: _pageController,
                         onPageChanged: (index) {
                           setState(() {
                             _currentImageIndex = index;
-                            _resetZoom();
                           });
-                        },
-                        itemBuilder: (context, index) {
-                          return InteractiveViewer(
-                            transformationController: _transformationController,
-                            minScale: 0.5,
-                            maxScale: 4.0,
-                            onInteractionStart: (_) => setState(() => _isZoomed = true),
-                            onInteractionEnd: (_) {
-                              final scale = _transformationController.value.getMaxScaleOnAxis();
-                              if (scale <= 1.1) setState(() => _isZoomed = false);
-                            },
-                            child: Padding(
-                              padding: const EdgeInsets.all(16.0),
-                              child: Image.asset(
-                                widget.municipio.imagenes[index],
-                                fit: BoxFit.contain,
-                                errorBuilder: (_, __, ___) => Container(
-                                  color: Colors.grey[300],
-                                  child: const Icon(Icons.broken_image, size: 80, color: Colors.grey),
-                                ),
-                              ),
-                            ),
-                          );
                         },
                       ),
                       Container(
@@ -346,7 +371,7 @@ class _DetailScreenState extends State<DetailScreen> {
                           ),
                         ),
                       ),
-                      if (widget.municipio.imagenes.length > 1 && !_isZoomed) ...[
+                      if (widget.municipio.imagenes.length > 1) ...[
                         Positioned(
                           left: 8,
                           top: 0,
@@ -370,7 +395,7 @@ class _DetailScreenState extends State<DetailScreen> {
                               backgroundColor: Colors.black26,
                               child: IconButton(
                                 icon: const Icon(Icons.arrow_forward_ios, color: Colors.white, size: 20),
-                                onPressed: _previousImage,
+                                onPressed: _nextImage,
                               ),
                             ),
                           ),
@@ -434,10 +459,95 @@ class _DetailScreenState extends State<DetailScreen> {
                           _buildMainInfo(),
                           const SizedBox(height: 24),
                           ..._sectionWidgets,
+                          // Mapas interactivos
                           if (widget.municipio.id == 'abasolo')
                             MapaInteractivo(lugares: abasolo.lugaresAbasolo),
                           if (widget.municipio.id == 'aldama')
                             MapaInteractivo(lugares: aldama.lugaresAldama),
+                          if (widget.municipio.id == 'altamira')
+                            MapaInteractivo(lugares: altamira.lugaresAltamira),
+                          if (widget.municipio.id == 'antiguo_morelos')
+                            MapaInteractivo(lugares: antiguo_morelos.lugaresAntiguoMorelos),
+                          if (widget.municipio.id == 'burgos')
+                            MapaInteractivo(lugares: burgos.lugaresBurgos),
+                          if (widget.municipio.id == 'bustamante')
+                            MapaInteractivo(lugares: bustamante.lugaresBustamante),
+                          if (widget.municipio.id == 'camargo')
+                            MapaInteractivo(lugares: camargo.lugaresCamargo),
+                          if (widget.municipio.id == 'casas')
+                            MapaInteractivo(lugares: casas.lugaresCasas),
+                          if (widget.municipio.id == 'ciudad_madero')
+                            MapaInteractivo(lugares: ciudad_madero.lugaresCiudadMadero),
+                          if (widget.municipio.id == 'ciudad_victoria')
+                            MapaInteractivo(lugares: ciudad_victoria.lugaresVictoria),
+                          if (widget.municipio.id == 'cruillas')
+                            MapaInteractivo(lugares: cruillas.lugaresCruillas),
+                          if (widget.municipio.id == 'gomez_farias')
+                            MapaInteractivo(lugares: gomez_farias.lugaresGomezFarias),
+                          if (widget.municipio.id == 'gonzalez')
+                            MapaInteractivo(lugares: gonzalez.lugaresGonzalez),
+                          if (widget.municipio.id == 'guerrero')
+                            MapaInteractivo(lugares: guerrero.lugaresGuerrero),
+                          if (widget.municipio.id == 'gustavo_diaz_ordaz')
+                            MapaInteractivo(lugares: gustavo_diaz_ordaz.lugaresGustavoDiazOrdaz),
+                          if (widget.municipio.id == 'gueemez')
+                            MapaInteractivo(lugares: gueemez.lugaresGueemez),
+                          if (widget.municipio.id == 'hidalgo')
+                            MapaInteractivo(lugares: hidalgo.lugaresHidalgo),
+                          if (widget.municipio.id == 'jaumave')
+                            MapaInteractivo(lugares: jaumave.lugaresJaumave),
+                          if (widget.municipio.id == 'jimenez')
+                            MapaInteractivo(lugares: jimenez.lugaresJimenez),
+                          if (widget.municipio.id == 'llera')
+                            MapaInteractivo(lugares: llera.lugaresLlera),
+                          if (widget.municipio.id == 'mainero')
+                            MapaInteractivo(lugares: mainero.lugaresMainero),
+                          if (widget.municipio.id == 'el_mante')
+                            MapaInteractivo(lugares: el_mante.lugaresElMante),
+                          if (widget.municipio.id == 'matamoros')
+                            MapaInteractivo(lugares: matamoros.lugaresMatamoros),
+                          if (widget.municipio.id == 'mendez')
+                            MapaInteractivo(lugares: mendez.lugaresMendez),
+                          if (widget.municipio.id == 'mier')
+                            MapaInteractivo(lugares: mier.lugaresMier),
+                          if (widget.municipio.id == 'miguel_aleman')
+                            MapaInteractivo(lugares: miguel_aleman.lugaresMiguelAleman),
+                          if (widget.municipio.id == 'miquihuana')
+                            MapaInteractivo(lugares: miquihuana.lugaresMiquihuana),
+                          if (widget.municipio.id == 'nuevo_laredo')
+                            MapaInteractivo(lugares: nuevo_laredo.lugaresNuevoLaredo),
+                          if (widget.municipio.id == 'nuevo_morelos')
+                            MapaInteractivo(lugares: nuevo_morelos.lugaresNuevoMorelos),
+                          if (widget.municipio.id == 'ocampo')
+                            MapaInteractivo(lugares: ocampo.lugaresOcampo),
+                          if (widget.municipio.id == 'padilla')
+                            MapaInteractivo(lugares: padilla.lugaresPadilla),
+                          if (widget.municipio.id == 'palmillas')
+                            MapaInteractivo(lugares: palmillas.lugaresPalmillas),
+                          if (widget.municipio.id == 'reynosa')
+                            MapaInteractivo(lugares: reynosa.lugaresReynosa),
+                          if (widget.municipio.id == 'rio_bravo')
+                            MapaInteractivo(lugares: rio_bravo.lugaresRioBravo),
+                          if (widget.municipio.id == 'san_carlos')
+                            MapaInteractivo(lugares: san_carlos.lugaresSanCarlos),
+                          if (widget.municipio.id == 'san_fernando')
+                            MapaInteractivo(lugares: san_fernando.lugaresSanFernando),
+                          if (widget.municipio.id == 'san_nicolas')
+                            MapaInteractivo(lugares: san_nicolas.lugaresSanNicolas),
+                          if (widget.municipio.id == 'soto_la_marina')
+                            MapaInteractivo(lugares: soto_la_marina.lugaresSotoLaMarina),
+                          if (widget.municipio.id == 'tampico')
+                            MapaInteractivo(lugares: tampico.lugaresTampico),
+                          if (widget.municipio.id == 'tula')
+                            MapaInteractivo(lugares: tula.lugaresTula),
+                          if (widget.municipio.id == 'valle_hermoso')
+                            MapaInteractivo(lugares: valle_hermoso.lugaresValleHermoso),
+                          if (widget.municipio.id == 'villagran')
+                            MapaInteractivo(lugares: villagran.lugaresVillagran),
+                          if (widget.municipio.id == 'xicotencatl')
+                            MapaInteractivo(lugares: xicotencatl.lugaresXicotencatl),
+                          if (widget.municipio.id == 'victoria')
+                            MapaInteractivo(lugares: victoria.lugaresVictoria),
                           const SizedBox(height: 40),
                         ],
                       ),

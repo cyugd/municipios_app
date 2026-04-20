@@ -5,48 +5,58 @@ final gueemez = Municipio(
   id: 'gueemez',
   nombre: 'Güémez',
   descripcionCorta: 'Ruralidad, historia y naturaleza cerca de la capital.',
-  descripcionLarga: '''
+  descripcionLarga:  '''
 ## Introducción
-Güémez, Tamaulipas, es un municipio con raíces profundamente ligadas a la identidad tamaulipeca. Su historia, su gente y sus tradiciones han moldeado con el tiempo una comunidad orgullosa de su pasado y comprometida con su desarrollo.
-
-Destaca por su ubicación estratégica, su cercanía a Ciudad Victoria y la presencia de parajes naturales, ríos, presas y espacios agrícolas que definen su carácter rural, productivo y comunitario.
+Güémez es un municipio del centro de Tamaulipas, ubicado al pie de la Sierra Madre Oriental, muy cerca de Ciudad Victoria. Su nombre proviene del general José de Güémez. Es una zona de transición entre el valle y la sierra, con paisajes que combinan llanuras agrícolas y montañas boscosas. La presa Las Pilas y el Salto del Tigre son algunos de sus atractivos naturales. Es ideal para el ecoturismo y el descanso.
 
 ## Historia
-La historia de Güémez se remonta al proceso de colonización del noreste de México en el siglo XVIII, encabezado por José de Escandón. El municipio surgió como un punto estratégico para la organización territorial y el desarrollo agrícola, rodeado de haciendas y rutas comerciales.
+La historia de Güémez se remonta al proceso de colonización del noreste de México en el siglo XVIII, encabezado por José de Escandón. El municipio surgió como un punto estratégico para la organización territorial y el desarrollo agrícola, rodeado de haciendas y rutas comerciales. En el siglo XIX, fue escenario de enfrentamientos durante la Guerra de Reforma y la Intervención Francesa. En el siglo XX, se consolidó como una comunidad rural con fuerte identidad histórica y tradición.
 
-## Geografía
-Güémez se localiza en la zona centro del estado de Tamaulipas. Su territorio combina llanuras con áreas cercanas a la Sierra Madre Oriental, lo que le proporciona diversidad natural. Cuenta con ríos, presas y zonas agrícolas que favorecen actividades productivas como la agricultura y la ganadería.
+## Geografía y Población
+Güémez se localiza en la zona centro del estado de Tamaulipas. Su territorio combina llanuras con áreas cercanas a la Sierra Madre Oriental, lo que le proporciona diversidad natural. Cuenta con ríos, presas (Las Pilas) y zonas agrícolas.  
+Población: aproximadamente 15,000 habitantes (2020), con baja densidad, principalmente rural.
 
 ## Economía
-La economía del municipio se basa principalmente en actividades del sector primario. La agricultura y la ganadería son fundamentales, siendo fuentes de empleo para gran parte de la población. El comercio local también contribuye al desarrollo económico de la región.
+- **Agricultura:** Maíz, sorgo, frijol, cítricos, hortalizas.  
+- **Ganadería:** Bovina, caprina, ovina.  
+- **Comercio local:** Pequeños negocios.  
+- **Turismo:** Ecoturismo en la sierra.
 
-## Cultura
-La cultura de Güémez se refleja en sus tradiciones, su música, su arquitectura y sus celebraciones religiosas. Existe un fuerte orgullo por sus raíces, lo que mantiene vivas las costumbres heredadas de generaciones anteriores.
+## Cultura y Tradiciones
+**Fiestas:** Patronales en honor a San José (19 de marzo), Semana Santa, Día de Muertos.  
+**Gastronomía:** Carne asada, cabrito, tamales serranos, discada, atole de masa.  
+**Artesanías:** Tejidos de palma, talabartería.
 
-## Valores
-Los valores principales de la comunidad son el respeto, la solidaridad, la responsabilidad y la unión familiar.
+## Turismo y Atractivos
+- **El Salto del Tigre:** Cascada y poza natural, ideal para senderismo.  
+- **Presa Las Pilas:** Pesca, paseos en lancha, camping.  
+- **Sierra Madre Oriental:** Miradores, caminatas.  
+- **Parroquia de San José:** Templo del siglo XVIII.  
+- **Río Santa Bárbara:** Paseos y pesca.
 
-## Costumbres
-Las costumbres incluyen festividades religiosas, reuniones familiares y eventos comunitarios. Las fiestas patronales y actividades tradicionales forman parte importante de la vida cotidiana del municipio.
+## Educación y Salud
+Cuenta con escuelas de nivel básico y medio superior (COBAT). Para estudios superiores, los jóvenes acuden a Ciudad Victoria. En salud, un centro de salud y clínica del IMSS.
 
-## Gastronomía
-La gastronomía de Güémez destaca por platillos típicos del norte de México como la carne asada, el cabrito, los tamales serranos y la discada.
+## Personajes Ilustres
+- **General José de Güémez (1800-1860):** Militar tamaulipeco.  
+- **Don Manuel López (1920-2000):** Promotor de la agricultura local.  
+- **Profesora Carmen García (1930-2010):** Fundadora de la escuela secundaria.
 
-## Educación
-El municipio cuenta con instituciones de nivel básico y medio superior. Además, su cercanía con Ciudad Victoria permite a los estudiantes continuar su formación en universidades y centros educativos más avanzados.
+## Datos Curiosos
+- El Salto del Tigre es una cascada estacional.  
+- La presa Las Pilas es ideal para la pesca de lobina.  
+- En la sierra se pueden observar venados y armadillos.  
+- El municipio es conocido por sus tamales serranos.  
+- La parroquia de San José data de 1780.
 
-## Sociedad
-La sociedad de Güémez se caracteriza por ser unida, trabajadora y participativa. El sentido de comunidad y la colaboración entre sus habitantes son fundamentales para su desarrollo social.
-
-## Turismo
-El turismo en Güémez se enfoca en sus atractivos naturales. Lugares como El Salto del Tigre, la Presa Las Pilas y otras áreas naturales ofrecen espacios para el ecoturismo, la recreación y el descanso.
-
-## Conclusión
-Güémez, Tamaulipas, representa una combinación de historia, tradición y desarrollo. Su identidad se mantiene firme gracias a sus costumbres, valores y la participación de su gente.
+## Perspectivas Futuras
+Se busca impulsar el ecoturismo, mejorar los caminos y apoyar la producción artesanal.
 ''',
   imagenAsset: 'assets/images/gueemez.jpg',
   imagenes: [
     'assets/fotos/guemez.png',
+    'assets/fotos/guemez1.jpg',
+    'assets/fotos/guemez2.jpg',
   ],
   poblacion: '7,000 hab.',
   superficie: '450 km²',
@@ -61,3 +71,23 @@ Güémez, Tamaulipas, representa una combinación de historia, tradición y desa
     ),
   ],
 );
+final List<Map<String, dynamic>> lugaresGueemez = [
+  {
+    'nombre': 'El Salto del Tigre',
+    'descripcion': 'Cascada y poza natural.',
+    'lat': 23.9833,
+    'lng': -99.2667,
+  },
+  {
+    'nombre': 'Presa Las Pilas',
+    'descripcion': 'Pesca y recreación.',
+    'lat': 24.0000,
+    'lng': -99.2500,
+  },
+  {
+    'nombre': 'Parroquia de San José',
+    'descripcion': 'Templo histórico.',
+    'lat': 23.9667,
+    'lng': -99.2833,
+  },
+];
