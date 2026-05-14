@@ -60,7 +60,7 @@ Cuenta con escuelas de nivel básico (primarias, secundaria técnica), bachiller
 ## Perspectivas Futuras
 El municipio busca mejorar la infraestructura turística, promover el ecoturismo en el río y fortalecer la producción agrícola con técnicas modernas. También se planea la creación de un museo de sitio y la restauración del centro histórico.
 ''',
-  imagenAsset: 'assets/images/camargo.jpg',
+  imagenAsset: 'assets/images/camargo.jpeg',
   imagenes: [
     'assets/fotos/camargo.png',
     'assets/fotos/camargo1.webp',

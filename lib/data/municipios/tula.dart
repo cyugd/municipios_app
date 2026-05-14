@@ -87,7 +87,7 @@ El turismo cultural y natural está en crecimiento, impulsado por el nombramient
 Tula es un municipio con gran riqueza histórica, cultural y natural. Su identidad se mantiene viva gracias a sus tradiciones, su gente y su patrimonio.  
 Como Pueblo Mágico, representa un importante símbolo de historia y cultura en Tamaulipas, con un futuro prometedor basado en el turismo, la conservación de sus raíces y el fortalecimiento de la economía local.
 ''',
-  imagenAsset: 'assets/images/tula.jpg',
+  imagenAsset: 'assets/images/tula.jpeg',
   imagenes: [
     'assets/fotos/Tula.png',
     'assets/fotos/tula-arroyo-loco-WEB.jpg',

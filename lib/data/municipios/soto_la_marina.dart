@@ -82,7 +82,7 @@ Entre los avances destacan proyectos de conservación ambiental, programas de ap
 Soto la Marina es un municipio con gran riqueza histórica, cultural y natural. A pesar de sus retos, su gente, tradiciones y valores lo convierten en un lugar importante.  
 Conservar su identidad es clave para el futuro, y el desarrollo sostenible en agricultura, pesca y turismo puede garantizar mejores oportunidades para las próximas generaciones.
 ''',
-  imagenAsset: 'assets/images/soto_la_marina.jpg',
+  imagenAsset: 'assets/images/soto.jpeg',
   imagenes: [
     'assets/fotos/Soto.png',
     'assets/fotos/soto la marina2.webp',

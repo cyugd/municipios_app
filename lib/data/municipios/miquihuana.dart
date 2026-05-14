@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final miquihuana = Municipio(
   id: 'miquihuana',
@@ -54,6 +55,15 @@ Su comunidad mantiene valores tradicionales que continúan fortaleciendo la vida
   poblacion: '3,000 hab.',
   superficie: '250 km²',
   gentilicio: 'Miquihuanense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Cabeza de Lazaro Cardenaz',
+      descripcion: 'Un monumento icónico de la ciudad de Miquihuana.',
+      rutaModelo: 'assets/models/Miqui.glb',
+      escala: 1.0,
+    ),
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresMiquihuana = [

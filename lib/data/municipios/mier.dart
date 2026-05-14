@@ -62,7 +62,7 @@ Cuenta con escuelas de nivel básico y medio superior (COBAT). Para estudios sup
 ## Perspectivas Futuras
 Se busca consolidar el turismo, mejorar la infraestructura y preservar el patrimonio histórico.
 ''',
-  imagenAsset: 'assets/images/mier.jpg',
+  imagenAsset: 'assets/images/mier.jpeg',
   imagenes: [
     'assets/fotos/Mier.png',
     'assets/fotos/mier1.jpg',

@@ -60,7 +60,7 @@ Altamira cuenta con una amplia oferta educativa: desde preescolar hasta universi
 ## Perspectivas Futuras
 Se busca ampliar el puerto con una nueva terminal de contenedores, fomentar el turismo industrial y ecológico, y mejorar la infraestructura urbana. También se promueve la certificación de Playa Miramar como "Playa Limpia" y la creación de un parque lineal en el malecón.
 ''',
-  imagenAsset: 'assets/images/altamira.jpg',
+  imagenAsset: 'assets/images/altamira.jpeg',
   imagenes: [
     'assets/fotos/altamira.png',
     'assets/fotos/altamira1-i.webp',

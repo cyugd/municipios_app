@@ -54,7 +54,7 @@ Cuenta con preescolar, primaria, telesecundaria y telebachillerato. Para estudio
 ## Perspectivas Futuras
 Se busca impulsar el turismo de naturaleza, mejorar los caminos rurales, apoyar la producción de queso artesanal y fomentar la conservación de las tradiciones.
 ''',
-  imagenAsset: 'assets/images/casas.jpg',
+  imagenAsset: 'assets/images/casas.jpeg',
   imagenes: [
     'assets/fotos/casas.png',
     'assets/fotos/casaa1.jpg',

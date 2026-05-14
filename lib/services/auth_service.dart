@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -38,3 +39,9 @@ class AuthService {
     await _auth.signOut();
   }
 }
+
+final authProvider = Provider<AuthService>((ref) => AuthService());
+
+final authStateProvider = StreamProvider<User?>((ref) {
+  return ref.watch(authProvider).user;
+});

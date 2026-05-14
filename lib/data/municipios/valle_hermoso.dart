@@ -79,7 +79,7 @@ Valle Hermoso es una ciudad con origen agrícola y fuerte identidad rural. Su de
 Aun así, su comunidad resiliente mantiene viva su economía y cultura, buscando un futuro más estable.  
 El fortalecimiento del turismo cinegético, la diversificación económica y la inversión en infraestructura son claves para garantizar el desarrollo sostenible del municipio.
 ''',
-  imagenAsset: 'assets/images/valle_hermoso.jpg',
+  imagenAsset: 'assets/images/valle_hermoso.jpeg',
   imagenes: [
     'assets/fotos/Valle_hermoso.png',
     'assets/fotos/valle hermoso.jpg',

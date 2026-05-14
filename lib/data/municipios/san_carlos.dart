@@ -79,7 +79,7 @@ El turismo ecológico y cultural es una oportunidad de desarrollo sostenible par
 San Carlos es un municipio pequeño pero con gran riqueza histórica, cultural y natural. Mantiene fuerte identidad local y tiene potencial de desarrollo sostenible a pesar de sus limitaciones.  
 El futuro de San Carlos depende de la capacidad de su comunidad para preservar sus tradiciones y aprovechar sus recursos naturales de manera responsable, fortaleciendo el turismo ecológico y la producción artesanal como motores de crecimiento.
 ''',
-  imagenAsset: 'assets/images/san_carlos.jpg',
+  imagenAsset: 'assets/images/san_carlos.jpeg',
   imagenes: [
     'assets/fotos/San_carlos.png',
     'assets/fotos/sancarlos2.jpg',

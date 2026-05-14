@@ -88,7 +88,7 @@ Es un destino que combina turismo cultural, natural y urbano, con gran potencial
 Tampico es una ciudad con gran importancia histórica, económica y cultural en Tamaulipas. Su desarrollo ha estado ligado al puerto y al petróleo, pero también destaca por sus tradiciones, gastronomía y riqueza natural.  
 Tiene un gran potencial turístico y sigue siendo un punto clave en el desarrollo regional, consolidándose como una ciudad moderna que conserva su identidad histórica y cultural.
 ''',
-  imagenAsset: 'assets/images/tampico.jpg',
+  imagenAsset: 'assets/images/tampico.jpeg',
   imagenes: [
     'assets/fotos/Tampico.png',
     'assets/fotos/tampico2.jpg',

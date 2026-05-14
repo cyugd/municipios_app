@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final gonzalez = Municipio(
   id: 'gonzalez',
@@ -61,6 +62,15 @@ Se busca diversificar la economía con el crecimiento industrial, mejorar la inf
   poblacion: '41,470 hab.',
   superficie: '3,500 km²',
   gentilicio: 'Gonzaleño',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Catedral de las campanas',
+      descripcion: 'Un monumento icónico de la ciudad de Gonzales.',
+      rutaModelo: 'assets/models/gonzales.glb',
+      escala: 1.0,
+    ),
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresGonzalez = [

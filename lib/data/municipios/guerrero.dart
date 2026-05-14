@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final guerrero = Municipio(
   id: 'guerrero',
@@ -62,6 +63,15 @@ Se busca promover el turismo histórico y ecológico, mejorar la infraestructura
   poblacion: '4,500 hab.',
   superficie: '900 km²',
   gentilicio: 'Guerrerense',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Cabeza de Lazaro Cardenaz',
+      descripcion: 'Un monumento icónico de la ciudad de Guerrero.',
+      rutaModelo: 'assets/models/Guerrero.glb',
+      escala: 1.0,
+    ),
+  ],
 );
 
 

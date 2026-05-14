@@ -96,7 +96,7 @@ El turismo es una fuente de ingresos y un medio para dar a conocer la riqueza cu
 Río Bravo es una ciudad que combina su desarrollo industrial con la riqueza natural de su litoral. El principal reto es lograr un equilibrio entre crecimiento económico, cuidado ambiental y bienestar social.  
 Su identidad se fortalece en la unión comunitaria, la preservación de tradiciones y el aprovechamiento de sus recursos naturales y culturales para construir un futuro sostenible.
 ''',
-  imagenAsset: 'assets/images/rio_bravo.jpg',
+  imagenAsset: 'assets/images/rio_bravo.jpeg',
   imagenes: [
     'assets/fotos/Rio_bravo.png',
     'assets/fotos/rio bravo1.JPG',

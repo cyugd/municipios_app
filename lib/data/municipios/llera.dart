@@ -55,7 +55,7 @@ Cuenta con escuelas de nivel básico y medio superior (COBAT). Para estudios sup
 Se busca impulsar el turismo histórico y natural, mejorar la infraestructura y evitar la migración juvenil.
 ''',
 
-  imagenAsset: 'assets/images/llera.jpg',
+  imagenAsset: 'assets/images/llera.jpeg',
 
 
   imagenes: [

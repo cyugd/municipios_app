@@ -78,7 +78,7 @@ Villagrán es un municipio con raíces históricas profundas y una identidad rur
 A pesar de retos como la migración y la falta de desarrollo industrial, conserva tradiciones, cultura y un fuerte sentido de comunidad.  
 Su futuro depende del fortalecimiento de la educación, la economía local y el aprovechamiento de sus recursos naturales y culturales, consolidándose como un municipio que preserva su historia y busca un desarrollo sostenible.
 ''',
-  imagenAsset: 'assets/images/villagran.jpg',
+  imagenAsset: 'assets/images/villagran.jpeg',
   imagenes: [
     'assets/fotos/Villagran.png',
     'assets/fotos/villagrant.jpg',

@@ -42,7 +42,7 @@ También sobresalen museos, teatros y centros culturales que promueven la histor
 Actualmente Nuevo Laredo continúa siendo una ciudad estratégica para el comercio internacional entre México y Estados Unidos. Su desarrollo económico está relacionado con el transporte, la industria y los servicios fronterizos.  
 Sin embargo, el municipio también enfrenta retos importantes como mejorar la infraestructura urbana, fortalecer la seguridad y atender el crecimiento de la población para mantener un desarrollo equilibrado. La gestión del agua, la movilidad y la seguridad pública son temas prioritarios. A pesar de ello, la ciudad sigue siendo un motor económico y cultural de Tamaulipas, con un papel clave en la relación binacional.
 ''',
-  imagenAsset: 'assets/images/nuevo_laredo.jpg',
+  imagenAsset: 'assets/images/nuevo_ladero.jpeg',
   imagenes: [
     'assets/fotos/Nuevo_ladero.png',
     'assets/fotos/NUEVO-LAREDO.jpg',

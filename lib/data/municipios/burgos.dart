@@ -56,7 +56,7 @@ Cuenta con preescolar, primaria, telesecundaria y telebachillerato. Para estudio
 ## Perspectivas Futuras
 Se busca promover el turismo rural, mejorar los caminos, apoyar la producción de queso de cabra y fomentar la artesanía.
 ''',
-  imagenAsset: 'assets/images/burgos.jpg',
+  imagenAsset: 'assets/images/burgos.jpeg',
   imagenes: [
     'assets/fotos/burgos.png',
     'assets/fotos/bugos1.jpg',

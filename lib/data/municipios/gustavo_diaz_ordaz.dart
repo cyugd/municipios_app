@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final gustavo_diaz_ordaz = Municipio(
   id: 'gustavo_diaz_ordaz',
@@ -51,7 +52,7 @@ Cuenta con escuelas de nivel básico y medio superior (CBTIS). Para estudios sup
 ## Perspectivas Futuras
 Se busca diversificar la economía, promover el turismo fronterizo y mejorar la infraestructura agrícola.
 ''',
-  imagenAsset: 'assets/images/gustavo_diaz_ordaz.jpg',
+  imagenAsset: 'assets/images/gustavo_diaz_ordaz.jpeg',
   imagenes: [
     'assets/fotos/gustavo dias ordaz.png',
     'assets/fotos/GDOrdaz.jpg',
@@ -60,6 +61,15 @@ Se busca diversificar la economía, promover el turismo fronterizo y mejorar la 
   poblacion: '16,000 hab.',
   superficie: '200 km²',
   gentilicio: 'Ordaceño',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a Gustavo Díaz Ordaz',
+      descripcion: 'Un monumento icónico de la ciudad de Gustavo Díaz Ordaz.',
+      rutaModelo: 'assets/models/gustavito.glb',
+      escala: 1.0,
+    ),
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresGustavoDiazOrdaz = [

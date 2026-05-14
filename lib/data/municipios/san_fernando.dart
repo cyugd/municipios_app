@@ -59,7 +59,7 @@ Además, sus zonas rurales y costeras ofrecen experiencias de turismo ecológico
 San Fernando combina historia, tradición y naturaleza. Su comunidad mantiene fuertes raíces culturales y valores locales, mientras que sus espacios emblemáticos, zonas rurales y costeras muestran un municipio con identidad, cultura y atractivos turísticos relevantes en el norte de Tamaulipas.  
 El futuro de San Fernando depende de la capacidad de su población y autoridades para equilibrar el desarrollo económico con la preservación de su entorno natural y cultural, consolidándose como un municipio con gran potencial en turismo, agricultura y cohesión social.
 ''',
-  imagenAsset: 'assets/images/san_fernando.jpg',
+  imagenAsset: 'assets/images/san_fernando.jpeg',
   imagenes: [
     'assets/fotos/San_fernando.png',
     'assets/fotos/San_Fernando_Centro,_Tamaulipas.jpg',
