@@ -7,7 +7,7 @@ import 'package:municipios_app/widgets/chat_ai_widget.dart';
 import 'package:municipios_app/services/auth_service.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,21 +19,22 @@ class HomeScreen extends StatelessWidget {
           children: [
             Image.asset(
               'assets/logo/tamaulipas_logo.png',
-              height: 30,
-              errorBuilder: (_, __, ___) => const Icon(Icons.map, color: Colors.white),
+              height: 35,
+              errorBuilder: (_, __, ___) => const Icon(Icons.map, color: Colors.white, size: 28),
             ),
-            const SizedBox(width: 8),
+            const SizedBox(width: 12),
             const Expanded(
               child: Text(
                 'Municipios de Tamaulipas',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 overflow: TextOverflow.ellipsis,
               ),
             ),
           ],
         ),
-        backgroundColor: Colors.teal,
+        backgroundColor: const Color(0xFF722F37),
         foregroundColor: Colors.white,
-        elevation: 2,
+        elevation: 4,
         actions: [
           IconButton(
             icon: const Icon(Icons.search),
@@ -58,14 +59,14 @@ class HomeScreen extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Color(0xFFE0F2F1), Color(0xFFB2DFDB)],
+            colors: [Color(0xFF722F37), Color(0xFF8B3A3F)], // degradado guindo
           ),
         ),
         child: LayoutBuilder(
           builder: (context, constraints) {
             int crossAxisCount = 2;
-            double maxWidth = 1200; 
-            
+            double maxWidth = 1200;
+
             if (constraints.maxWidth > 1200) {
               crossAxisCount = 5;
             } else if (constraints.maxWidth > 900) {

@@ -4,7 +4,7 @@ import 'package:municipios_app/models/monumento.dart';
 
 class Visor3DScreen extends StatefulWidget {
   final Monumento monumento;
-  const Visor3DScreen({Key? key, required this.monumento}) : super(key: key);
+  const Visor3DScreen({super.key, required this.monumento});
 
   @override
   State<Visor3DScreen> createState() => _Visor3DScreenState();
@@ -13,12 +13,12 @@ class Visor3DScreen extends StatefulWidget {
 class _Visor3DScreenState extends State<Visor3DScreen> {
   @override
   Widget build(BuildContext context) {
-    final String src = widget.monumento.rutaModelo;
+    final src = widget.monumento.rutaModelo;
 
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.monumento.nombre),
-        backgroundColor: Colors.teal,
+        backgroundColor: const Color(0xFF722F37),
         actions: [
           IconButton(
             icon: const Icon(Icons.info_outline),
@@ -52,7 +52,7 @@ class _Visor3DScreenState extends State<Visor3DScreen> {
                 borderRadius: const BorderRadius.vertical(top: Radius.circular(20)),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withAlpha(50),
+                    color: Colors.grey.withValues(alpha: 0.2),
                     blurRadius: 10,
                     offset: const Offset(0, -2),
                   ),
@@ -66,7 +66,7 @@ class _Visor3DScreenState extends State<Visor3DScreen> {
                     style: const TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
-                      color: Colors.teal,
+                      color: Color(0xFF722F37),
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -94,7 +94,7 @@ class _Visor3DScreenState extends State<Visor3DScreen> {
         title: const Text('Acerca del modelo 3D'),
         content: const Text(
           'Puedes rotar el modelo con un dedo y hacer zoom con dos dedos.\n'
-              'El modelo se carga desde los archivos definidos para este monumento.  ',
+              'El modelo se carga desde los archivos definidos para este monumento.',
         ),
         actions: [
           TextButton(

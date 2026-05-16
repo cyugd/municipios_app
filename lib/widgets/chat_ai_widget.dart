@@ -5,7 +5,7 @@ import 'package:municipios_app/providers/chat_provider.dart';
 
 class ChatAIWidget extends ConsumerStatefulWidget {
   final Municipio? municipio;
-  const ChatAIWidget({Key? key, this.municipio}) : super(key: key);
+  const ChatAIWidget({super.key, this.municipio});
 
   @override
   ConsumerState<ChatAIWidget> createState() => _ChatAIWidgetState();
@@ -29,11 +29,9 @@ class _ChatAIWidgetState extends ConsumerState<ChatAIWidget> {
 
   @override
   Widget build(BuildContext context) {
-    // Obtenemos el estado y el notificador del chat usando Riverpod
     final chatState = ref.watch(chatProvider(widget.municipio));
     final chatNotifier = ref.read(chatProvider(widget.municipio).notifier);
 
-    // Escuchamos cambios en los mensajes para hacer scroll automático
     ref.listen(chatProvider(widget.municipio), (previous, next) {
       if (previous?.messages.length != next.messages.length) {
         _scrollToBottom();
@@ -42,8 +40,8 @@ class _ChatAIWidgetState extends ConsumerState<ChatAIWidget> {
 
     return FloatingActionButton(
       heroTag: 'ai_fab_${widget.municipio?.id ?? "global"}',
-      backgroundColor: Colors.teal,
-      child: const Icon(Icons.smart_toy, color: Colors.white),
+      backgroundColor: const Color(0xFFFFD700),
+      child: const Icon(Icons.smart_toy, color: Color(0xFF722F37)),
       onPressed: () => _showChat(context, chatState, chatNotifier),
     );
   }
@@ -63,11 +61,10 @@ class _ChatAIWidgetState extends ConsumerState<ChatAIWidget> {
             ? const Center(child: CircularProgressIndicator())
             : Column(
           children: [
-            // Cabecera del Chat
             Container(
               padding: const EdgeInsets.all(16),
               decoration: const BoxDecoration(
-                color: Colors.teal,
+                color: Color(0xFF722F37),
                 borderRadius: BorderRadius.vertical(top: Radius.circular(25)),
               ),
               child: Row(
@@ -77,8 +74,7 @@ class _ChatAIWidgetState extends ConsumerState<ChatAIWidget> {
                   Expanded(
                     child: Text(
                       'Asistente - ${widget.municipio?.nombre ?? "Tamaulipas"}',
-                      style: const TextStyle(
-                          color: Colors.white, fontWeight: FontWeight.bold),
+                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
@@ -94,7 +90,6 @@ class _ChatAIWidgetState extends ConsumerState<ChatAIWidget> {
                 ],
               ),
             ),
-            // Lista de Mensajes
             Expanded(
               child: ListView.builder(
                 controller: _scrollController,
@@ -107,12 +102,10 @@ class _ChatAIWidgetState extends ConsumerState<ChatAIWidget> {
                     alignment: isUser ? Alignment.centerRight : Alignment.centerLeft,
                     child: Container(
                       margin: const EdgeInsets.only(bottom: 12),
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 14, vertical: 10),
-                      constraints: BoxConstraints(
-                          maxWidth: MediaQuery.of(context).size.width * 0.75),
+                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                      constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.75),
                       decoration: BoxDecoration(
-                        color: isUser ? Colors.teal[100] : Colors.grey[200],
+                        color: isUser ? const Color(0xFFFFD700).withValues(alpha: 0.3) : Colors.grey[200],
                         borderRadius: BorderRadius.circular(15),
                       ),
                       child: Text(
@@ -124,10 +117,8 @@ class _ChatAIWidgetState extends ConsumerState<ChatAIWidget> {
                 },
               ),
             ),
-            // Indicador de carga de la IA
             if (state.isLoading)
-              const LinearProgressIndicator(color: Colors.teal, backgroundColor: Colors.transparent),
-            // Área de entrada de texto
+              const LinearProgressIndicator(color: Color(0xFF722F37), backgroundColor: Colors.transparent),
             Padding(
               padding: EdgeInsets.only(
                 bottom: MediaQuery.of(context).viewInsets.bottom + 16,
@@ -144,7 +135,10 @@ class _ChatAIWidgetState extends ConsumerState<ChatAIWidget> {
                         hintText: 'Pregunta sobre Tamaulipas...',
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30),
+                          borderSide: BorderSide.none,
                         ),
+                        fillColor: Colors.grey[100],
+                        filled: true,
                         contentPadding: const EdgeInsets.symmetric(horizontal: 20),
                       ),
                       onSubmitted: (val) {
@@ -157,7 +151,7 @@ class _ChatAIWidgetState extends ConsumerState<ChatAIWidget> {
                   ),
                   const SizedBox(width: 8),
                   IconButton(
-                    icon: const Icon(Icons.send, color: Colors.teal),
+                    icon: const Icon(Icons.send, color: Color(0xFF722F37)),
                     onPressed: () {
                       if (_controller.text.trim().isNotEmpty) {
                         notifier.sendMessage(_controller.text.trim());

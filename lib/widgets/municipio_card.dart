@@ -4,9 +4,7 @@ import 'package:municipios_app/models/municipio.dart';
 class MunicipioCard extends StatefulWidget {
   final Municipio municipio;
   final VoidCallback onTap;
-
-  const MunicipioCard({Key? key, required this.municipio, required this.onTap})
-      : super(key: key);
+  const MunicipioCard({super.key, required this.municipio, required this.onTap});
 
   @override
   State<MunicipioCard> createState() => _MunicipioCardState();
@@ -27,8 +25,8 @@ class _MunicipioCardState extends State<MunicipioCard> {
         onTapCancel: () => setState(() => _isPressed = false),
         onTap: widget.onTap,
         child: Card(
-          elevation: 4,
-          shadowColor: Colors.teal.withOpacity(0.2),
+          elevation: 6,
+          shadowColor: const Color(0xFF722F37).withValues(alpha: 0.3),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
           clipBehavior: Clip.antiAlias,
           child: Column(
@@ -43,9 +41,9 @@ class _MunicipioCardState extends State<MunicipioCard> {
                     width: double.infinity,
                     fit: BoxFit.cover,
                     errorBuilder: (context, error, stackTrace) => Container(
-                      color: Colors.teal.withOpacity(0.1),
-                      child: Center(
-                        child: Icon(Icons.image_not_supported, color: Colors.teal.withOpacity(0.5)),
+                      color: const Color(0xFF722F37).withValues(alpha: 0.1),
+                      child: const Center(
+                        child: Icon(Icons.image_not_supported, size: 40),
                       ),
                     ),
                   ),
@@ -67,6 +65,7 @@ class _MunicipioCardState extends State<MunicipioCard> {
                             style: const TextStyle(
                               fontSize: 15,
                               fontWeight: FontWeight.bold,
+                              color: Color(0xFF722F37),
                             ),
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
@@ -82,7 +81,7 @@ class _MunicipioCardState extends State<MunicipioCard> {
                       ),
                       Row(
                         children: [
-                          const Icon(Icons.people, size: 13, color: Colors.teal),
+                          const Icon(Icons.people, size: 13, color: Color(0xFFFFD700)),
                           const SizedBox(width: 2),
                           Expanded(
                             child: Text(
@@ -91,7 +90,7 @@ class _MunicipioCardState extends State<MunicipioCard> {
                               overflow: TextOverflow.ellipsis,
                             ),
                           ),
-                          const Icon(Icons.map, size: 13, color: Colors.teal),
+                          const Icon(Icons.map, size: 13, color: Color(0xFFFFD700)),
                           const SizedBox(width: 2),
                           Expanded(
                             child: Text(

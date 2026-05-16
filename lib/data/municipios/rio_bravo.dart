@@ -6,95 +6,53 @@ final rio_bravo = Municipio(
   nombre: 'Río Bravo',
   descripcionCorta: 'Ciudad joven, agrícola e industrial en la frontera norte.',
   descripcionLarga: '''
-## Historia
-Río Bravo es un municipio joven de Tamaulipas cuyo desarrollo comenzó en el siglo XX gracias a la agricultura en tierras fértiles cercanas al río Bravo. La producción de algodón, maíz y sorgo, junto con los sistemas de riego, impulsó la formación de comunidades.  
-En 1961 se convirtió en municipio independiente de Reynosa, lo que fortaleció su crecimiento en comercio y exportación hacia Estados Unidos. Posteriormente, la llegada de maquiladoras aceleró su desarrollo económico y urbano.  
-Actualmente, es un municipio fronterizo con economía basada en la agricultura, industria y comercio, destacando por su ubicación estratégica y crecimiento poblacional. Su historia refleja la transición de una comunidad agrícola a un centro urbano con fuerte dinamismo económico.
+## Introducción
+Río Bravo es un municipio joven de Tamaulipas cuyo desarrollo comenzó en el siglo XX gracias a la agricultura en tierras fértiles cercanas al río Bravo. La producción de algodón, maíz y sorgo, junto con los sistemas de riego, impulsó la formación de comunidades. En 1961 se convirtió en municipio independiente de Reynosa, lo que fortaleció su crecimiento en comercio y exportación hacia Estados Unidos. Posteriormente, la llegada de maquiladoras aceleró su desarrollo económico y urbano.
 
 ## Geografía
-Río Bravo se ubica en una zona costera cercana al Golfo de México, dentro del área metropolitana Tampico–Madero–Altamira. Su territorio es plano, con suelos arenosos, lagunas y humedales que favorecen la formación de playas, aunque también son vulnerables a la erosión.  
-Cuenta con una red de esteros y cuerpos de agua conectados al río Pánuco, lo que permite el desarrollo de manglares y ecosistemas acuáticos importantes. El clima es cálido-subhúmedo, con lluvias en verano y riesgo de huracanes.  
-Los manglares y estuarios son clave para la biodiversidad, ya que sirven como hábitat de aves, peces y otras especies, siendo fundamentales para la pesca y el equilibrio ecológico. Además, su ubicación lo convierte en un punto estratégico para el comercio marítimo y el turismo costero.
+Se ubica en el norte de Tamaulipas, en la región fronteriza con Texas. Su territorio es plano, con suelos fértiles aptos para la agricultura de riego. El clima es seco cálido extremoso, con temperaturas que superan los 40°C en verano. La precipitación anual es baja. La vegetación es de matorral espinoso.
 
-## Población / Evolución
-**Evolución poblacional:** La población de Río Bravo pasó de pequeños núcleos costeros a una ciudad con más de 200 mil habitantes. El crecimiento fue especialmente intenso entre 1930 y 1980 por el empuje industrial.  
-**Características demográficas:**  
-- Composición por edades: mezcla de población activa en edad productiva y segmentos jóvenes.  
-- Distribución espacial: densidad mayor en colonias cercanas a la refinería y en el área urbana central.  
-- Migración: flujo histórico de migrantes laborales atraídos por la industria, especialmente en sectores petroleros y maquiladores.  
-La población es diversa y multicultural, con familias originarias de la región y migrantes que han aportado nuevas tradiciones y costumbres.
+## Población
+Población aproximada de 100,000 habitantes (2020). Crecimiento constante por migración laboral hacia la industria y agricultura.
+
+## Historia
+El desarrollo comenzó en el siglo XX con la agricultura de riego. En 1961 se convirtió en municipio independiente de Reynosa. La producción de algodón fue muy importante en las décadas de 1950 y 1960. Posteriormente llegaron las maquiladoras, diversificando la economía.
 
 ## Economía
-La economía de Río Bravo se basa en la industria, la pesca, el comercio y el turismo. La refinería es una de las principales fuentes de empleo, generando actividades relacionadas como transporte y servicios.  
-El turismo se concentra en la playa, con hoteles, restaurantes y actividades recreativas, además del potencial gastronómico y de eventos. También destaca la pesca artesanal y la producción de mariscos, que abastecen mercados locales y regionales.  
-En años recientes, la industria maquiladora y los proyectos de exportación han diversificado la economía, fortaleciendo el papel de Río Bravo como un municipio competitivo en la frontera.
-
-## Cultura
-La cultura de Río Bravo está influenciada por su vida marina, sus tradiciones populares y su historia obrera. Se reflejan en expresiones como el huapango y los sones costeños, que forman parte de su identidad local.  
-**Patrimonio inmaterial:** Incluye conocimientos y tradiciones como los oficios de pesca y navegación, recetas típicas y la memoria histórica de los trabajadores petroleros, que se transmiten de generación en generación.  
-La música, la danza y las festividades reflejan la unión comunitaria y el orgullo por la identidad costeña.
-
-## Valores
-La comunidad se caracteriza por valores como el trabajo, la solidaridad, la hospitalidad y el orgullo por su historia y tradiciones. Estos valores se manifiestan en la cooperación durante festividades, en la ayuda mutua ante fenómenos naturales como huracanes y en la preservación de la cultura local.
-
-## Iniciativas
-Se promueven acciones para conservar la cultura y fortalecer la comunidad, como:  
-- Reconocimientos a oficios tradicionales.  
-- Campañas escolares sobre patrimonio y prevención ante huracanes.  
-- Apoyo al emprendimiento, especialmente femenino.  
-- Capacitación laboral en áreas técnicas e industriales.  
-Estas iniciativas buscan equilibrar el desarrollo económico con la preservación cultural y social.
-
-## Costumbres (Fiestas)
-Las festividades combinan elementos religiosos, marítimos y populares, siendo parte importante de la vida social.  
-- **Carnaval:** celebración muy importante que reúne a familias, comparsas y música, además de generar actividad económica.  
-- **Virgen del Carmen:** fiesta ligada al mar, con procesiones, misas y bendición de embarcaciones, reflejando la fe de la comunidad pesquera.  
-- **Semana Santa:** periodo de gran afluencia turística y actividades religiosas, especialmente en la zona costera.  
-Estas celebraciones refuerzan la identidad comunitaria y atraen visitantes de otras regiones.
-
-## Patrimonio
-El patrimonio incluye elementos históricos, culturales e industriales que representan la identidad del municipio.  
-**Edificios y sitios históricos:**  
-- Faro de la Barra.  
-- La refinería.  
-- Monumentos conmemorativos.  
-- Iglesia principal.  
-- Palacio municipal.  
-Estos espacios son símbolos de la historia y el desarrollo de Río Bravo.
-
-## Gastronomía
-La gastronomía combina sabores del mar, la región huasteca y la tradición criolla.  
-**Platos emblemáticos:**  
-- Cóctel de mariscos.  
-- Empanadas de jaiba.  
-- Ceviches.  
-- Pescado asado.  
-- Camarones al coco.  
-- Pan tradicional.  
-La cocina local es un atractivo turístico y un símbolo de identidad cultural.
-
-## Educación
-Cuenta con oferta educativa en todos los niveles, con enfoque en áreas técnicas relacionadas con la industria petrolera y actividades locales.  
-**Programas especiales:**  
-- Formación en seguridad industrial.  
-- Protección ambiental.  
-- Turismo y cultura.  
-- Pesca sostenible.  
-La educación busca preparar a los jóvenes para enfrentar los retos de un municipio industrial y costero.
+- **Agricultura:** sorgo, maíz, algodón, frijol, hortalizas.
+- **Ganadería:** bovina, caprina.
+- **Industria maquiladora.**
+- **Comercio y servicios.**
+- **Turismo:** incipiente.
 
 ## Turismo
-Río Bravo ofrece atractivos relacionados con playa, naturaleza e industria.  
-**Lugares para visitar:**  
-- Playa Miramar.  
-- Faro de la Barra.  
-- Refinería.  
-- Parques y malecón.  
-**Consejos:** revisar el clima, consumir en lugares seguros, respetar áreas protegidas y participar en recorridos guiados.  
-El turismo es una fuente de ingresos y un medio para dar a conocer la riqueza cultural y natural del municipio.
+- **Plaza Principal:** jardín con kiosco.
+- **Parroquia de Nuestra Señora del Refugio:** templo principal.
+- **Campos agrícolas:** recorridos por zonas de cultivo.
+- **Áreas recreativas** cercanas al río Bravo.
 
-## Conclusión
-Río Bravo es una ciudad que combina su desarrollo industrial con la riqueza natural de su litoral. El principal reto es lograr un equilibrio entre crecimiento económico, cuidado ambiental y bienestar social.  
-Su identidad se fortalece en la unión comunitaria, la preservación de tradiciones y el aprovechamiento de sus recursos naturales y culturales para construir un futuro sostenible.
+## Gastronomía
+Carne asada, cabrito al pastor, tamales, machacado con huevo, enchiladas, frijoles charros.
+
+## Cultura y Tradiciones
+Fiestas patronales en honor a la Virgen del Refugio (julio). Día de Muertos. Fiestas Patrias. Música norteña y banda. Artesanías: talabartería, bordados.
+
+## Educación
+Escuelas de nivel básico y medio superior (CBTIS, COBAT). Para educación superior, los jóvenes acuden a Reynosa.
+
+## Infraestructura
+Centros de salud, clínicas del IMSS. Carreteras pavimentadas. Puente internacional hacia Estados Unidos.
+
+## Personajes Ilustres
+- Don José López (1920-2000): pionero de la agricultura de riego.
+- Profesora María Hernández (1930-2015): educadora.
+
+## Datos Curiosos
+- Río Bravo se separó de Reynosa en 1961.
+- La producción de algodón fue muy importante en el pasado.
+- El distrito de riego 025 fue clave para su desarrollo.
+- Es un municipio joven en comparación con otros.
+- La feria regional se celebra en febrero.
 ''',
   imagenAsset: 'assets/images/rio_bravo.jpg',
   imagenes: [
@@ -105,35 +63,29 @@ Su identidad se fortalece en la unión comunitaria, la preservación de tradicio
   poblacion: '100,000 hab.',
   superficie: '1,500 km²',
   gentilicio: 'Riobravense',
-
   monumentos3D: [
     Monumento(
       nombre: 'Casa de Ladrillo',
-      descripcion: 'Un monumento icónico de la ciudad de Rio Bravo.',
+      descripcion: 'Edificio emblemático.',
       rutaModelo: 'assets/models/Riobravo.glb',
       escala: 1.0,
     ),
   ],
+  imagenesGastronomia: [],
+  imagenesTurismo: [],
 );
-
 
 final List<Map<String, dynamic>> lugaresRioBravo = [
   {
-    'nombre': 'Playa Miramar',
-    'descripcion': 'Principal playa del municipio, ideal para recreación.',
-    'lat': 22.2728,
-    'lng': -97.8350,
+    'nombre': 'Plaza Principal',
+    'descripcion': 'Centro social.',
+    'lat': 25.8000,
+    'lng': -98.1000,
   },
   {
-    'nombre': 'Faro de la Barra',
-    'descripcion': 'Atractivo natural y paisajístico.',
-    'lat': 22.2667,
-    'lng': -97.8000,
-  },
-  {
-    'nombre': 'Laguna de Champayán',
-    'descripcion': 'Ecosistema de manglares, ideal para ecoturismo.',
-    'lat': 22.2500,
-    'lng': -97.9000,
+    'nombre': 'Parroquia de Nuestra Señora del Refugio',
+    'descripcion': 'Templo principal.',
+    'lat': 25.8010,
+    'lng': -98.1010,
   },
 ];

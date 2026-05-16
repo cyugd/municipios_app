@@ -11,6 +11,8 @@ class Municipio {
   final String superficie;
   final String gentilicio;
   final List<Monumento> monumentos3D;
+  final List<String> imagenesGastronomia;
+  final List<String> imagenesTurismo;
 
   Municipio({
     required this.id,
@@ -23,5 +25,7 @@ class Municipio {
     required this.superficie,
     required this.gentilicio,
     this.monumentos3D = const [],
+    this.imagenesGastronomia = const [], // Si no existe, será lista vacía
+    this.imagenesTurismo = const [],     // Si no existe, será lista vacía
   });
 }

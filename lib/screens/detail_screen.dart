@@ -53,7 +53,7 @@ import 'package:municipios_app/data/municipios/victoria.dart' as victoria;
 
 class DetailScreen extends StatefulWidget {
   final Municipio municipio;
-  const DetailScreen({Key? key, required this.municipio}) : super(key: key);
+  const DetailScreen({super.key, required this.municipio});
 
   @override
   State<DetailScreen> createState() => _DetailScreenState();
@@ -68,21 +68,23 @@ class _DetailScreenState extends State<DetailScreen> {
   final FlutterTts _flutterTts = FlutterTts();
   bool _isSpeaking = false;
 
+  // Definimos las secciones con sus respectivas palabras clave
   final List<Map<String, dynamic>> _sections = [
-    {'name': 'Historia', 'key': GlobalKey(), 'icon': Icons.history},
-    {'name': 'Geografía', 'key': GlobalKey(), 'icon': Icons.landscape},
-    {'name': 'Demografía', 'key': GlobalKey(), 'icon': Icons.people},
-    {'name': 'Economía', 'key': GlobalKey(), 'icon': Icons.attach_money},
-    {'name': 'Turismo', 'key': GlobalKey(), 'icon': Icons.beach_access},
-    {'name': 'Cultura', 'key': GlobalKey(), 'icon': Icons.music_note},
-    {'name': 'Educación', 'key': GlobalKey(), 'icon': Icons.school},
-    {'name': 'Infraestructura', 'key': GlobalKey(), 'icon': Icons.business},
-    {'name': 'Personajes', 'key': GlobalKey(), 'icon': Icons.people_outline},
-    {'name': 'Curiosidades', 'key': GlobalKey(), 'icon': Icons.lightbulb},
-    {'name': 'Futuro', 'key': GlobalKey(), 'icon': Icons.trending_up},
+    {'name': 'Historia', 'icon': Icons.history, 'keywords': ['historia']},
+    {'name': 'Geografía', 'icon': Icons.landscape, 'keywords': ['geografía', 'ubicación', 'medio ambiente']},
+    {'name': 'Demografía', 'icon': Icons.people, 'keywords': ['población', 'demografía']},
+    {'name': 'Economía', 'icon': Icons.attach_money, 'keywords': ['economía']},
+    {'name': 'Turismo', 'icon': Icons.beach_access, 'keywords': ['turismo', 'atractivos']},
+    {'name': 'Gastronomía', 'icon': Icons.restaurant, 'keywords': ['gastronomía', 'comida']},
+    {'name': 'Cultura', 'icon': Icons.music_note, 'keywords': ['cultura', 'tradiciones']},
+    {'name': 'Educación', 'icon': Icons.school, 'keywords': ['educación']},
+    {'name': 'Infraestructura', 'icon': Icons.business, 'keywords': ['infraestructura', 'comunicaciones']},
+    {'name': 'Personajes', 'icon': Icons.people_outline, 'keywords': ['personajes']},
+    {'name': 'Curiosidades', 'icon': Icons.lightbulb, 'keywords': ['curiosidades', 'datos']},
   ];
 
-  List<Widget> _sectionWidgets = [];
+  // Lista de widgets de sección, cada uno con su propio GlobalKey único
+  List<Map<String, dynamic>> _sectionWidgets = []; // cada elemento: {'title': String, 'widget': Widget, 'key': GlobalKey}
 
   @override
   void initState() {
@@ -97,7 +99,6 @@ class _DetailScreenState extends State<DetailScreen> {
     await _flutterTts.setLanguage("es-MX");
     await _flutterTts.setSpeechRate(0.5);
     await _flutterTts.setPitch(1.0);
-    await _flutterTts.awaitSpeakCompletion(true);
   }
 
   void _onScroll() {
@@ -117,10 +118,9 @@ class _DetailScreenState extends State<DetailScreen> {
   }
 
   void _scrollToSection(GlobalKey key) {
-    final context = key.currentContext;
-    if (context != null) {
+    if (key.currentContext != null) {
       Scrollable.ensureVisible(
-        context,
+        key.currentContext!,
         duration: const Duration(milliseconds: 500),
         curve: Curves.easeOutCubic,
       );
@@ -128,8 +128,8 @@ class _DetailScreenState extends State<DetailScreen> {
   }
 
   void _buildSectionWidgets() {
-    final String text = widget.municipio.descripcionLarga;
-    final List<String> lines = text.split('\n');
+    final text = widget.municipio.descripcionLarga;
+    final lines = text.split('\n');
     List<Map<String, String>> sections = [];
     String currentSection = '';
     String currentContent = '';
@@ -142,66 +142,61 @@ class _DetailScreenState extends State<DetailScreen> {
         currentSection = line.substring(3).trim();
         currentContent = '';
       } else {
-        currentContent += line + '\n';
+        currentContent += '$line\n';
       }
     }
     if (currentSection.isNotEmpty) {
       sections.add({'title': currentSection, 'content': currentContent.trim()});
     }
 
-    _sectionWidgets = [];
-    final Set<GlobalKey> usedKeys = {};
+    // Limpiar lista anterior
+    _sectionWidgets.clear();
 
+    // Para cada sección del texto, asignar una clave única (basada en el título) y un GlobalKey único
     for (var section in sections) {
-      GlobalKey key = _findKeyForSection(section['title']!);
-
-      if (usedKeys.contains(key)) {
-        key = GlobalKey();
-      } else {
-        usedKeys.add(key);
-      }
-
-      _sectionWidgets.add(
-        Container(
-          key: key,
+      final title = section['title']!;
+      final content = section['content']!;
+      // Crear una clave única para esta sección
+      final uniqueKey = GlobalKey();
+      _sectionWidgets.add({
+        'title': title,
+        'widget': Container(
+          key: uniqueKey,
           padding: const EdgeInsets.only(top: 16),
-          child: _buildSection(section['title']!, section['content']!),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _buildSectionTitle(title),
+              _buildFormattedText(content),
+            ],
+          ),
         ),
-      );
+        'key': uniqueKey,
+        'keywords': _getKeywordsForTitle(title), // para facilitar navegación
+      });
     }
   }
 
-  GlobalKey _findKeyForSection(String title) {
-    final cleanTitle = title.toLowerCase().trim();
-
-    if (cleanTitle.contains('historia')) return _sections[0]['key'];
-    if (cleanTitle.contains('geografía') || cleanTitle.contains('ubicación')) return _sections[1]['key'];
-    if (cleanTitle.contains('demografía') || cleanTitle.contains('población')) return _sections[2]['key'];
-    if (cleanTitle.contains('economía')) return _sections[3]['key'];
-    if (cleanTitle.contains('turismo')) return _sections[4]['key'];
-    if (cleanTitle.contains('cultura')) return _sections[5]['key'];
-    if (cleanTitle.contains('educación')) return _sections[6]['key'];
-    if (cleanTitle.contains('infraestructura')) return _sections[7]['key'];
-    if (cleanTitle.contains('personajes')) return _sections[8]['key'];
-    if (cleanTitle.contains('curiosidades') || cleanTitle.contains('datos')) return _sections[9]['key'];
-    if (cleanTitle.contains('futuro') || cleanTitle.contains('perspectivas')) return _sections[10]['key'];
-
-    return GlobalKey();
+  // Devuelve las palabras clave asociadas a un título según la lista de secciones
+  List<String> _getKeywordsForTitle(String title) {
+    final lowerTitle = title.toLowerCase();
+    for (var sec in _sections) {
+      for (var kw in sec['keywords'] as List<String>) {
+        if (lowerTitle.contains(kw)) {
+          return sec['keywords'] as List<String>;
+        }
+      }
+    }
+    return [];
   }
 
-  Widget _buildSection(String title, String content) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 12),
-          child: Text(
-            title,
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.teal),
-          ),
-        ),
-        _buildFormattedText(content),
-      ],
+  Widget _buildSectionTitle(String title) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 12),
+      child: Text(
+        title,
+        style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Color(0xFF722F37)),
+      ),
     );
   }
 
@@ -213,6 +208,7 @@ class _DetailScreenState extends State<DetailScreen> {
     }
 
     String fullText = widget.municipio.descripcionLarga;
+    fullText = _cleanText(fullText);
     List<String> chunks = [];
     int chunkSize = 1800;
     for (int i = 0; i < fullText.length; i += chunkSize) {
@@ -227,6 +223,24 @@ class _DetailScreenState extends State<DetailScreen> {
       await Future.delayed(const Duration(milliseconds: 500));
     }
     setState(() => _isSpeaking = false);
+  }
+
+  String _cleanText(String text) {
+    final unwanted = RegExp(r'[!@#$%^&*()_+={}\[\]|;:"\\<>,?/]');
+    String cleaned = text.replaceAll(unwanted, '');
+    cleaned = cleaned.replaceAll('`', '');
+    cleaned = cleaned.replaceAll('~', '');
+    cleaned = cleaned.replaceAll('_', ' ');
+    cleaned = cleaned.replaceAll('**', '###BOLD###');
+    cleaned = cleaned.replaceAll('*', '');
+    cleaned = cleaned.replaceAll('###BOLD###', '**');
+    cleaned = cleaned.replaceAll('&amp;', 'y');
+    cleaned = cleaned.replaceAll('&', 'y');
+    cleaned = cleaned.replaceAll('?', '.');
+    cleaned = cleaned.replaceAll('!', '');
+    cleaned = cleaned.replaceAll('¡', '');
+    cleaned = cleaned.replaceAll('¿', '');
+    return cleaned;
   }
 
   void _showMonumentosMenu() {
@@ -250,7 +264,7 @@ class _DetailScreenState extends State<DetailScreen> {
             ),
             const SizedBox(height: 16),
             ...monumentos.map((monumento) => ListTile(
-              leading: const Icon(Icons.place, color: Colors.teal),
+              leading: const Icon(Icons.place, color: Color(0xFF722F37)),
               title: Text(monumento.nombre),
               subtitle: Text(monumento.descripcion),
               onTap: () {
@@ -308,10 +322,10 @@ class _DetailScreenState extends State<DetailScreen> {
           const SizedBox(height: 16),
           if (widget.municipio.monumentos3D.isNotEmpty)
             FloatingActionButton(
-              heroTag: 'visor_3d_btn',
+              heroTag: 'visor_3d_btn_${widget.municipio.id}',
               onPressed: _showMonumentosMenu,
-              backgroundColor: Colors.deepPurple,
-              child: const Icon(Icons.view_in_ar),
+              backgroundColor: const Color(0xFFFFD700),
+              child: const Icon(Icons.view_in_ar, color: Color(0xFF722F37)),
             ),
         ],
       ),
@@ -324,7 +338,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 expandedHeight: isDesktop ? 500 : 350,
                 pinned: true,
                 title: Text(widget.municipio.nombre),
-                backgroundColor: Colors.teal,
+                backgroundColor: const Color(0xFF722F37),
                 actions: [
                   IconButton(
                     icon: Icon(_isSpeaking ? Icons.stop : Icons.volume_up),
@@ -347,12 +361,8 @@ class _DetailScreenState extends State<DetailScreen> {
                           );
                         },
                         itemCount: widget.municipio.imagenes.length,
-                        loadingBuilder: (context, event) => Center(
-                          child: Container(
-                            width: 20.0,
-                            height: 20.0,
-                            child: const CircularProgressIndicator(),
-                          ),
+                        loadingBuilder: (context, event) => const Center(
+                          child: SizedBox(width: 20, height: 20, child: CircularProgressIndicator()),
                         ),
                         backgroundDecoration: const BoxDecoration(color: Colors.black),
                         pageController: _pageController,
@@ -431,12 +441,10 @@ class _DetailScreenState extends State<DetailScreen> {
                   child: ConstrainedBox(
                     constraints: const BoxConstraints(maxWidth: 1000),
                     child: Padding(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: isDesktop ? 40.0 : 16.0,
-                        vertical: 24.0,
-                      ),
+                      padding: EdgeInsets.symmetric(horizontal: isDesktop ? 40.0 : 16.0, vertical: 24.0),
                       child: Column(
                         children: [
+                          // Botones de navegación (ActionChip)
                           Container(
                             margin: const EdgeInsets.only(bottom: 16),
                             height: 50,
@@ -449,105 +457,68 @@ class _DetailScreenState extends State<DetailScreen> {
                                 return ActionChip(
                                   avatar: Icon(section['icon'], size: 18),
                                   label: Text(section['name']),
-                                  onPressed: () => _scrollToSection(section['key']),
-                                  backgroundColor: Colors.teal.shade50,
-                                  labelStyle: const TextStyle(color: Colors.teal),
+                                  onPressed: () {
+                                    // Buscar la primera sección cuyo título contenga alguna keyword
+                                    final targetKey = _findKeyForKeywords(section['keywords'] as List<String>);
+                                    if (targetKey != null) {
+                                      _scrollToSection(targetKey);
+                                    }
+                                  },
+                                  backgroundColor: const Color(0xFFFFD700).withOpacity(0.2),
+                                  labelStyle: const TextStyle(color: Color(0xFF722F37)),
                                 );
                               },
                             ),
                           ),
                           _buildMainInfo(),
                           const SizedBox(height: 24),
-                          ..._sectionWidgets,
+                          // Lista de widgets de sección (cada uno con su propia GlobalKey única)
+                          ..._sectionWidgets.map((item) => item['widget'] as Widget),
                           // Mapas interactivos
-                          if (widget.municipio.id == 'abasolo')
-                            MapaInteractivo(lugares: abasolo.lugaresAbasolo),
-                          if (widget.municipio.id == 'aldama')
-                            MapaInteractivo(lugares: aldama.lugaresAldama),
-                          if (widget.municipio.id == 'altamira')
-                            MapaInteractivo(lugares: altamira.lugaresAltamira),
-                          if (widget.municipio.id == 'antiguo_morelos')
-                            MapaInteractivo(lugares: antiguo_morelos.lugaresAntiguoMorelos),
-                          if (widget.municipio.id == 'burgos')
-                            MapaInteractivo(lugares: burgos.lugaresBurgos),
-                          if (widget.municipio.id == 'bustamante')
-                            MapaInteractivo(lugares: bustamante.lugaresBustamante),
-                          if (widget.municipio.id == 'camargo')
-                            MapaInteractivo(lugares: camargo.lugaresCamargo),
-                          if (widget.municipio.id == 'casas')
-                            MapaInteractivo(lugares: casas.lugaresCasas),
-                          if (widget.municipio.id == 'ciudad_madero')
-                            MapaInteractivo(lugares: ciudad_madero.lugaresCiudadMadero),
-                          if (widget.municipio.id == 'ciudad_victoria')
-                            MapaInteractivo(lugares: ciudad_victoria.lugaresVictoria),
-                          if (widget.municipio.id == 'cruillas')
-                            MapaInteractivo(lugares: cruillas.lugaresCruillas),
-                          if (widget.municipio.id == 'gomez_farias')
-                            MapaInteractivo(lugares: gomez_farias.lugaresGomezFarias),
-                          if (widget.municipio.id == 'gonzalez')
-                            MapaInteractivo(lugares: gonzalez.lugaresGonzalez),
-                          if (widget.municipio.id == 'guerrero')
-                            MapaInteractivo(lugares: guerrero.lugaresGuerrero),
-                          if (widget.municipio.id == 'gustavo_diaz_ordaz')
-                            MapaInteractivo(lugares: gustavo_diaz_ordaz.lugaresGustavoDiazOrdaz),
-                          if (widget.municipio.id == 'gueemez')
-                            MapaInteractivo(lugares: gueemez.lugaresGueemez),
-                          if (widget.municipio.id == 'hidalgo')
-                            MapaInteractivo(lugares: hidalgo.lugaresHidalgo),
-                          if (widget.municipio.id == 'jaumave')
-                            MapaInteractivo(lugares: jaumave.lugaresJaumave),
-                          if (widget.municipio.id == 'jimenez')
-                            MapaInteractivo(lugares: jimenez.lugaresJimenez),
-                          if (widget.municipio.id == 'llera')
-                            MapaInteractivo(lugares: llera.lugaresLlera),
-                          if (widget.municipio.id == 'mainero')
-                            MapaInteractivo(lugares: mainero.lugaresMainero),
-                          if (widget.municipio.id == 'el_mante')
-                            MapaInteractivo(lugares: el_mante.lugaresElMante),
-                          if (widget.municipio.id == 'matamoros')
-                            MapaInteractivo(lugares: matamoros.lugaresMatamoros),
-                          if (widget.municipio.id == 'mendez')
-                            MapaInteractivo(lugares: mendez.lugaresMendez),
-                          if (widget.municipio.id == 'mier')
-                            MapaInteractivo(lugares: mier.lugaresMier),
-                          if (widget.municipio.id == 'miguel_aleman')
-                            MapaInteractivo(lugares: miguel_aleman.lugaresMiguelAleman),
-                          if (widget.municipio.id == 'miquihuana')
-                            MapaInteractivo(lugares: miquihuana.lugaresMiquihuana),
-                          if (widget.municipio.id == 'nuevo_laredo')
-                            MapaInteractivo(lugares: nuevo_laredo.lugaresNuevoLaredo),
-                          if (widget.municipio.id == 'nuevo_morelos')
-                            MapaInteractivo(lugares: nuevo_morelos.lugaresNuevoMorelos),
-                          if (widget.municipio.id == 'ocampo')
-                            MapaInteractivo(lugares: ocampo.lugaresOcampo),
-                          if (widget.municipio.id == 'padilla')
-                            MapaInteractivo(lugares: padilla.lugaresPadilla),
-                          if (widget.municipio.id == 'palmillas')
-                            MapaInteractivo(lugares: palmillas.lugaresPalmillas),
-                          if (widget.municipio.id == 'reynosa')
-                            MapaInteractivo(lugares: reynosa.lugaresReynosa),
-                          if (widget.municipio.id == 'rio_bravo')
-                            MapaInteractivo(lugares: rio_bravo.lugaresRioBravo),
-                          if (widget.municipio.id == 'san_carlos')
-                            MapaInteractivo(lugares: san_carlos.lugaresSanCarlos),
-                          if (widget.municipio.id == 'san_fernando')
-                            MapaInteractivo(lugares: san_fernando.lugaresSanFernando),
-                          if (widget.municipio.id == 'san_nicolas')
-                            MapaInteractivo(lugares: san_nicolas.lugaresSanNicolas),
-                          if (widget.municipio.id == 'soto_la_marina')
-                            MapaInteractivo(lugares: soto_la_marina.lugaresSotoLaMarina),
-                          if (widget.municipio.id == 'tampico')
-                            MapaInteractivo(lugares: tampico.lugaresTampico),
-                          if (widget.municipio.id == 'tula')
-                            MapaInteractivo(lugares: tula.lugaresTula),
-                          if (widget.municipio.id == 'valle_hermoso')
-                            MapaInteractivo(lugares: valle_hermoso.lugaresValleHermoso),
-                          if (widget.municipio.id == 'villagran')
-                            MapaInteractivo(lugares: villagran.lugaresVillagran),
-                          if (widget.municipio.id == 'xicotencatl')
-                            MapaInteractivo(lugares: xicotencatl.lugaresXicotencatl),
-                          if (widget.municipio.id == 'victoria')
-                            MapaInteractivo(lugares: victoria.lugaresVictoria),
+                          if (widget.municipio.id == 'abasolo') MapaInteractivo(lugares: abasolo.lugaresAbasolo),
+                          if (widget.municipio.id == 'aldama') MapaInteractivo(lugares: aldama.lugaresAldama),
+                          if (widget.municipio.id == 'altamira') MapaInteractivo(lugares: altamira.lugaresAltamira),
+                          if (widget.municipio.id == 'antiguo_morelos') MapaInteractivo(lugares: antiguo_morelos.lugaresAntiguoMorelos),
+                          if (widget.municipio.id == 'burgos') MapaInteractivo(lugares: burgos.lugaresBurgos),
+                          if (widget.municipio.id == 'bustamante') MapaInteractivo(lugares: bustamante.lugaresBustamante),
+                          if (widget.municipio.id == 'camargo') MapaInteractivo(lugares: camargo.lugaresCamargo),
+                          if (widget.municipio.id == 'casas') MapaInteractivo(lugares: casas.lugaresCasas),
+                          if (widget.municipio.id == 'ciudad_madero') MapaInteractivo(lugares: ciudad_madero.lugaresCiudadMadero),
+                          if (widget.municipio.id == 'ciudad_victoria') MapaInteractivo(lugares: ciudad_victoria.lugaresVictoria),
+                          if (widget.municipio.id == 'cruillas') MapaInteractivo(lugares: cruillas.lugaresCruillas),
+                          if (widget.municipio.id == 'gomez_farias') MapaInteractivo(lugares: gomez_farias.lugaresGomezFarias),
+                          if (widget.municipio.id == 'gonzalez') MapaInteractivo(lugares: gonzalez.lugaresGonzalez),
+                          if (widget.municipio.id == 'guerrero') MapaInteractivo(lugares: guerrero.lugaresGuerrero),
+                          if (widget.municipio.id == 'gustavo_diaz_ordaz') MapaInteractivo(lugares: gustavo_diaz_ordaz.lugaresGustavoDiazOrdaz),
+                          if (widget.municipio.id == 'gueemez') MapaInteractivo(lugares: gueemez.lugaresGueemez),
+                          if (widget.municipio.id == 'hidalgo') MapaInteractivo(lugares: hidalgo.lugaresHidalgo),
+                          if (widget.municipio.id == 'jaumave') MapaInteractivo(lugares: jaumave.lugaresJaumave),
+                          if (widget.municipio.id == 'jimenez') MapaInteractivo(lugares: jimenez.lugaresJimenez),
+                          if (widget.municipio.id == 'llera') MapaInteractivo(lugares: llera.lugaresLlera),
+                          if (widget.municipio.id == 'mainero') MapaInteractivo(lugares: mainero.lugaresMainero),
+                          if (widget.municipio.id == 'el_mante') MapaInteractivo(lugares: el_mante.lugaresElMante),
+                          if (widget.municipio.id == 'matamoros') MapaInteractivo(lugares: matamoros.lugaresMatamoros),
+                          if (widget.municipio.id == 'mendez') MapaInteractivo(lugares: mendez.lugaresMendez),
+                          if (widget.municipio.id == 'mier') MapaInteractivo(lugares: mier.lugaresMier),
+                          if (widget.municipio.id == 'miguel_aleman') MapaInteractivo(lugares: miguel_aleman.lugaresMiguelAleman),
+                          if (widget.municipio.id == 'miquihuana') MapaInteractivo(lugares: miquihuana.lugaresMiquihuana),
+                          if (widget.municipio.id == 'nuevo_laredo') MapaInteractivo(lugares: nuevo_laredo.lugaresNuevoLaredo),
+                          if (widget.municipio.id == 'nuevo_morelos') MapaInteractivo(lugares: nuevo_morelos.lugaresNuevoMorelos),
+                          if (widget.municipio.id == 'ocampo') MapaInteractivo(lugares: ocampo.lugaresOcampo),
+                          if (widget.municipio.id == 'padilla') MapaInteractivo(lugares: padilla.lugaresPadilla),
+                          if (widget.municipio.id == 'palmillas') MapaInteractivo(lugares: palmillas.lugaresPalmillas),
+                          if (widget.municipio.id == 'reynosa') MapaInteractivo(lugares: reynosa.lugaresReynosa),
+                          if (widget.municipio.id == 'rio_bravo') MapaInteractivo(lugares: rio_bravo.lugaresRioBravo),
+                          if (widget.municipio.id == 'san_carlos') MapaInteractivo(lugares: san_carlos.lugaresSanCarlos),
+                          if (widget.municipio.id == 'san_fernando') MapaInteractivo(lugares: san_fernando.lugaresSanFernando),
+                          if (widget.municipio.id == 'san_nicolas') MapaInteractivo(lugares: san_nicolas.lugaresSanNicolas),
+                          if (widget.municipio.id == 'soto_la_marina') MapaInteractivo(lugares: soto_la_marina.lugaresSotoLaMarina),
+                          if (widget.municipio.id == 'tampico') MapaInteractivo(lugares: tampico.lugaresTampico),
+                          if (widget.municipio.id == 'tula') MapaInteractivo(lugares: tula.lugaresTula),
+                          if (widget.municipio.id == 'valle_hermoso') MapaInteractivo(lugares: valle_hermoso.lugaresValleHermoso),
+                          if (widget.municipio.id == 'villagran') MapaInteractivo(lugares: villagran.lugaresVillagran),
+                          if (widget.municipio.id == 'xicotencatl') MapaInteractivo(lugares: xicotencatl.lugaresXicotencatl),
+                          if (widget.municipio.id == 'victoria') MapaInteractivo(lugares: victoria.lugaresVictoria),
                           const SizedBox(height: 40),
                         ],
                       ),
@@ -563,8 +534,8 @@ class _DetailScreenState extends State<DetailScreen> {
               right: 20,
               child: FloatingActionButton.small(
                 onPressed: _scrollToTop,
-                backgroundColor: Colors.teal,
-                child: const Icon(Icons.arrow_upward, color: Colors.white),
+                backgroundColor: const Color(0xFFFFD700),
+                child: const Icon(Icons.arrow_upward, color: Color(0xFF722F37)),
               ),
             ),
         ],
@@ -572,10 +543,21 @@ class _DetailScreenState extends State<DetailScreen> {
     );
   }
 
+  // Función auxiliar para encontrar la GlobalKey de la primera sección que coincida con las keywords
+  GlobalKey? _findKeyForKeywords(List<String> keywords) {
+    for (var item in _sectionWidgets) {
+      final itemKeywords = item['keywords'] as List<String>;
+      if (itemKeywords.isNotEmpty && keywords.any((kw) => itemKeywords.any((ikw) => ikw.contains(kw)))) {
+        return item['key'] as GlobalKey;
+      }
+    }
+    return null;
+  }
+
   Widget _buildMainInfo() {
     return Card(
       elevation: 8,
-      shadowColor: Colors.teal.withAlpha(77),
+      shadowColor: const Color(0xFF722F37).withOpacity(0.3),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
       child: Padding(
         padding: const EdgeInsets.all(24.0),
@@ -584,7 +566,7 @@ class _DetailScreenState extends State<DetailScreen> {
           children: [
             const Text(
               'Información General',
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.teal),
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Color(0xFF722F37)),
             ),
             const SizedBox(height: 20),
             _buildInfoRow(Icons.people_outline, 'Población', widget.municipio.poblacion),
@@ -604,10 +586,10 @@ class _DetailScreenState extends State<DetailScreen> {
         Container(
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
-            color: Colors.teal.withAlpha(26),
+            color: const Color(0xFF722F37).withOpacity(0.1),
             borderRadius: BorderRadius.circular(10),
           ),
-          child: Icon(icon, color: Colors.teal, size: 24),
+          child: Icon(icon, color: const Color(0xFF722F37), size: 24),
         ),
         const SizedBox(width: 16),
         Expanded(
@@ -624,7 +606,8 @@ class _DetailScreenState extends State<DetailScreen> {
   }
 
   Widget _buildFormattedText(String text) {
-    final lines = text.split('\n');
+    final cleanText = _cleanText(text);
+    final lines = cleanText.split('\n');
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: lines.map((line) {
@@ -644,7 +627,7 @@ class _DetailScreenState extends State<DetailScreen> {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('• ', style: TextStyle(fontSize: 16, color: Colors.teal, fontWeight: FontWeight.bold)),
+                const Text('• ', style: TextStyle(fontSize: 16, color: Color(0xFF722F37), fontWeight: FontWeight.bold)),
                 Expanded(child: Text(line.substring(2), style: const TextStyle(fontSize: 16, height: 1.5))),
               ],
             ),
