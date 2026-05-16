@@ -6,77 +6,52 @@ final villagran = Municipio(
   nombre: 'Villagrán',
   descripcionCorta: 'Municipio rural con historia colonial y tradición agrícola.',
   descripcionLarga: '''
-## Historia
-Villagrán fue fundado el 8 de mayo de 1757 por Domingo de Ungaza con el nombre de Villa Real de Borbón, como parte de la colonización del noreste de la Nueva España. Tras la Independencia de México, en 1827, cambió su nombre a Villagrán en honor al insurgente Julián de Villagrán, quien luchó por la libertad del país.  
-Durante la época colonial fue un asentamiento agrícola y ganadero, con familias dedicadas al cultivo de maíz y la cría de ganado. En la Independencia tuvo un papel como zona de paso estratégico, y durante la Revolución Mexicana sufrió efectos económicos y sociales, con saqueos y migración de habitantes.  
-En el siglo XX se consolidó como municipio rural, con desarrollo basado en ejidos y actividades del campo, manteniendo ese carácter hasta la actualidad. Su historia refleja la transición de una villa colonial a un municipio moderno con identidad rural.
+## Introducción
+Villagrán es un municipio rural del centro-sur de Tamaulipas, fundado el 8 de mayo de 1757 con el nombre de Villa Real de Borbón. Tras la Independencia, en 1827, cambió su nombre a Villagrán en honor al insurgente Julián de Villagrán, quien luchó por la libertad del país. Durante la colonia fue un asentamiento agrícola y ganadero, con familias dedicadas al cultivo de maíz y la cría de ganado. En la Independencia tuvo un papel como zona de paso estratégico, y durante la Revolución Mexicana sufrió efectos económicos y sociales, con saqueos y migración de habitantes. En el siglo XX se consolidó como municipio rural, con desarrollo basado en ejidos y actividades del campo.
 
 ## Geografía
-Villagrán se ubica en la región centro-sur de Tamaulipas, al pie del Cerro de Santiago. Su relieve combina llanuras y pequeñas elevaciones que favorecen la agricultura y la ganadería.  
-El clima es semiseco cálido, con lluvias en verano. No cuenta con grandes ríos, pero sí con arroyos temporales que abastecen a las comunidades rurales.  
-Tiene una población aproximada de 5,361 habitantes, con tendencia a disminuir por la migración hacia otras ciudades y Estados Unidos. La dispersión poblacional en ejidos y rancherías refleja su carácter rural.
+Se ubica en la región centro-sur de Tamaulipas, al pie del Cerro de Santiago. Su relieve combina llanuras y pequeñas elevaciones que favorecen la agricultura y la ganadería. El clima es semiseco cálido, con lluvias en verano. No cuenta con grandes ríos, pero sí con arroyos temporales que abastecen a las comunidades rurales. La vegetación predominante es el matorral espinoso, mezquite y huizache. La fauna incluye venado cola blanca, coyote, liebre, conejo y aves canoras.
+
+## Población
+Aproximadamente 5,361 habitantes (2020), con tendencia a disminuir por la migración hacia otras ciudades y Estados Unidos. La dispersión poblacional en ejidos y rancherías refleja su carácter rural. Predominan los adultos mayores, ya que los jóvenes emigran.
+
+## Historia
+Fundado el 8 de mayo de 1757 por Domingo de Ungaza como Villa Real de Borbón. En 1827 cambió a Villagrán en honor a Julián de Villagrán. Durante el Porfiriato creció con base agrícola. En la Revolución Mexicana hubo saqueos y migración. En el siglo XX se mejoró la infraestructura básica.
 
 ## Economía
-La economía es principalmente rural.  
-**Actividades principales:**  
-- **Agricultura:** maíz y sorgo.  
-- **Ganadería:** bovinos, caprinos y aves.  
-- **Comercio y servicios:** tiendas, mercados y pequeños negocios familiares.  
-- **Industria:** pequeña escala (panaderías, lácteos, talleres).  
-También son importantes las remesas enviadas desde Estados Unidos, que apoyan la economía familiar.  
-En general, el municipio enfrenta retos como baja industrialización y dependencia del campo, aunque se han impulsado proyectos de producción artesanal y ferias agrícolas para diversificar la economía.
+- **Agricultura:** maíz, sorgo.
+- **Ganadería:** bovinos, caprinos, aves. Producción de queso y carne seca.
+- **Comercio y servicios:** tiendas de abarrotes, talleres.
+- **Remesas** desde EE. UU., que apoyan la economía familiar.
 
-## Cultura
-La cultura de Villagrán está fuertemente ligada a sus tradiciones rurales y religiosas.  
-Destacan celebraciones, música norteña y banda, así como danzas folklóricas que acompañan las festividades.  
-Entre sus espacios importantes están la parroquia, la presidencia municipal y monumentos históricos que reflejan su identidad. La vida cultural se organiza en torno a la plaza principal, donde se realizan ferias, cabalgatas y convivencias comunitarias.
-
-## Valores
-Los principales valores de la comunidad son:  
-- **Hospitalidad:** trato amable a visitantes.  
-- **Solidaridad:** apoyo entre vecinos.  
-- **Respeto:** hacia personas y tradiciones.  
-- **Cooperación:** trabajo comunitario.  
-- **Sentido de pertenencia:** orgullo por su historia.  
-Estos valores fortalecen la cohesión social y se reflejan en la organización de festividades y en la vida cotidiana.
-
-## Costumbres
-Las costumbres incluyen la convivencia en la plaza, visitas familiares y celebraciones sociales como bodas y quinceañeras.  
-**Fiestas importantes:**  
-- Fundación del municipio (8 de mayo).  
-- Fiestas patrias.  
-- Día de Muertos.  
-- Fiesta de San Isidro Labrador.  
-Estas actividades fortalecen la unión social y la identidad cultural, siendo espacios donde se mezclan tradición, religión y convivencia comunitaria.
+## Turismo
+- **Cerro de Santiago:** elevación natural con una cruz en la cima, ideal para caminatas y vistas panorámicas.
+- **Plaza Principal:** kiosco, jardín y bancas, centro de la vida social.
+- **Parroquia local:** templo del siglo XIX, de estilo neoclásico sencillo.
 
 ## Gastronomía
-La comida típica refleja la tradición del norte de México.  
-**Platillos destacados:**  
-- Gorditas rellenas.  
-- Asado de puerco.  
-- Tamales norteños.  
-- Cabrito al pastor.  
-- Atole de masa.  
-- Empanadas de calabaza o camote.  
-Son platillos tradicionales preparados en reuniones familiares y festividades, reflejando la identidad rural y el sabor de la cocina casera.
+Cabrito asado, carne seca con huevo, frijoles charros, tamales de puerco, tortillas de harina, gorditas de maíz, dulces de leche (glorias, jamoncillos). Bebidas: café de olla, atole.
+
+## Cultura y Tradiciones
+Fiestas de Santa Rosalía (septiembre) con procesiones, misas, danzas y jaripeos. Día de la Independencia (15 y 16 de septiembre) con desfile y grito. Día de Muertos con altares y visitas al panteón. Música norteña y banda. Artesanías: talabartería (cinturones, monturas), tejidos de palma y bordados.
 
 ## Educación
-El municipio cuenta con educación básica y media, como:  
-- Primaria Benito Juárez.  
-- Secundaria Técnica No. 3.  
-- COBAT Plantel Villagrán.  
-También dispone de biblioteca pública y actividades culturales que fomentan el aprendizaje y la identidad local.  
-Para estudios superiores, los jóvenes suelen salir a otros municipios como Ciudad Victoria o Reynosa, lo que representa un reto en la formación profesional de la comunidad.
+Preescolar, primaria, telesecundaria, telebachillerato. Para estudios superiores, los jóvenes viajan a Ciudad Victoria.
 
-## Sociedad
-Villagrán es una sociedad pequeña, rural y cercana, con familias numerosas y estilo de vida comunitario.  
-La vida social gira en torno a la iglesia, la plaza y los eventos culturales y deportivos, fortaleciendo los lazos entre habitantes y preservando tradiciones locales.  
-La migración ha reducido la población activa, pero las remesas y el apego cultural mantienen la cohesión social y el orgullo por la identidad local.
+## Infraestructura
+Centro de salud rural. Caminos rurales de terracería. Servicios básicos en la cabecera.
 
-## Conclusión
-Villagrán es un municipio con raíces históricas profundas y una identidad rural bien definida. Su economía depende principalmente del campo, mientras que su vida social se sostiene en valores como la solidaridad y la cooperación.  
-A pesar de retos como la migración y la falta de desarrollo industrial, conserva tradiciones, cultura y un fuerte sentido de comunidad.  
-Su futuro depende del fortalecimiento de la educación, la economía local y el aprovechamiento de sus recursos naturales y culturales, consolidándose como un municipio que preserva su historia y busca un desarrollo sostenible.
+## Personajes Ilustres
+- Julián de Villagrán: insurgente.
+- Bernardo G. Mainero (1820-1880): político tamaulipeco.
+- Don José López (1900-1980): promotor agrícola.
+
+## Datos Curiosos
+- Originalmente se llamaba Villa Real de Borbón, en honor a la dinastía española.
+- El nombre actual honra a Julián de Villagrán, insurgente.
+- El Cerro de Santiago tiene una cruz en la cima y es sitio de peregrinación.
+- La parroquia fue construida en el siglo XIX con piedra de cantera.
+- Los tamales de puerco son típicos de las fiestas.
 ''',
   imagenAsset: 'assets/images/villagran.jpeg',
   imagenes: [
@@ -87,15 +62,16 @@ Su futuro depende del fortalecimiento de la educación, la economía local y el 
   poblacion: '5,361 hab.',
   superficie: '800 km²',
   gentilicio: 'Villagranense',
-
   monumentos3D: [
     Monumento(
       nombre: 'Monumento de los caidos',
-      descripcion: 'Un monumento icónico de la ciudad de Villagran.',
+      descripcion: 'Homenaje a los revolucionarios.',
       rutaModelo: 'assets/models/Villagran.glb',
       escala: 1.0,
     ),
   ],
+  imagenesGastronomia: [],
+  imagenesTurismo: [],
 );
 
 final List<Map<String, dynamic>> lugaresVillagran = [
@@ -113,7 +89,7 @@ final List<Map<String, dynamic>> lugaresVillagran = [
   },
   {
     'nombre': 'Parroquia local',
-    'descripcion': 'Templo religioso del siglo XIX.',
+    'descripcion': 'Templo del siglo XIX.',
     'lat': 24.1480,
     'lng': -99.5020,
   },

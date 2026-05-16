@@ -5,52 +5,55 @@ final gueemez = Municipio(
   id: 'gueemez',
   nombre: 'Güémez',
   descripcionCorta: 'Ruralidad, historia y naturaleza cerca de la capital.',
-  descripcionLarga:  '''
+  descripcionLarga: '''
 ## Introducción
-Güémez es un municipio del centro de Tamaulipas, ubicado al pie de la Sierra Madre Oriental, muy cerca de Ciudad Victoria. Su nombre proviene del general José de Güémez. Es una zona de transición entre el valle y la sierra, con paisajes que combinan llanuras agrícolas y montañas boscosas. La presa Las Pilas y el Salto del Tigre son algunos de sus atractivos naturales. Es ideal para el ecoturismo y el descanso.
+Güémez es un municipio del centro de Tamaulipas, ubicado al pie de la Sierra Madre Oriental, muy cerca de Ciudad Victoria. Su nombre proviene del general José de Güémez. Es una zona de transición entre el valle y la sierra, con paisajes que combinan llanuras agrícolas y montañas boscosas. La presa Las Pilas y el Salto del Tigre son algunos de sus atractivos naturales.
+
+## Geografía
+Se localiza en la zona centro del estado, combinando llanuras con áreas cercanas a la Sierra Madre Oriental. Cuenta con ríos, presas (Las Pilas) y zonas agrícolas.
+
+## Población
+Aproximadamente 15,000 habitantes (2020), con baja densidad, principalmente rural.
 
 ## Historia
-La historia de Güémez se remonta al proceso de colonización del noreste de México en el siglo XVIII, encabezado por José de Escandón. El municipio surgió como un punto estratégico para la organización territorial y el desarrollo agrícola, rodeado de haciendas y rutas comerciales. En el siglo XIX, fue escenario de enfrentamientos durante la Guerra de Reforma y la Intervención Francesa. En el siglo XX, se consolidó como una comunidad rural con fuerte identidad histórica y tradición.
-
-## Geografía y Población
-Güémez se localiza en la zona centro del estado de Tamaulipas. Su territorio combina llanuras con áreas cercanas a la Sierra Madre Oriental, lo que le proporciona diversidad natural. Cuenta con ríos, presas (Las Pilas) y zonas agrícolas.  
-Población: aproximadamente 15,000 habitantes (2020), con baja densidad, principalmente rural.
+El municipio surgió durante la colonización de José de Escandón en el siglo XVIII. En el siglo XIX fue escenario de enfrentamientos durante la Guerra de Reforma y la Intervención Francesa. En el siglo XX se consolidó como comunidad rural.
 
 ## Economía
-- **Agricultura:** Maíz, sorgo, frijol, cítricos, hortalizas.  
-- **Ganadería:** Bovina, caprina, ovina.  
-- **Comercio local:** Pequeños negocios.  
-- **Turismo:** Ecoturismo en la sierra.
+- **Agricultura:** maíz, sorgo, frijol, cítricos, hortalizas.
+- **Ganadería:** bovina, caprina, ovina.
+- **Comercio local:** pequeños negocios.
+- **Turismo:** ecoturismo en la sierra.
+
+## Turismo
+- **El Salto del Tigre:** cascada y poza natural, ideal para senderismo.
+- **Presa Las Pilas:** pesca, paseos en lancha, camping.
+- **Sierra Madre Oriental:** miradores, caminatas.
+- **Parroquia de San José:** templo del siglo XVIII.
+- **Río Santa Bárbara:** paseos y pesca.
+
+## Gastronomía
+Carne asada, cabrito, tamales serranos, discada, atole de masa.
 
 ## Cultura y Tradiciones
-**Fiestas:** Patronales en honor a San José (19 de marzo), Semana Santa, Día de Muertos.  
-**Gastronomía:** Carne asada, cabrito, tamales serranos, discada, atole de masa.  
-**Artesanías:** Tejidos de palma, talabartería.
+Fiestas patronales de San José (19 de marzo). Semana Santa. Día de Muertos. Artesanías: tejidos de palma, talabartería.
 
-## Turismo y Atractivos
-- **El Salto del Tigre:** Cascada y poza natural, ideal para senderismo.  
-- **Presa Las Pilas:** Pesca, paseos en lancha, camping.  
-- **Sierra Madre Oriental:** Miradores, caminatas.  
-- **Parroquia de San José:** Templo del siglo XVIII.  
-- **Río Santa Bárbara:** Paseos y pesca.
+## Educación
+Preescolar, primaria, secundaria, bachillerato (COBAT). Para estudios superiores, acuden a Ciudad Victoria.
 
-## Educación y Salud
-Cuenta con escuelas de nivel básico y medio superior (COBAT). Para estudios superiores, los jóvenes acuden a Ciudad Victoria. En salud, un centro de salud y clínica del IMSS.
+## Infraestructura
+Centro de salud y clínica del IMSS. Caminos pavimentados y de terracería.
 
 ## Personajes Ilustres
-- **General José de Güémez (1800-1860):** Militar tamaulipeco.  
-- **Don Manuel López (1920-2000):** Promotor de la agricultura local.  
-- **Profesora Carmen García (1930-2010):** Fundadora de la escuela secundaria.
+- General José de Güémez (1800-1860): militar tamaulipeco.
+- Don Manuel López (1920-2000): promotor de la agricultura.
+- Profesora Carmen García (1930-2010): fundadora de la escuela secundaria.
 
 ## Datos Curiosos
-- El Salto del Tigre es una cascada estacional.  
-- La presa Las Pilas es ideal para la pesca de lobina.  
-- En la sierra se pueden observar venados y armadillos.  
-- El municipio es conocido por sus tamales serranos.  
+- El Salto del Tigre es una cascada estacional.
+- La presa Las Pilas es ideal para pesca de lobina.
+- En la sierra se pueden observar venados y armadillos.
+- Los tamales serranos son típicos de la región.
 - La parroquia de San José data de 1780.
-
-## Perspectivas Futuras
-Se busca impulsar el ecoturismo, mejorar los caminos y apoyar la producción artesanal.
 ''',
   imagenAsset: 'assets/images/gueemez.jpg',
   imagenes: [
@@ -58,36 +61,23 @@ Se busca impulsar el ecoturismo, mejorar los caminos y apoyar la producción art
     'assets/fotos/guemez1.jpg',
     'assets/fotos/guemez2.jpg',
   ],
-  poblacion: '7,000 hab.',
+  poblacion: '15,000 hab.',
   superficie: '450 km²',
   gentilicio: 'Güemecense',
-
   monumentos3D: [
     Monumento(
       nombre: 'Monumento a la Patria',
-      descripcion: 'Un monumento icónico de la ciudad de Guemez.',
+      descripcion: 'Escultura en la plaza principal.',
       rutaModelo: 'assets/models/Guemez.glb',
       escala: 1.0,
     ),
   ],
+  imagenesGastronomia: [],
+  imagenesTurismo: [],
 );
+
 final List<Map<String, dynamic>> lugaresGueemez = [
-  {
-    'nombre': 'El Salto del Tigre',
-    'descripcion': 'Cascada y poza natural.',
-    'lat': 23.9833,
-    'lng': -99.2667,
-  },
-  {
-    'nombre': 'Presa Las Pilas',
-    'descripcion': 'Pesca y recreación.',
-    'lat': 24.0000,
-    'lng': -99.2500,
-  },
-  {
-    'nombre': 'Parroquia de San José',
-    'descripcion': 'Templo histórico.',
-    'lat': 23.9667,
-    'lng': -99.2833,
-  },
+  {'nombre': 'El Salto del Tigre', 'descripcion': 'Cascada y poza natural.', 'lat': 23.9833, 'lng': -99.2667},
+  {'nombre': 'Presa Las Pilas', 'descripcion': 'Pesca y recreación.', 'lat': 24.0000, 'lng': -99.2500},
+  {'nombre': 'Parroquia de San José', 'descripcion': 'Templo histórico.', 'lat': 23.9667, 'lng': -99.2833},
 ];

@@ -6,75 +6,54 @@ final xicotencatl = Municipio(
   nombre: 'Xicoténcatl',
   descripcionCorta: 'Tierra cañera y huasteca, con tradición agrícola y riqueza natural.',
   descripcionLarga: '''
-## Historia
-Xicoténcatl es un municipio con raíces prehispánicas, habitado originalmente por grupos huastecos que aprovechaban el Río Guayalejo para la pesca y la agricultura.  
-Durante la época colonial se establecieron misiones religiosas y haciendas agrícolas y ganaderas, lo que impulsó su desarrollo económico y social. Con el paso del tiempo, el poblado creció alrededor de ranchos cañeros, consolidándose en el siglo XIX como una zona agrícola importante.  
-En el siglo XX, el desarrollo del Ingenio Azucarero “Aarón Sáenz” fortaleció la economía local, posicionando a Xicoténcatl como uno de los principales productores de caña de azúcar en Tamaulipas.  
-Hoy en día, el municipio conserva su carácter agrícola, pero también ha diversificado su economía hacia el turismo ecológico y actividades comerciales.
-
-## Línea del tiempo
-- Época prehispánica: Asentamientos huastecos.  
-- Época colonial: Formación de haciendas.  
-- Siglo XIX: Crecimiento agrícola y ganadero.  
-- Siglo XX: Desarrollo del ingenio azucarero.  
-- Actualidad: Municipio agrícola con turismo ecológico.  
+## Introducción
+Xicoténcatl es un municipio con raíces prehispánicas, habitado originalmente por grupos huastecos que aprovechaban el Río Guayalejo para la pesca y la agricultura. Durante la época colonial se establecieron misiones religiosas y haciendas agrícolas y ganaderas, lo que impulsó su desarrollo económico y social. Con el paso del tiempo, el poblado creció alrededor de ranchos cañeros, consolidándose en el siglo XIX como una zona agrícola importante. En el siglo XX, el desarrollo del Ingenio Azucarero “Aarón Sáenz” fortaleció la economía local, posicionando a Xicoténcatl como uno de los principales productores de caña de azúcar en Tamaulipas. Hoy en día, el municipio conserva su carácter agrícola, pero también ha diversificado su economía hacia el turismo ecológico y actividades comerciales.
 
 ## Geografía
-Se localiza en el sur de Tamaulipas, dentro de la Huasteca Tamaulipeca, cerca de la Sierra Madre Oriental.  
-Presenta clima cálido subhúmedo, temperaturas promedio de 26°C y una altitud de 80 a 120 msnm. Su territorio combina llanuras, lomeríos y zonas agrícolas, con presencia de vegetación como pastizales, selva baja y matorral.  
-El Río Guayalejo es su principal recurso hídrico, fundamental para el riego y la actividad agrícola, además de ser un atractivo turístico y ecológico.
+Se localiza en el sur de Tamaulipas, dentro de la Huasteca Tamaulipeca, cerca de la Sierra Madre Oriental. Presenta clima cálido subhúmedo, temperatura promedio de 26°C y una altitud de 80 a 120 msnm. Su territorio combina llanuras, lomeríos y zonas agrícolas, con presencia de vegetación como pastizales, selva baja y matorral. El Río Guayalejo es su principal recurso hídrico, fundamental para el riego y la actividad agrícola, además de ser un atractivo turístico y ecológico. La fauna incluye venado, armadillo, coyote, garzas, y aves acuáticas.
+
+## Población
+Aproximadamente 12,000 habitantes (2020). Población mayoritariamente rural, dedicada a la caña de azúcar y actividades relacionadas. La migración hacia ciudades como El Mante y Ciudad Victoria es común entre los jóvenes.
+
+## Historia
+Época prehispánica habitada por huastecos. Época colonial con misiones religiosas y haciendas. Siglo XIX crecimiento agrícola y ganadero. Siglo XX desarrollo del ingenio azucarero. Actualidad, municipio agrícola con turismo ecológico. El ingenio azucarero “Aarón Sáenz” fue construido en la década de 1940 y ha sido el motor económico de la región.
 
 ## Economía
-La economía se basa principalmente en:  
-- **Agricultura:** caña de azúcar, maíz, sorgo, cítricos.  
-- **Ganadería:** bovinos, porcinos y caprinos.  
-- **Industria:** Ingenio Azucarero “Aarón Sáenz”.  
-- **Comercio:** mercados y venta de productos locales.  
-- **Turismo:** actividades ecológicas y recreativas.  
+- **Agricultura:** caña de azúcar (principal), maíz, sorgo, cítricos (naranja, limón).
+- **Ganadería:** bovinos, porcinos, caprinos.
+- **Industria:** Ingenio Azucarero “Aarón Sáenz” (produce azúcar y sus derivados).
+- **Comercio:** mercados locales, venta de productos artesanales.
+- **Turismo:** ecológico y recreativo en el Río Guayalejo y balnearios.
 
-La producción de caña de azúcar es el motor económico del municipio, generando empleo y atrayendo inversión. El comercio local y el turismo complementan la economía, aunque la dependencia del campo sigue siendo un reto.
-
-## Cultura
-Xicoténcatl conserva una fuerte identidad huasteca y rural. La música norteña, los bailes folklóricos y las ferias reflejan el carácter alegre y trabajador de su gente.  
-Destaca la Feria de Santiago Apóstol, donde se realizan eventos culturales, música y tradiciones religiosas.  
-La cultura se transmite de generación en generación, reforzando el sentido de pertenencia y orgullo comunitario.
-
-## Valores
-En Xicoténcatl, los valores forman parte esencial de la vida diaria y reflejan la identidad de su gente. Entre los más importantes destacan:  
-- **Respeto:** hacia personas, tradiciones y autoridades.  
-- **Solidaridad:** apoyo mutuo en trabajos del campo y situaciones difíciles.  
-- **Unión familiar:** núcleo principal de la sociedad.  
-- **Responsabilidad:** en el trabajo agrícola y cuidado de la tierra.  
-- **Hospitalidad:** calidez hacia visitantes.  
-- **Trabajo honesto:** esfuerzo diario en el campo y actividades económicas.  
+## Turismo
+- **Río Guayalejo:** principal atractivo para pesca de mojarra y lobina, paseos en lancha, balnearios naturales. En sus orillas hay restaurantes típicos.
+- **Ingenio Azucarero Aarón Sáenz:** símbolo de la tradición cañera. Se pueden realizar visitas guiadas (previa autorización) para conocer el proceso de producción de azúcar.
+- **Balneario natural El Ojo de Agua:** área de recreación familiar con aguas cristalinas.
+- **Campos cañeros:** reflejo de la identidad agrícola del municipio; en época de zafra (noviembre a mayo) los campos se llenan de caña verde.
 
 ## Gastronomía
-La gastronomía combina tradición huasteca y regional:  
-- Zacahuil (tamal gigante).  
-- Enchiladas huastecas.  
-- Tamales de elote.  
-- Platillos a base de maíz y carne.  
-La cocina local es un reflejo de la vida rural y se disfruta en festividades y reuniones familiares.
+La gastronomía combina tradición huasteca y regional. Destacan el zacahuil (tamal gigante de hasta 30 kg relleno de carne de cerdo o pollo, envuelto en hojas de plátano), las enchiladas huastecas (bañadas en salsa de chile ancho y guajillo), los tamales de elote (dulces o salados), y los platillos a base de maíz y carne. También se prepara el asado de boda y los dulces de leche.
 
-## Educación y Sociedad
-El municipio cuenta con educación básica y media superior (como el CBTA 98). Para estudios universitarios, los jóvenes migran a ciudades cercanas como Ciudad Mante o Ciudad Victoria.  
-La sociedad se caracteriza por su unión, participación en eventos comunitarios y respeto por la naturaleza, especialmente el cuidado del Río Guayalejo.  
-La vida social gira en torno a la plaza principal, la iglesia y las festividades, reforzando la cohesión comunitaria.
+## Cultura y Tradiciones
+La Feria de Santiago Apóstol (25 de julio) es la celebración principal, con eventos culturales, música de banda y norteña, danzas folclóricas, juegos pirotécnicos, jaripeos y cabalgatas. El Día de Muertos se colocan altares con ofrendas. La Semana Santa se celebra con procesiones y representaciones del viacrucis. La música huasteca (huapango) y la norteña son parte esencial de las festividades. Las artesanías incluyen bordados huastecos, cestería de carrizo y talabartería.
 
-## Turismo y Lugares Emblemáticos
-Xicoténcatl no es un destino turístico masivo, pero cuenta con atractivos naturales y rurales que lo hacen especial dentro de la región huasteca.  
-**Principales atractivos:**  
-- Río Guayalejo: principal atractivo para pesca, paseos y actividades acuáticas.  
-- Balnearios naturales: espacios de recreación familiar.  
-- Miradores y paisajes serranos: ideales para senderismo y fotografía.  
-- Campos cañeros: reflejo de la identidad agrícola del municipio.  
+## Educación
+El municipio cuenta con escuelas de nivel básico (primarias, secundarias) y el CBTA 98 (Centro de Bachillerato Tecnológico Agropecuario). Para educación superior, los jóvenes viajan a El Mante o Ciudad Victoria.
 
-El turismo ecológico y rural es una oportunidad de desarrollo sostenible para la comunidad.
+## Infraestructura
+Centro de salud y clínica del IMSS-Bienestar. Carretera pavimentada que conecta con El Mante y Ciudad Victoria. Servicios de agua potable, electricidad y drenaje en la cabecera.
 
-## Conclusión
-Xicoténcatl es un municipio donde la historia, la naturaleza y la cultura se combinan para formar una identidad única. Su economía agrícola, especialmente la caña de azúcar, ha sido clave en su desarrollo.  
-A pesar de los retos actuales, como la migración y la dependencia del campo, su comunidad mantiene vivas sus tradiciones, valores y sentido de pertenencia.  
-Xicoténcatl sigue siendo un lugar representativo de la Huasteca Tamaulipeca, destacando por su riqueza natural y cultural, con un futuro prometedor en el turismo ecológico y la preservación de sus raíces.
+## Personajes Ilustres
+- Fundadores de la región huasteca.
+- Trabajadores del ingenio azucarero.
+- Don Aarón Sáenz (1891-1983): impulsor del ingenio.
+
+## Datos Curiosos
+- Xicoténcatl es un nombre de origen indígena (tlaxcalteca) que significa "lugar de jicotes".
+- El ingenio azucarero es uno de los más importantes del estado.
+- El zacahuil es un tamal gigante típico de la huasteca, que se cocina en horno de leña.
+- El río Guayalejo es ideal para la pesca de mojarra tilapia y lobina.
+- La feria de Santiago Apóstol es la celebración principal y atrae visitantes de municipios vecinos.
 ''',
   imagenAsset: 'assets/images/xicotencatl.jpeg',
   imagenes: [
@@ -85,21 +64,22 @@ Xicoténcatl sigue siendo un lugar representativo de la Huasteca Tamaulipeca, de
   poblacion: '12,000 hab.',
   superficie: '800 km²',
   gentilicio: 'Xicotencatlense',
-
   monumentos3D: [
     Monumento(
-      nombre: 'Monumento de Xicontencat',
-      descripcion: 'Un monumento icónico de la ciudad de Xicontencat.',
+      nombre: 'Monumento de Xicoténcatl',
+      descripcion: 'Escultura del héroe tlaxcalteca.',
       rutaModelo: 'assets/models/Xicontencat.glb',
       escala: 1.0,
     ),
   ],
+  imagenesGastronomia: [],
+  imagenesTurismo: [],
 );
 
 final List<Map<String, dynamic>> lugaresXicotencatl = [
   {
     'nombre': 'Río Guayalejo',
-    'descripcion': 'Principal atractivo para pesca y paseos.',
+    'descripcion': 'Pesca, paseos y balnearios naturales.',
     'lat': 22.9000,
     'lng': -98.9833,
   },

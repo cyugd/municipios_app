@@ -40,6 +40,7 @@ class AuthService {
   }
 }
 
+// Proveedores de Riverpod para autenticación
 final authProvider = Provider<AuthService>((ref) => AuthService());
 
 final authStateProvider = StreamProvider<User?>((ref) {

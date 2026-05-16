@@ -6,6 +6,7 @@ import 'package:municipios_app/models/municipio.dart';
 import 'package:municipios_app/widgets/chat_ai_widget.dart';
 import 'package:municipios_app/widgets/mapa_interactivo.dart';
 import 'package:municipios_app/screens/visor_3d_screen.dart';
+import 'package:municipios_app/screens/quiz_screen.dart'; // Importar QuizScreen
 import 'package:municipios_app/data/municipios/abasolo.dart' as abasolo;
 import 'package:municipios_app/data/municipios/aldama.dart' as aldama;
 import 'package:municipios_app/data/municipios/altamira.dart' as altamira;
@@ -304,6 +305,21 @@ class _DetailScreenState extends State<DetailScreen> {
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
+          // Botón del Minijuego de Trivia
+          FloatingActionButton(
+            heroTag: 'quiz_fab_${widget.municipio.id}',
+            backgroundColor: Colors.orange,
+            child: const Icon(Icons.quiz, color: Colors.white),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => QuizScreen(municipio: widget.municipio),
+                ),
+              );
+            },
+          ),
+          const SizedBox(height: 16),
           ChatAIWidget(municipio: widget.municipio),
           const SizedBox(height: 16),
           if (widget.municipio.monumentos3D.isNotEmpty)

@@ -5,8 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 class MapaInteractivo extends StatelessWidget {
   final List<Map<String, dynamic>> lugares;
-
-  const MapaInteractivo({Key? key, required this.lugares}) : super(key: key);
+  const MapaInteractivo({super.key, required this.lugares});
 
   void _openGoogleMaps(double lat, double lng) async {
     final url = Uri.parse('https://www.google.com/maps/search/?api=1&query=$lat,$lng');
@@ -17,8 +16,6 @@ class MapaInteractivo extends StatelessWidget {
       if (await canLaunchUrl(geoUrl)) {
         await launchUrl(geoUrl);
       } else {
-        // No se pudo abrir, mostramos snackbar (necesitamos contexto)
-        // Lo manejamos desde el diálogo
         debugPrint('No se pudo abrir Google Maps');
       }
     }
@@ -32,7 +29,7 @@ class MapaInteractivo extends StatelessWidget {
 
     return Card(
       elevation: 8,
-      shadowColor: Colors.teal.withOpacity(0.3),
+      shadowColor: const Color(0xFF722F37).withValues(alpha: 0.3),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       child: ClipRRect(
@@ -44,7 +41,7 @@ class MapaInteractivo extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
-                  colors: [Colors.teal, Colors.tealAccent],
+                  colors: [Color(0xFF722F37), Color(0xFFFFD700)],
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight,
                 ),
@@ -132,7 +129,7 @@ class MapaInteractivo extends StatelessWidget {
           children: [
             Row(
               children: [
-                const Icon(Icons.place, color: Colors.teal),
+                const Icon(Icons.place, color: Color(0xFF722F37)),
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
@@ -163,6 +160,10 @@ class MapaInteractivo extends StatelessWidget {
                     Navigator.pop(context);
                     _openGoogleMaps(lugar['lat'], lugar['lng']);
                   },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFF722F37),
+                    foregroundColor: Colors.white,
+                  ),
                 ),
               ],
             ),

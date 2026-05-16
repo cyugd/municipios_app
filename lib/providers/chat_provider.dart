@@ -56,7 +56,7 @@ class ChatState {
 class ChatNotifier extends StateNotifier<ChatState> {
   final Municipio? municipio;
   final String? userId;
-  final String _apiKey = '';
+  final String _apiKey = 'AIzaSyCQ5DZV-oqEfQ3TGHYFnxoU2sWoy3p-2mM';
 
   late GenerativeModel _model;
   ChatSession? _chat;
@@ -136,7 +136,6 @@ Tu objetivo es ayudar al usuario a descubrir la riqueza de Tamaulipas. Responde 
 
       loadedMessages.add(welcomeMsg);
       
-      // Guardamos el mensaje de bienvenida en Firestore para que sea persistente
       _firestore.collection(_chatPath).add({
         'role': 'model', 
         'text': welcomeText, 
