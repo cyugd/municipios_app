@@ -37,6 +37,10 @@ flutter:
     - assets/images/
     - assets/fotos/
     - assets/models/
+    - assets/Ciudad_Cultura/
+    - assets/Ciudad_gastronomia/
+    - assets/Ciudad_geografia/
+    - assets/Ciudad_Turismo/
 
 flutter_launcher_icons:
   android: true

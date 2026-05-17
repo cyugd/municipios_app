@@ -6,7 +6,7 @@ import 'package:municipios_app/models/municipio.dart';
 import 'package:municipios_app/widgets/chat_ai_widget.dart';
 import 'package:municipios_app/widgets/mapa_interactivo.dart';
 import 'package:municipios_app/screens/visor_3d_screen.dart';
-import 'package:municipios_app/screens/quiz_screen.dart'; // Importar QuizScreen
+import 'package:municipios_app/screens/quiz_screen.dart';
 import 'package:municipios_app/data/municipios/abasolo.dart' as abasolo;
 import 'package:municipios_app/data/municipios/aldama.dart' as aldama;
 import 'package:municipios_app/data/municipios/altamira.dart' as altamira;
@@ -72,15 +72,15 @@ class _DetailScreenState extends State<DetailScreen> {
   final List<Map<String, dynamic>> _sections = [
     {'name': 'Historia', 'key': GlobalKey(), 'icon': Icons.history},
     {'name': 'Geografía', 'key': GlobalKey(), 'icon': Icons.landscape},
-    {'name': 'Demografía', 'key': GlobalKey(), 'icon': Icons.people},
+    {'name': 'Población', 'key': GlobalKey(), 'icon': Icons.people},
     {'name': 'Economía', 'key': GlobalKey(), 'icon': Icons.attach_money},
     {'name': 'Turismo', 'key': GlobalKey(), 'icon': Icons.beach_access},
-    {'name': 'Cultura', 'key': GlobalKey(), 'icon': Icons.music_note},
+    {'name': 'Gastronomía', 'key': GlobalKey(), 'icon': Icons.restaurant},
+    {'name': 'Cultura y Tradiciones', 'key': GlobalKey(), 'icon': Icons.music_note},
     {'name': 'Educación', 'key': GlobalKey(), 'icon': Icons.school},
     {'name': 'Infraestructura', 'key': GlobalKey(), 'icon': Icons.business},
-    {'name': 'Personajes', 'key': GlobalKey(), 'icon': Icons.people_outline},
-    {'name': 'Curiosidades', 'key': GlobalKey(), 'icon': Icons.lightbulb},
-    {'name': 'Futuro', 'key': GlobalKey(), 'icon': Icons.trending_up},
+    {'name': 'Personajes Ilustres', 'key': GlobalKey(), 'icon': Icons.people_outline},
+    {'name': 'Datos Curiosos', 'key': GlobalKey(), 'icon': Icons.lightbulb},
   ];
 
   List<Widget> _sectionWidgets = [];
@@ -154,56 +154,210 @@ class _DetailScreenState extends State<DetailScreen> {
     final Set<GlobalKey> usedKeys = {};
 
     for (var section in sections) {
-      GlobalKey key = _findKeyForSection(section['title']!);
-
+      String title = section['title']!;
+      GlobalKey key = _findKeyForSection(title);
       if (usedKeys.contains(key)) {
         key = GlobalKey();
       } else {
         usedKeys.add(key);
       }
 
+      bool isGeografia = title.toLowerCase().contains('geografía');
+      bool isGastronomia = title.toLowerCase().contains('gastronomía');
+      bool isTurismo = title.toLowerCase().contains('turismo');
+      bool isCultura = title.toLowerCase().contains('cultura') || title.toLowerCase().contains('tradiciones');
+
       _sectionWidgets.add(
         Container(
           key: key,
           padding: const EdgeInsets.only(top: 16),
-          child: _buildSection(section['title']!, section['content']!),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _buildSectionTitle(title),
+              _buildFormattedText(section['content']!),
+              if (isGeografia && widget.municipio.imagenesGeografia.isNotEmpty)
+                _buildImageGallery(widget.municipio.imagenesGeografia, '🗺️ Imágenes Geográficas'),
+              if (isGastronomia && widget.municipio.imagenesGastronomia.isNotEmpty)
+                _buildImageGallery(widget.municipio.imagenesGastronomia, '🍽️ Platillos Típicos'),
+              if (isTurismo && widget.municipio.imagenesTurismo.isNotEmpty)
+                _buildImageGallery(widget.municipio.imagenesTurismo, '🏞️ Atractivos Turísticos'),
+              if (isCultura && widget.municipio.imagenesCultura.isNotEmpty)
+                _buildImageGallery(widget.municipio.imagenesCultura, '🎭 Manifestaciones Culturales'),
+            ],
+          ),
         ),
       );
     }
   }
 
+  Widget _buildImageGallery(List<String> imagenes, String titulo) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 16.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            titulo,
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFFFFD700)),
+          ),
+          const SizedBox(height: 8),
+          SizedBox(
+            height: 120,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: imagenes.length,
+              itemBuilder: (context, index) {
+                return GestureDetector(
+                  onTap: () => _showFullImage(imagenes[index]),
+                  child: Hero(
+                    tag: 'gallery_$index',
+                    child: Container(
+                      width: 120,
+                      margin: const EdgeInsets.only(right: 8),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        image: DecorationImage(
+                          image: AssetImage(imagenes[index]),
+                          fit: BoxFit.cover,
+                          onError: (exception, stackTrace) {
+                            debugPrint('Error cargando imagen: $imagenes[index]');
+                          },
+                        ),
+                      ),
+                      child: const Center(
+                        child: Icon(Icons.broken_image, color: Colors.white70),
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showFullImage(String imagePath) {
+    showDialog(
+      context: context,
+      builder: (_) => Dialog(
+        child: Stack(
+          children: [
+            PhotoView(
+              imageProvider: AssetImage(imagePath),
+              backgroundDecoration: const BoxDecoration(color: Colors.black),
+            ),
+            Positioned(
+              top: 10,
+              right: 10,
+              child: IconButton(
+                icon: const Icon(Icons.close, color: Colors.white),
+                onPressed: () => Navigator.pop(context),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   GlobalKey _findKeyForSection(String title) {
     final cleanTitle = title.toLowerCase().trim();
-
     if (cleanTitle.contains('historia')) return _sections[0]['key'];
     if (cleanTitle.contains('geografía') || cleanTitle.contains('ubicación')) return _sections[1]['key'];
-    if (cleanTitle.contains('demografía') || cleanTitle.contains('población')) return _sections[2]['key'];
+    if (cleanTitle.contains('población') || cleanTitle.contains('demografía')) return _sections[2]['key'];
     if (cleanTitle.contains('economía')) return _sections[3]['key'];
     if (cleanTitle.contains('turismo')) return _sections[4]['key'];
-    if (cleanTitle.contains('cultura')) return _sections[5]['key'];
-    if (cleanTitle.contains('educación')) return _sections[6]['key'];
-    if (cleanTitle.contains('infraestructura')) return _sections[7]['key'];
-    if (cleanTitle.contains('personajes')) return _sections[8]['key'];
-    if (cleanTitle.contains('curiosidades') || cleanTitle.contains('datos')) return _sections[9]['key'];
-    if (cleanTitle.contains('futuro') || cleanTitle.contains('perspectivas')) return _sections[10]['key'];
-
+    if (cleanTitle.contains('gastronomía') || cleanTitle.contains('comida')) return _sections[5]['key'];
+    if (cleanTitle.contains('cultura') || cleanTitle.contains('tradiciones')) return _sections[6]['key'];
+    if (cleanTitle.contains('educación')) return _sections[7]['key'];
+    if (cleanTitle.contains('infraestructura')) return _sections[8]['key'];
+    if (cleanTitle.contains('personajes')) return _sections[9]['key'];
+    if (cleanTitle.contains('curiosidades') || cleanTitle.contains('datos')) return _sections[10]['key'];
     return GlobalKey();
   }
 
-  Widget _buildSection(String title, String content) {
+  Widget _buildSectionTitle(String title) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 12),
+      child: Text(
+        title,
+        style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Color(0xFF722F37)),
+      ),
+    );
+  }
+
+  Widget _buildFormattedText(String text) {
+    final List<TextSpan> spans = [];
+    final RegExp exp = RegExp(r'\*\*(.*?)\*\*');
+    int lastIndex = 0;
+    for (final match in exp.allMatches(text)) {
+      if (match.start > lastIndex) {
+        spans.add(TextSpan(text: text.substring(lastIndex, match.start)));
+      }
+      spans.add(TextSpan(text: match.group(1), style: const TextStyle(fontWeight: FontWeight.bold)));
+      lastIndex = match.end;
+    }
+    if (lastIndex < text.length) {
+      spans.add(TextSpan(text: text.substring(lastIndex)));
+    }
+
+    final lines = text.split('\n');
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 12),
-          child: Text(
-            title,
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.teal),
-          ),
-        ),
-        _buildFormattedText(content),
-      ],
+      children: lines.map((line) {
+        if (line.startsWith('- ')) {
+          return Padding(
+            padding: const EdgeInsets.only(left: 8, top: 4),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text('• ', style: TextStyle(fontSize: 16, color: Color(0xFF722F37), fontWeight: FontWeight.bold)),
+                Expanded(
+                  child: RichText(
+                    text: TextSpan(
+                      style: const TextStyle(color: Colors.black87, fontSize: 16, height: 1.5),
+                      children: _parseInlineSpans(line.substring(2)),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          );
+        } else if (line.trim().isEmpty) {
+          return const SizedBox(height: 12);
+        } else {
+          return Padding(
+            padding: const EdgeInsets.symmetric(vertical: 2),
+            child: RichText(
+              text: TextSpan(
+                style: const TextStyle(color: Colors.black87, fontSize: 16, height: 1.5),
+                children: _parseInlineSpans(line),
+              ),
+            ),
+          );
+        }
+      }).toList(),
     );
+  }
+
+  List<TextSpan> _parseInlineSpans(String text) {
+    final RegExp exp = RegExp(r'\*\*(.*?)\*\*');
+    final List<TextSpan> spans = [];
+    int lastIndex = 0;
+    for (final match in exp.allMatches(text)) {
+      if (match.start > lastIndex) {
+        spans.add(TextSpan(text: text.substring(lastIndex, match.start)));
+      }
+      spans.add(TextSpan(text: match.group(1), style: const TextStyle(fontWeight: FontWeight.bold)));
+      lastIndex = match.end;
+    }
+    if (lastIndex < text.length) {
+      spans.add(TextSpan(text: text.substring(lastIndex)));
+    }
+    return spans;
   }
 
   Future<void> _speak() async {
@@ -213,7 +367,7 @@ class _DetailScreenState extends State<DetailScreen> {
       return;
     }
 
-    String fullText = widget.municipio.descripcionLarga;
+    String fullText = widget.municipio.descripcionLarga.replaceAll(RegExp(r'\*\*'), '');
     List<String> chunks = [];
     int chunkSize = 1800;
     for (int i = 0; i < fullText.length; i += chunkSize) {
@@ -251,7 +405,7 @@ class _DetailScreenState extends State<DetailScreen> {
             ),
             const SizedBox(height: 16),
             ...monumentos.map((monumento) => ListTile(
-              leading: const Icon(Icons.place, color: Colors.teal),
+              leading: const Icon(Icons.place, color: Color(0xFF722F37)),
               title: Text(monumento.nombre),
               subtitle: Text(monumento.descripcion),
               onTap: () {
@@ -305,11 +459,10 @@ class _DetailScreenState extends State<DetailScreen> {
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          // Botón del Minijuego de Trivia
           FloatingActionButton(
             heroTag: 'quiz_fab_${widget.municipio.id}',
-            backgroundColor: Colors.orange,
-            child: const Icon(Icons.quiz, color: Colors.white),
+            backgroundColor: const Color(0xFFFFD700),
+            child: const Icon(Icons.quiz, color: Color(0xFF722F37)),
             onPressed: () {
               Navigator.push(
                 context,
@@ -326,8 +479,8 @@ class _DetailScreenState extends State<DetailScreen> {
             FloatingActionButton(
               heroTag: 'visor_3d_btn',
               onPressed: _showMonumentosMenu,
-              backgroundColor: Colors.deepPurple,
-              child: const Icon(Icons.view_in_ar),
+              backgroundColor: const Color(0xFFFFD700),
+              child: const Icon(Icons.view_in_ar, color: Color(0xFF722F37)),
             ),
         ],
       ),
@@ -340,7 +493,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 expandedHeight: isDesktop ? 500 : 350,
                 pinned: true,
                 title: Text(widget.municipio.nombre),
-                backgroundColor: Colors.teal,
+                backgroundColor: const Color(0xFF722F37),
                 actions: [
                   IconButton(
                     icon: Icon(_isSpeaking ? Icons.stop : Icons.volume_up),
@@ -363,12 +516,8 @@ class _DetailScreenState extends State<DetailScreen> {
                           );
                         },
                         itemCount: widget.municipio.imagenes.length,
-                        loadingBuilder: (context, event) => Center(
-                          child: Container(
-                            width: 20.0,
-                            height: 20.0,
-                            child: const CircularProgressIndicator(),
-                          ),
+                        loadingBuilder: (context, event) => const Center(
+                          child: SizedBox(width: 20, height: 20, child: CircularProgressIndicator()),
                         ),
                         backgroundDecoration: const BoxDecoration(color: Colors.black),
                         pageController: _pageController,
@@ -463,11 +612,11 @@ class _DetailScreenState extends State<DetailScreen> {
                               itemBuilder: (context, index) {
                                 final section = _sections[index];
                                 return ActionChip(
-                                  avatar: Icon(section['icon'], size: 18),
+                                  avatar: Icon(section['icon'], size: 18, color: const Color(0xFF722F37)),
                                   label: Text(section['name']),
                                   onPressed: () => _scrollToSection(section['key']),
-                                  backgroundColor: Colors.teal.shade50,
-                                  labelStyle: const TextStyle(color: Colors.teal),
+                                  backgroundColor: const Color(0xFFFFD700).withOpacity(0.2),
+                                  labelStyle: const TextStyle(color: Color(0xFF722F37)),
                                 );
                               },
                             ),
@@ -475,7 +624,6 @@ class _DetailScreenState extends State<DetailScreen> {
                           _buildMainInfo(),
                           const SizedBox(height: 24),
                           ..._sectionWidgets,
-                          // Mapas interactivos
                           if (widget.municipio.id == 'abasolo')
                             MapaInteractivo(lugares: abasolo.lugaresAbasolo),
                           if (widget.municipio.id == 'aldama')
@@ -579,8 +727,8 @@ class _DetailScreenState extends State<DetailScreen> {
               right: 20,
               child: FloatingActionButton.small(
                 onPressed: _scrollToTop,
-                backgroundColor: Colors.teal,
-                child: const Icon(Icons.arrow_upward, color: Colors.white),
+                backgroundColor: const Color(0xFFFFD700),
+                child: const Icon(Icons.arrow_upward, color: Color(0xFF722F37)),
               ),
             ),
         ],
@@ -591,7 +739,7 @@ class _DetailScreenState extends State<DetailScreen> {
   Widget _buildMainInfo() {
     return Card(
       elevation: 8,
-      shadowColor: Colors.teal.withAlpha(77),
+      shadowColor: const Color(0xFF722F37).withOpacity(0.3),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
       child: Padding(
         padding: const EdgeInsets.all(24.0),
@@ -600,7 +748,7 @@ class _DetailScreenState extends State<DetailScreen> {
           children: [
             const Text(
               'Información General',
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.teal),
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Color(0xFF722F37)),
             ),
             const SizedBox(height: 20),
             _buildInfoRow(Icons.people_outline, 'Población', widget.municipio.poblacion),
@@ -620,10 +768,10 @@ class _DetailScreenState extends State<DetailScreen> {
         Container(
           padding: const EdgeInsets.all(8),
           decoration: BoxDecoration(
-            color: Colors.teal.withAlpha(26),
+            color: const Color(0xFF722F37).withOpacity(0.1),
             borderRadius: BorderRadius.circular(10),
           ),
-          child: Icon(icon, color: Colors.teal, size: 24),
+          child: Icon(icon, color: const Color(0xFF722F37), size: 24),
         ),
         const SizedBox(width: 16),
         Expanded(
@@ -636,41 +784,6 @@ class _DetailScreenState extends State<DetailScreen> {
           ),
         ),
       ],
-    );
-  }
-
-  Widget _buildFormattedText(String text) {
-    final lines = text.split('\n');
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: lines.map((line) {
-        if (line.startsWith('## ')) {
-          return const SizedBox.shrink();
-        } else if (line.startsWith('**') && line.endsWith('**')) {
-          return Padding(
-            padding: const EdgeInsets.only(top: 12, bottom: 4),
-            child: Text(
-              line.replaceAll('**', ''),
-              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-          );
-        } else if (line.startsWith('- ')) {
-          return Padding(
-            padding: const EdgeInsets.only(left: 8, top: 4),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text('• ', style: TextStyle(fontSize: 16, color: Colors.teal, fontWeight: FontWeight.bold)),
-                Expanded(child: Text(line.substring(2), style: const TextStyle(fontSize: 16, height: 1.5))),
-              ],
-            ),
-          );
-        } else if (line.trim().isEmpty) {
-          return const SizedBox(height: 12);
-        } else {
-          return Text(line, style: const TextStyle(fontSize: 16, height: 1.6));
-        }
-      }).toList(),
     );
   }
 }
