@@ -70,8 +70,22 @@ Centro de salud rural. Caminos rurales pavimentados. Servicios básicos en la ca
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/Padilla_geografia.png',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/Padilla_gastronomia.jpg',
+    'assets/Ciudad_gastronomia/Padilla_gastronomia2.jpg',
+    'assets/Ciudad_gastronomia/Padilla_gastronomia3.jpg',
+    'assets/Ciudad_gastronomia/Padilla_gastronomia4.jpg',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/Padilla_turismo.png',
+    'assets/Ciudad_Turismo/Padilla_turismo2.png',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/Padilla_cultura.png',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresPadilla = [

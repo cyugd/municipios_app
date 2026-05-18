@@ -71,8 +71,20 @@ Centros de salud, clínicas del IMSS. Carreteras pavimentadas. Puente internacio
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/Rio bravo_geografia.png',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/Rio bravo_gastronomia.png',
+    'assets/Ciudad_gastronomia/Rio bravo_gastronomia2.jpg',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/Rio bravo_turismo.png',
+    'assets/Ciudad_Turismo/Rio bravo_turismo2.jpg',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/Rio bravo_cultura.png',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresRioBravo = [

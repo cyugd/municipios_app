@@ -71,8 +71,22 @@ Tampico tiene una moderna infraestructura. **Carreteras:** Conectado con la carr
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/Tampico_geografia.png',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/Tampico_gastronomia.jpg',
+    'assets/Ciudad_gastronomia/Tampico_gastronomia2.jpg',
+    'assets/Ciudad_gastronomia/Tampico_gastronomia3.jpg',
+    'assets/Ciudad_gastronomia/Tampico_gastronomia4.jpg',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/Tampico_turismo.png',
+    'assets/Ciudad_Turismo/Tampico_turismo2.png',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/Tampico_cultura.png',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresTampico = [

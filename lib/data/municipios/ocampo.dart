@@ -16,7 +16,7 @@ Se ubica al suroeste de Tamaulipas, en una zona entre la Sierra Madre Oriental y
 Según el censo 2020 tiene 13,190 habitantes. La población es mayoritariamente joven y el municipio presenta un carácter rural con baja densidad. Existe migración hacia ciudades grandes y Estados Unidos.
 
 ## Historia
-Antes de la llegada de los españoles, la región estaba habitada por pueblos nómadas que dejaron pinturas rupestres. Fue fundada como Villa de Santa Bárbara en 1749 por José de Escandón. En 1869 cambió su nombre a Ocampo en honor a Melchor Ocampo. Durante la Revolución Mexicana vivió cambios con la creación de ejidos.
+Antes de la llegada de los españoles, la región estaba habitada por pueblos nómadas que dejaron pinturas rupestres. Fue fundada como Villa de Santa Bárbara in 1749 por José de Escandón. En 1869 cambió su nombre a Ocampo en honor a Melchor Ocampo. Durante la Revolución Mexicana vivió cambios con la creación de ejidos.
 
 ## Economía
 - **Agricultura:** maíz, frijol, sorgo.
@@ -70,8 +70,22 @@ Centro de salud. Carreteras pavimentadas y caminos rurales.
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/Ciudad Ocampo_geografia.png',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/Ciudad Ocampo_gastronomia.png',
+    'assets/Ciudad_gastronomia/Ciudad Ocampo_gastronomia2.png',
+    'assets/Ciudad_gastronomia/Ciudad Ocampo_gastronomia3.png',
+    'assets/Ciudad_gastronomia/Ciudad Ocampo_gastronomia4.png',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/Ciudad Ocampo_turismo.png',
+    'assets/Ciudad_Turismo/Ciudad Ocampo_turismo2.png',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/Ciudad Ocampo_cultura.png',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresOcampo = [

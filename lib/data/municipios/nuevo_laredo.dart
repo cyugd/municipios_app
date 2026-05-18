@@ -67,8 +67,23 @@ Nuevo Laredo cuenta con una moderna infraestructura que incluye tres puentes int
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/Nuevo Laredo_geografia.png',
+    'assets/Ciudad_geografia/Nuevo Laredo_geografia2.png',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/Nuevo Laredo_gastronomia.png',
+    'assets/Ciudad_gastronomia/Nuevo Laredo_gastronomia2.png',
+    'assets/Ciudad_gastronomia/Nuevo Laredo_gastronomia3.png',
+    'assets/Ciudad_gastronomia/Nuevo Laredo_gastronomia4.png',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/Nuevo Laredo_turismo.png',
+    'assets/Ciudad_Turismo/Nuevo Laredo_turismo2.png',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/Nuevo Laredo_cultura.png',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresNuevoLaredo = [
@@ -80,7 +95,7 @@ final List<Map<String, dynamic>> lugaresNuevoLaredo = [
   },
   {
     'nombre': 'Parque Cultural',
-    'descripcion': 'Centro cultural con exposiciones y eventos artísticos.',
+    'descripcion': 'Centro cultural con exposiciones and eventos artísticos.',
     'lat': 27.4766,
     'lng': -99.5164,
   },

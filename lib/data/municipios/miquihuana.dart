@@ -14,7 +14,7 @@ Miquihuana fue fundado en 1849 con el nombre de San Juan de Miquihuana por famil
 En el siglo XX se desarrollaron caminos, escuelas y servicios básicos, aunque también ocurrió migración hacia otras ciudades y Estados Unidos. La historia del municipio refleja la lucha constante por mantener sus raíces rurales frente a los procesos de modernización. Actualmente el municipio busca modernizarse mientras preserva su identidad cultural y su entorno natural, con proyectos que incluyen la promoción del turismo ecológico y la producción artesanal.
 
 ## Geografía y Población
-Miquihuana se encuentra en una zona montañosa de la Sierra Madre Oriental, con altitudes altas que generan un clima templado a frío. El territorio está formado por montañas, cañadas y altiplanos que favorecen actividades como la ganadería y el ecoturismo. El municipio cuenta con manantiales y arroyos que abastecen de agua a la población.  
+Miquihuana se encuentra en una zona montañoso de la Sierra Madre Oriental, con altitudes altas que generan un clima templado a frío. El territorio está formado por montañas, cañadas y altiplanos que favorecen actividades como la ganadería y el ecoturismo. El municipio cuenta con manantiales y arroyos que abastecen de agua a la población.  
 Su población es pequeña y dispersa en comunidades rurales, con baja densidad poblacional y un estilo de vida principalmente rural. La mayoría de los habitantes se dedican a actividades del campo, y la migración hacia ciudades más grandes ha reducido el crecimiento poblacional. Sin embargo, la cohesión comunitaria sigue siendo fuerte, y las familias mantienen tradiciones que refuerzan la identidad local.
 
 ## Colonias
@@ -54,6 +54,23 @@ Su comunidad mantiene valores tradicionales que continúan fortaleciendo la vida
   poblacion: '3,000 hab.',
   superficie: '250 km²',
   gentilicio: 'Miquihuanense',
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/maquihuana_geografia.png',
+    'assets/Ciudad_geografia/maquihuana_geografia2.png',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/maquihuana_gastronomia.png',
+    'assets/Ciudad_gastronomia/maquihuana_gastronomia2.png',
+    'assets/Ciudad_gastronomia/maquihuana_gastronomia3.png',
+    'assets/Ciudad_gastronomia/maquihuana_gastronomia4.png',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/maquihuana_turismo.png',
+    'assets/Ciudad_Turismo/maquihuana_turismo2.png',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/maquihuana_cultura.png',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresMiquihuana = [

@@ -20,7 +20,7 @@ A partir de 1929, repatriación de mexicanos desde EE. UU. En 1939 inicio de la 
 
 ## Economía
 - **Agricultura:** sorgo (principal cultivo), algodón, maíz.
-- **Industria maquiladora.**
+- **Ganadería:** industria maquiladora.
 - **Comercio agrícola.**
 - **Turismo cinegético** (caza de paloma ala blanca), que atrae cazadores de Estados Unidos.
 
@@ -69,8 +69,22 @@ Centro de salud, clínicas del IMSS. Carreteras pavimentadas. Servicios de agua 
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/Valle hermoso_geografia.png',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/Valle hermoso_gastronomia.jpg',
+    'assets/Ciudad_gastronomia/Valle hermoso_gastronomia2.jpg',
+    'assets/Ciudad_gastronomia/Valle hermoso_gastronomia3.jpg',
+    'assets/Ciudad_gastronomia/Valle hermoso_gastronomia4.jpg',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/Valle hermoso_turismo.jpg',
+    'assets/Ciudad_Turismo/Valle hermoso_turismo2.jpg',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/Valle hermoso_cultura.jpg',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresValleHermoso = [

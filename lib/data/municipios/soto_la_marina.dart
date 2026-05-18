@@ -38,7 +38,7 @@ El municipio cuenta con una oferta educativa que cubre desde el nivel preescolar
 
 ## Personajes Ilustres
 - **General Mariano García (1820-1880):** Militar tamaulipeco que participó en la Guerra de Reforma y en la Intervención Francesa. Nació en Soto la Marina.
-- **Profesor José de Jesús López (1925-2000):** Educador y cronista municipal. Fundó la primera escuela secundaria y escribió la historia del municipio.
+- **Profesor José de Jesús López (1925-2000):** Educador y cronista municipal. Fundó la primera escuela secundaria y escribir la historia del municipio.
 - **Doña María del Refugio Garza (1930-2015):** Artesana textil, reconocida por sus bordados en punto de cruz. Sus obras fueron expuestas en la Feria Nacional de Artesanías en Guadalajara.
 - **Don Manuel Sánchez (1945- ):** Pescador y activista ambiental. Lideró la creación de la cooperativa pesquera y la protección de la tortuga marina.
 
@@ -69,8 +69,22 @@ El municipio cuenta con una oferta educativa que cubre desde el nivel preescolar
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/Soto la marina_geografia.png',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/Soto la marina_gastronomia.jpg',
+    'assets/Ciudad_gastronomia/Soto la marina_gastronomia2.jpg',
+    'assets/Ciudad_gastronomia/Soto la marina_gastronomia3.png',
+    'assets/Ciudad_gastronomia/Soto la marina_gastronomia4.jpg',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/Soto la marina_turismo.png',
+    'assets/Ciudad_Turismo/Soto la marina_turismo2.png',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/Soto la marina_cultura.png',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresSotoLaMarina = [
@@ -91,17 +105,5 @@ final List<Map<String, dynamic>> lugaresSotoLaMarina = [
     'descripcion': 'Recurso hídrico fundamental, ideal para paseos.',
     'lat': 23.7667,
     'lng': -98.2000,
-  },
-  {
-    'nombre': 'Parroquia de Nuestra Señora de la Consolación',
-    'descripcion': 'Templo del siglo XVIII.',
-    'lat': 23.8000,
-    'lng': -98.3000,
-  },
-  {
-    'nombre': 'Faro Punta de Piedra',
-    'descripcion': 'Formación rocosa con faro.',
-    'lat': 23.7300,
-    'lng': -97.7900,
   },
 ];

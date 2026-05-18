@@ -72,8 +72,22 @@ Centro de salud rural. Caminos pavimentados y de terracería.
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/San Carlos_geografia.jpg',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/San Carlos_gastronomia.png',
+    'assets/Ciudad_gastronomia/San Carlos_gastronomia2.jpg',
+    'assets/Ciudad_gastronomia/San Carlos_gastronomia3.jpg',
+    'assets/Ciudad_gastronomia/San Carlos_gastronomia4.jpg',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/San Carlos_turismo.png',
+    'assets/Ciudad_Turismo/San Carlos_turismo2.png',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/San Carlos_cultura.png',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresSanCarlos = [

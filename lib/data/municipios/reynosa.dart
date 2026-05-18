@@ -71,8 +71,22 @@ Puentes internacionales (Reynosa-Pharr, Reynosa-Hidalgo), aeropuerto internacion
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/Reynosa_geografia.png',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/Reynosa_gastronomia.png',
+    'assets/Ciudad_gastronomia/Reynosa_gastronomia2.png',
+    'assets/Ciudad_gastronomia/Reynosa_gastronomia3.png',
+    'assets/Ciudad_gastronomia/Reynosa_gastronomia4.png',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/Reynosa_turismo.png',
+    'assets/Ciudad_Turismo/Reynosa_turismo2.jpg',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/Reynosa_cultura.png',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresReynosa = [

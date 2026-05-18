@@ -16,7 +16,7 @@ Ubicado en la Sierra de San Carlos, San Nicolás tiene un relieve montañoso que
 La población en 2020 era de 926 habitantes, principalmente niños y jóvenes. Comunidad pequeña pero con gran cohesión social. Migración frecuente hacia ciudades más grandes.
 
 ## Historia
-Desde su fundación en 1750, San Nicolás se consolidó como una villa agrícola de autoconsumo. En el siglo XIX apoyó movimientos insurgentes. Durante la Revolución Mexicana, varios habitantes se unieron al movimiento constitucionalista. A lo largo del tiempo ha conservado su estructura tradicional y el carácter agrícola de su economía.
+Desde su fundación in 1750, San Nicolás se consolidó como una villa agrícola de autoconsumo. En el siglo XIX apoyó movimientos insurgentes. Durante la Revolución Mexicana, varios habitantes se unieron al movimiento constitucionalista. A lo largo del tiempo ha conservado su estructura tradicional y el carácter agrícola de su economía.
 
 ## Economía
 - **Agricultura:** maíz, frijol, calabaza, sorgo.
@@ -71,8 +71,22 @@ Centro de salud rural. Caminos rurales. Servicios básicos limitados.
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/San Nicolás_geografia.png',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/San Nicolás_gastronomia.jpg',
+    'assets/Ciudad_gastronomia/San Nicolás_gastronomia2.jpg',
+    'assets/Ciudad_gastronomia/San Nicolás_gastronomia3.jpg',
+    'assets/Ciudad_gastronomia/San Nicolás_gastronomia4.jpg',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/San Nicolás_turismo.jpg',
+    'assets/Ciudad_Turismo/San Nicolás_turismo2.jpg',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/San Nicolás_cultura.png',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresSanNicolas = [

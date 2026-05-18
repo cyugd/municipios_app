@@ -68,8 +68,23 @@ Centro de salud rural. Caminos rurales pavimentados y de terracería.
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/Nuevo Morelos_geografia.png',
+    'assets/Ciudad_geografia/Nuevo Morelos_geografia2.png',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/Nuevo Morelos_gastronomia.png',
+    'assets/Ciudad_gastronomia/Nuevo Morelos_gastronomia2.png',
+    'assets/Ciudad_gastronomia/Nuevo Morelos_gastronomia3.png',
+    'assets/Ciudad_gastronomia/Nuevo Morelos_gastronomia4.png',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/Nuevo Morelos_turismo.png',
+    'assets/Ciudad_Turismo/Nuevo Morelos_turismo2.png',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/Nuevo Morelos_cultura.png',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresNuevoMorelos = [

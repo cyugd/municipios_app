@@ -71,8 +71,22 @@ Centro de salud, clínicas del IMSS. Carretera pavimentada. Servicios básicos e
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/San Fernando_geografia.png',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/San Fernando_gastronomia.jpg',
+    'assets/Ciudad_gastronomia/San Fernando_gastronomia2.jpg',
+    'assets/Ciudad_gastronomia/San Fernando_gastronomia3.jpg',
+    'assets/Ciudad_gastronomia/San Fernando_gastronomia4.png',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/San Fernando_turismo.jpg',
+    'assets/Ciudad_Turismo/San Fernando_turismo2.png',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/San Fernando_cultura.png',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresSanFernando = [

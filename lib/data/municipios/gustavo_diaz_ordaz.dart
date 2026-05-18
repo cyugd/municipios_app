@@ -1,4 +1,5 @@
 import '../../models/municipio.dart';
+import '../../models/monumento.dart';
 
 final gustavo_diaz_ordaz = Municipio(
   id: 'gustavo_diaz_ordaz',
@@ -60,6 +61,15 @@ Se busca diversificar la economía, promover el turismo fronterizo y mejorar la 
   poblacion: '16,000 hab.',
   superficie: '200 km²',
   gentilicio: 'Ordaceño',
+
+  monumentos3D: [
+    Monumento(
+      nombre: 'Monumento a la Patria',
+      descripcion: 'Monumento icónico.',
+      rutaModelo: 'assets/models/gustavito.glb',
+      escala: 1.0,
+    ),
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresGustavoDiazOrdaz = [

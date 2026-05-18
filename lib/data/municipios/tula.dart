@@ -90,8 +90,24 @@ Carretera pavimentada a Ciudad Victoria (1.5 horas). Servicios de agua, electric
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/Tula_geografia.png',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/Tula_gastronomia.jpg',
+    'assets/Ciudad_gastronomia/Tula_gastronomia2.png',
+    'assets/Ciudad_gastronomia/Tula_gastronomia3.jpg',
+    'assets/Ciudad_gastronomia/Tula_gastronomia4.jpg',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/Tula_turismo.png',
+    'assets/Ciudad_Turismo/Tula_turismo2.jpg',
+    'assets/Ciudad_Turismo/Tula_turismo3.jpg',
+    'assets/Ciudad_Turismo/Tula_turismo4.jpg',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/Tula_cultura.png',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresTula = [

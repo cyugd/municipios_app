@@ -130,42 +130,45 @@ class _ChatAIWidgetState extends ConsumerState<ChatAIWidget> {
             // Área de entrada de texto
             Padding(
               padding: EdgeInsets.only(
-                bottom: MediaQuery.of(context).viewInsets.bottom + 16,
+                // Aumentamos el padding para subir la caja de texto y evitar los botones de navegación del sistema
+                bottom: MediaQuery.of(context).viewInsets.bottom + 48,
                 left: 16,
                 right: 16,
                 top: 8,
               ),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: TextField(
-                      controller: _controller,
-                      decoration: InputDecoration(
-                        hintText: 'Pregunta sobre Tamaulipas...',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30),
+              child: SafeArea(
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: TextField(
+                        controller: _controller,
+                        decoration: InputDecoration(
+                          hintText: 'Pregunta sobre Tamaulipas...',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                          contentPadding: const EdgeInsets.symmetric(horizontal: 20),
                         ),
-                        contentPadding: const EdgeInsets.symmetric(horizontal: 20),
+                        onSubmitted: (val) {
+                          if (val.trim().isNotEmpty) {
+                            notifier.sendMessage(val.trim());
+                            _controller.clear();
+                          }
+                        },
                       ),
-                      onSubmitted: (val) {
-                        if (val.trim().isNotEmpty) {
-                          notifier.sendMessage(val.trim());
+                    ),
+                    const SizedBox(width: 8),
+                    IconButton(
+                      icon: const Icon(Icons.send, color: Colors.teal),
+                      onPressed: () {
+                        if (_controller.text.trim().isNotEmpty) {
+                          notifier.sendMessage(_controller.text.trim());
                           _controller.clear();
                         }
                       },
                     ),
-                  ),
-                  const SizedBox(width: 8),
-                  IconButton(
-                    icon: const Icon(Icons.send, color: Colors.teal),
-                    onPressed: () {
-                      if (_controller.text.trim().isNotEmpty) {
-                        notifier.sendMessage(_controller.text.trim());
-                        _controller.clear();
-                      }
-                    },
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ],

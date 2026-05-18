@@ -70,8 +70,21 @@ Centro de salud rural. Caminos rurales de terracería. Servicios básicos en la 
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/Villagrán_geografia.jpg',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/Villagrán_gastronomia.jpg',
+    'assets/Ciudad_gastronomia/Villagrán_gastronomia2.jpg',
+    'assets/Ciudad_gastronomia/Villagrán_gastronomia3.png',
+    'assets/Ciudad_gastronomia/Villagrán_gastronomia4.jpg',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/Villagrán_turismo.jpg',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/Villagrán_cultura.jpg',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresVillagran = [

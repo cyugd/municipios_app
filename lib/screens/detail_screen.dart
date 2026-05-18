@@ -95,7 +95,7 @@ class _DetailScreenState extends State<DetailScreen> {
   }
 
   void _initTts() async {
-    await _flutterTts.setLanguage("es-MX");
+    await _flutterTts.setLanguage('es-MX');
     await _flutterTts.setSpeechRate(0.5);
     await _flutterTts.setPitch(1.0);
     await _flutterTts.awaitSpeakCompletion(true);
@@ -193,45 +193,56 @@ class _DetailScreenState extends State<DetailScreen> {
 
   Widget _buildImageGallery(List<String> imagenes, String titulo) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 16.0),
+      padding: const EdgeInsets.symmetric(vertical: 24.0),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          const SizedBox(width: double.infinity),
           Text(
             titulo,
-            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFFFFD700)),
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              fontSize: 18, 
+              fontWeight: FontWeight.bold, 
+              color: Color(0xFFFFD700),
+              shadows: [Shadow(color: Colors.black26, offset: Offset(1, 1), blurRadius: 2)],
+            ),
           ),
-          const SizedBox(height: 8),
-          SizedBox(
-            height: 120,
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: imagenes.length,
-              itemBuilder: (context, index) {
+          const SizedBox(height: 16),
+          Center(
+            child: Wrap(
+              spacing: 12,
+              runSpacing: 12,
+              alignment: WrapAlignment.center,
+              children: List.generate(imagenes.length, (index) {
                 return GestureDetector(
                   onTap: () => _showFullImage(imagenes[index]),
                   child: Hero(
-                    tag: 'gallery_$index',
+                    tag: 'gallery_${titulo}_$index',
                     child: Container(
-                      width: 120,
-                      margin: const EdgeInsets.only(right: 8),
+                      width: 150,
+                      height: 110,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(16),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.2),
+                            blurRadius: 8,
+                            offset: const Offset(0, 4),
+                          ),
+                        ],
                         image: DecorationImage(
                           image: AssetImage(imagenes[index]),
                           fit: BoxFit.cover,
                           onError: (exception, stackTrace) {
-                            debugPrint('Error cargando imagen: $imagenes[index]');
+                            debugPrint('Error cargando imagen: ${imagenes[index]}');
                           },
                         ),
-                      ),
-                      child: const Center(
-                        child: Icon(Icons.broken_image, color: Colors.white70),
                       ),
                     ),
                   ),
                 );
-              },
+              }),
             ),
           ),
         ],
@@ -243,18 +254,26 @@ class _DetailScreenState extends State<DetailScreen> {
     showDialog(
       context: context,
       builder: (_) => Dialog(
+        backgroundColor: Colors.transparent,
+        insetPadding: const EdgeInsets.all(10),
         child: Stack(
+          alignment: Alignment.center,
           children: [
             PhotoView(
               imageProvider: AssetImage(imagePath),
-              backgroundDecoration: const BoxDecoration(color: Colors.black),
+              backgroundDecoration: const BoxDecoration(color: Colors.transparent),
+              minScale: PhotoViewComputedScale.contained,
+              maxScale: PhotoViewComputedScale.covered * 2,
             ),
             Positioned(
               top: 10,
               right: 10,
-              child: IconButton(
-                icon: const Icon(Icons.close, color: Colors.white),
-                onPressed: () => Navigator.pop(context),
+              child: CircleAvatar(
+                backgroundColor: Colors.black54,
+                child: IconButton(
+                  icon: const Icon(Icons.close, color: Colors.white),
+                  onPressed: () => Navigator.pop(context),
+                ),
               ),
             ),
           ],
@@ -290,20 +309,6 @@ class _DetailScreenState extends State<DetailScreen> {
   }
 
   Widget _buildFormattedText(String text) {
-    final List<TextSpan> spans = [];
-    final RegExp exp = RegExp(r'\*\*(.*?)\*\*');
-    int lastIndex = 0;
-    for (final match in exp.allMatches(text)) {
-      if (match.start > lastIndex) {
-        spans.add(TextSpan(text: text.substring(lastIndex, match.start)));
-      }
-      spans.add(TextSpan(text: match.group(1), style: const TextStyle(fontWeight: FontWeight.bold)));
-      lastIndex = match.end;
-    }
-    if (lastIndex < text.length) {
-      spans.add(TextSpan(text: text.substring(lastIndex)));
-    }
-
     final lines = text.split('\n');
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -456,33 +461,36 @@ class _DetailScreenState extends State<DetailScreen> {
     final isDesktop = size.width > 900;
 
     return Scaffold(
-      floatingActionButton: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          FloatingActionButton(
-            heroTag: 'quiz_fab_${widget.municipio.id}',
-            backgroundColor: const Color(0xFFFFD700),
-            child: const Icon(Icons.quiz, color: Color(0xFF722F37)),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => QuizScreen(municipio: widget.municipio),
-                ),
-              );
-            },
-          ),
-          const SizedBox(height: 16),
-          ChatAIWidget(municipio: widget.municipio),
-          const SizedBox(height: 16),
-          if (widget.municipio.monumentos3D.isNotEmpty)
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.only(bottom: 30.0), // Elevamos el grupo de botones flotantes
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
             FloatingActionButton(
-              heroTag: 'visor_3d_btn',
-              onPressed: _showMonumentosMenu,
+              heroTag: 'quiz_fab_${widget.municipio.id}',
               backgroundColor: const Color(0xFFFFD700),
-              child: const Icon(Icons.view_in_ar, color: Color(0xFF722F37)),
+              child: const Icon(Icons.quiz, color: Color(0xFF722F37)),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => QuizScreen(municipio: widget.municipio),
+                  ),
+                );
+              },
             ),
-        ],
+            const SizedBox(height: 16),
+            ChatAIWidget(municipio: widget.municipio),
+            const SizedBox(height: 16),
+            if (widget.municipio.monumentos3D.isNotEmpty)
+              FloatingActionButton(
+                heroTag: 'visor_3d_btn',
+                onPressed: _showMonumentosMenu,
+                backgroundColor: const Color(0xFFFFD700),
+                child: const Icon(Icons.view_in_ar, color: Color(0xFF722F37)),
+              ),
+          ],
+        ),
       ),
       body: Stack(
         children: [
@@ -723,9 +731,10 @@ class _DetailScreenState extends State<DetailScreen> {
           ),
           if (_showBackToTop)
             Positioned(
-              bottom: 200,
+              bottom: 250, // Subimos el botón de desplazamiento
               right: 20,
               child: FloatingActionButton.small(
+                heroTag: 'scroll_top_btn',
                 onPressed: _scrollToTop,
                 backgroundColor: const Color(0xFFFFD700),
                 child: const Icon(Icons.arrow_upward, color: Color(0xFF722F37)),

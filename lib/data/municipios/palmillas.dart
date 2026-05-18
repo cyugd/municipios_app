@@ -70,8 +70,22 @@ Centro de salud rural. Caminos rurales. Servicios básicos en la cabecera.
       escala: 1.0,
     ),
   ],
-  imagenesGastronomia: [],
-  imagenesTurismo: [],
+  imagenesGeografia: [
+    'assets/Ciudad_geografia/Palmillas_geografia.png',
+  ],
+  imagenesGastronomia: [
+    'assets/Ciudad_gastronomia/Palmillas_gastronomia.jpg',
+    'assets/Ciudad_gastronomia/Palmillas_gastronomia2.jpg',
+    'assets/Ciudad_gastronomia/Palmillas_gastronomia3.png',
+    'assets/Ciudad_gastronomia/Palmillas_gastronomia4.png',
+  ],
+  imagenesTurismo: [
+    'assets/Ciudad_Turismo/Palmillas_turismo.png',
+    'assets/Ciudad_Turismo/Palmillas_turismo2.png',
+  ],
+  imagenesCultura: [
+    'assets/Ciudad_Cultura/Palmillas_cultura.png',
+  ],
 );
 
 final List<Map<String, dynamic>> lugaresPalmillas = [
